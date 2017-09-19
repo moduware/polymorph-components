@@ -1,0 +1,139 @@
+<link rel="import" href="../polymer/polymer-element.html">
+<link rel="import" href="../polymer/lib/mixins/gesture-event-listeners.html"> <!-- import needed to use Polymer Gestures Mixin -->
+<link rel="import" href="../morph-element/morph-element.html">
+
+<dom-module id="morph-sidebar">
+  <template>
+    <style>
+      :host {
+        display: block;
+      }
+
+      :host([sidebar]) {
+        z-index: 1000;
+        /*display: none;*/
+        background: #111;
+        box-sizing: border-box;
+        overflow: auto;
+        -webkit-overflow-scrolling: touch;
+        position: absolute;
+        width: 260px;
+        top: 0;
+        height: 100%;
+        -webkit-transform: translate3d(0,0,0);
+        transform: translate3d(0,0,0);
+        -webkit-transition-duration: .4s;
+        transition-duration: .4s;
+      }
+
+      :host([sidebar][left]) {
+        left: 0;
+      }
+
+      :host([sidebar][right]) {
+        right: 0;
+      }
+
+      :host([sidebar][left][cover][close]) {
+        z-index: 6000;
+        -webkit-transform: translate3d(-100%, 0, 0);
+        transform: translate3d(-100%, 0, 0);
+      }
+
+      :host([overlay]) {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,0);
+        opacity: 0;
+        z-index: 5999;
+        display: none;
+        -webkit-transform: translate3d(0,0,0);
+        transform: translate3d(0,0,0);
+        -webkit-transition-duration: .5s;
+        transition-duration: .5s;
+      }
+
+
+
+    </style>
+
+    <slot></slot>
+
+
+  </template>
+
+  <script>
+    /**
+     * `morph-sidebar`
+     * Sidebar that morphs for current mobile OS
+     *
+     * @customElement
+     * @polymer
+     * @demo demo/index.html
+     */
+    class MorphSidebar extends MorphElement {
+      static get is() { return 'morph-sidebar'; }
+      static get properties() {
+        return {
+          sidebar: {
+            type: Boolean,
+            value: 'false',
+            reflectToAttibute: true
+          },
+          left: {
+            type: Boolean,
+            value: 'false',
+            reflectToAttibute: true
+          },
+          overlay: {
+            type: Boolean,
+            value: 'false',
+            reflectToAttibute: true
+          },
+          close: {
+            type: Boolean,
+            value: 'false',
+            reflectToAttibute: true
+          },
+          open: {
+            type: Boolean,
+            value: 'false',
+            reflectToAttibute: true
+          }
+        };
+      }
+
+      ready() {
+        super.ready();
+        var sidebar = document.getElementById("left");
+        console.log('sidebar', sidebar);
+        console.log('sidebar.nodeName', sidebar.nodeName);
+        if (sidebar.nodeName == 'MORPH-SIDEBAR') {
+          console.log('Morph!');
+        }
+        if( (sidebar.hasAttribute('left')) && (sidebar.nodeName == 'MORPH-SIDEBAR') ) {
+          console.log('Morph me!');
+          this.setAttribute('close', '');
+        }
+        Polymer.Gestures.addListener(this, 'tap', e => {
+          this.setAttribute('close', '');
+          if (this.hasAttribute('open')) {
+            
+            console.log('elem', sidebar);
+            sidebar.removeAttribute('close');
+          }
+        });
+      }
+
+      _openMe(e) {
+        console.info(e.target.id + ' was clicked.');
+      }
+
+    }
+
+    window.customElements.define(MorphSidebar.is, MorphSidebar);
+  </script>
+</dom-module>

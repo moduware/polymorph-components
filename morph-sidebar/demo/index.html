@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
+
+    <title>morph-sidebar demo</title>
+
+    <script src="../../webcomponentsjs/webcomponents-lite.js"></script>
+
+    <link rel="import" href="../../iron-demo-helpers/demo-pages-shared-styles.html">
+    <link rel="import" href="../../iron-demo-helpers/demo-snippet.html">
+    <link rel="import" href="../morph-sidebar.html">
+
+    <custom-style>
+      <style is="custom-style" include="demo-pages-shared-styles">
+        p {
+          color: #6d6d72;
+        }
+        p a {
+          color: #007aff;
+          text-decoration: none;
+        }
+      </style>
+    </custom-style>
+  </head>
+  <body>
+    <div>
+      <h3>Android morph-sidebar demo</h3>
+
+      <demo-snippet>
+        <template>
+
+          <div class="page-content">
+            <div class="content-block">
+              <morph-sidebar id="left" sidebar left cover >
+                <div style="padding: 20px;">
+                  <p>Left Panel content here</p>
+                  <p>
+                    <a href="#">Click Sidebar to close</a>
+                  </p>
+
+                </div>
+              </morph-sidebar>
+              <!-- Click on link with "open-panel" and data-panel="right" attribute will open Right panel -->
+              <morph-sidebar open >
+                <p><a href="#">Open Left Panel</a></p>
+              </morph-sidebar>
+             
+            </div>
+          </div>
+          
+        </template>
+      </demo-snippet>
+      
+    </div>
+  </body>
+</html>
