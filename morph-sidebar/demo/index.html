@@ -23,6 +23,10 @@
           color: #007aff;
           text-decoration: none;
         }
+
+        morph-sidebar[platform="android"] {
+          --sidebar-background-color: white; 
+        }
       </style>
     </custom-style>
   </head>
@@ -46,10 +50,10 @@
       
       <demo-snippet>
         <template>   
-              <morph-sidebar id="sidebarLeft">
+              <morph-sidebar id="sidebarLeft" platform="android">
                   <p>Left Panel content here</p>
               </morph-sidebar>
-              <morph-sidebar side="right" id="sidebarRight">
+              <morph-sidebar side="right" id="sidebarRight" platform="ios">
                   <p>Right Panel content here</p>
               </morph-sidebar>
         </template>
