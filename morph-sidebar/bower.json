@@ -10,7 +10,9 @@
   "devDependencies": {
     "iron-demo-helpers": "PolymerElements/iron-demo-helpers#^2.0.0",
     "web-component-tester": "Polymer/web-component-tester#^6.0.0",
-    "webcomponentsjs": "webcomponents/webcomponentsjs#^1.0.0"
+    "webcomponentsjs": "webcomponents/webcomponentsjs#^1.0.0",
+    "morph-button": "../morph-button/",
+    "morph-shared-colors": "../morph-shared-colors"
   },
   "resolutions": {
     "polymer": "^2.0.0"
