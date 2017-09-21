@@ -30,20 +30,27 @@
     <div>
       <h3>Android morph-sidebar demo</h3>
       <script>
-          function toggleSidebar() {
-            let sidebar = document.getElementById('sidebarLeft');
+          function toggleSidebar(name) {
+            let sidebar = document.getElementById('sidebar' + name);
             sidebar.open = !sidebar.open;
           }
           document.addEventListener('DOMContentLoaded', function(event) {
-            document.getElementById('sidebarToggler').addEventListener('click', toggleSidebar);
+            document.getElementById('sidebarLeftToggler').addEventListener('click', () => toggleSidebar('Left'));
+            document.getElementById('sidebarRightToggler').addEventListener('click', () => toggleSidebar('Right'));
           });
       </script>
-      <morph-button platform="android" big filled id="sidebarToggler" on-tap="toggleSidebar">Open Left Panel</morph-button>
+      <!-- <morph-button platform="android" big filled id="sidebarToggler" on-tap="toggleSidebar">Open Left Panel</morph-button>
+      <morph-button platform="android" big filled id="sidebarToggler" on-tap="toggleSidebar">Open Left Panel</morph-button> -->
+      <button id="sidebarLeftToggler">Toggle Left Sidebar</button>
+      <button id="sidebarRightToggler">Toggle Right Sidebar</button>
       
       <demo-snippet>
         <template>   
               <morph-sidebar id="sidebarLeft">
                   <p>Left Panel content here</p>
+              </morph-sidebar>
+              <morph-sidebar side="right" id="sidebarRight">
+                  <p>Right Panel content here</p>
               </morph-sidebar>
         </template>
       </demo-snippet>
