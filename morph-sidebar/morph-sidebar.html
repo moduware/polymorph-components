@@ -23,20 +23,20 @@
         -webkit-overflow-scrolling: touch;
       }
 
-      :host([left]) {
+      :host([side="left"]) {
         left: 0;
       }
 
-      :host([right]) {
+      :host([side="right"]) {
         right: 0;
       }
 
-      :host([left]:not([open])) {
+      :host([side="left"]:not([open])) {
         -webkit-transform: translate3d(-100%, 0, 0);
         transform: translate3d(-100%, 0, 0);
       }
 
-      :host([right]:not([open])) {
+      :host([side="right"]:not([open])) {
         -webkit-transform: translate3d(100%, 0, 0);
         transform: translate3d(100%, 0, 0);
       }
@@ -61,9 +61,9 @@
 
       static get properties() {
         return {
-          left: {
-            type: Boolean,
-            value: true,
+          side: {
+            type: String,
+            value: "left",
             reflectToAttribute: true
           },
           open: {
