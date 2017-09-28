@@ -2,7 +2,12 @@
 
 <dom-module id="morph-element">
   <template>
-    <style></style>
+    <style>
+    :host {
+      /* --have-access-to-shared-colors: var(--morph-shared-colors-connected, black); */
+      /* background-color: black; */
+    }
+    </style>
 
   </template>
 
@@ -43,6 +48,18 @@
             }
           }
         };
+      }
+
+      checkIfSharedStylesConnected() {
+        let style;
+        if (ShadyCSS) {
+          style = ShadyCSS.getComputedStyleValue(this, '--have-access-to-shared-colors');
+        } else {
+          style = getComputedStyle(this, '--have-access-to-shared-colors');
+        }
+        if(style != 'deepskyblue') {
+          console.warning('You need include morph-shared-styles if you want use not standard or custom colors!');
+        }
       }
 
     }
