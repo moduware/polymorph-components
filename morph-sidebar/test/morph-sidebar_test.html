@@ -13,36 +13,50 @@
   </head>
   <body>
 
-    <test-fixture id='SidebarFixture'>
+    <test-fixture id='sidebarFixture'>
       <template>
         <morph-sidebar platform='android'></morph-sidebar>
       </template>
     </test-fixture>
 
-    <test-fixture id='RightSidebarFixture'>
+    <test-fixture id='rightSidebarFixture'>
       <template>
         <morph-sidebar side='right' platform='android'></morph-sidebar>
       </template>
     </test-fixture>
 
     <script>
-      describe('morph-sidebar', function() {
+      describe('<morph-sidebar>', function() {
         // testing for default properties present
-        it('instantiating the element with default properties works', function() {
-          var element = fixture('SidebarFixture');
-          expect(element).to.be.ok;
-          expect(element.side).to.be.equal('left');
-          expect(element.open).to.be.false;
-          
-          var style = getComputedStyle(element);
-          console.log('style', style.left, style.right);
+        context('Default Sidebar Property Test', function() {
+          // declare variable for sidebar in this context only
+          let sidebar;
+          // assigning button fixture for this context. This will automatically removed on the teardown phase of this test context
+          beforeEach(function() {
+            sidebar = fixture('sidebarFixture');
+          });
+
+          it('instantiating the sidebar reflects default properties', function() {
+            expect(sidebar).to.be.ok;
+            expect(sidebar.side).to.be.equal('left');
+            expect(sidebar.open).to.be.false;
+          });
+
         });
 
         // testing for setting side property reflects correctly
-        it('setting a property on the element works', function() {
-          // Create a test fixture
-          var element = fixture('RightSidebarFixture');
-          expect(element.side).to.be.equal('right');
+        context('Set Sidebar property side = right', function() {
+           // declare variable for sidebar in this context only
+          let sidebar;
+          // assigning button fixture for this context. This will automatically removed on the teardown phase of this test context 
+          beforeEach(function() {
+            sidebar = fixture('rightSidebarFixture');
+          });
+
+          it('setting a property on the sidebar works', function() {
+            expect(sidebar.side).to.be.equal('right');
+          });
+
         });
 
       });
