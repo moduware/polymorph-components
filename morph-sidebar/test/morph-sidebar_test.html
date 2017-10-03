@@ -30,15 +30,17 @@
         // testing for default properties present
         context('Default Sidebar Property Test', function() {
           // declare variable for sidebar in this context only
-          let sidebar;
+          let sidebar, style;
           // assigning button fixture for this context. This will automatically removed on the teardown phase of this test context
           beforeEach(function() {
             sidebar = fixture('sidebarFixture');
+            style = getComputedStyle(sidebar);
           });
 
           it('instantiating the sidebar reflects default properties', function() {
             expect(sidebar).to.be.ok;
             expect(sidebar.side).to.be.equal('left');
+            expect(style.left).to.be.equal('0px');
             expect(sidebar.open).to.be.false;
           });
 
@@ -51,10 +53,13 @@
           // assigning button fixture for this context. This will automatically removed on the teardown phase of this test context 
           beforeEach(function() {
             sidebar = fixture('rightSidebarFixture');
+            style = getComputedStyle(sidebar);
           });
 
           it('setting a property on the sidebar works', function() {
             expect(sidebar.side).to.be.equal('right');
+            expect(style.right).to.be.equal('0px');
+            expect(style.left).not.to.be.equal('640px');
           });
 
         });
