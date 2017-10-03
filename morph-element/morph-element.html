@@ -51,14 +51,19 @@
       }
 
       checkIfSharedStylesConnected() {
-        let style;
-        if (ShadyCSS) {
-          style = ShadyCSS.getComputedStyleValue(this, '--have-access-to-shared-colors');
-        } else {
-          style = getComputedStyle(this, '--have-access-to-shared-colors');
-        }
+        let style = this.getStyleShadyOrDOM();
         if(style != 'deepskyblue') {
           console.warn('WARNING: You need to include morph-shared-styles if you want to use non-standard or custom colors!');
+          return false;
+        }
+        return true;
+      }
+
+      getStyleShadyOrDOM() {
+        if (ShadyCSS) {
+          return ShadyCSS.getComputedStyleValue(this, '--have-access-to-shared-colors');
+        } else {
+          return getComputedStyle(this, '--have-access-to-shared-colors');
         }
       }
 
