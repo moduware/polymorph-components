@@ -1,0 +1,45 @@
+<link rel="import" href="../polymer/polymer-element.html">
+
+<dom-module id="morph-view">
+  <template>
+    <style>
+      :host {
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: red;
+        overflow: scroll;
+      }
+    </style>
+
+    <slot></slot>
+    
+  </template>
+
+  <script>
+    /**
+     * `morph-view`
+     * View where we put all our elements
+     *
+     * @customElement
+     * @polymer
+     * @demo demo/index.html
+     */
+    class MorphView extends Polymer.Element {
+      static get is() { return 'morph-view'; }
+      static get properties() {
+        return {
+          prop1: {
+            type: String,
+            value: 'morph-view'
+          }
+        };
+      }
+    }
+
+    window.customElements.define(MorphView.is, MorphView);
+  </script>
+</dom-module>
