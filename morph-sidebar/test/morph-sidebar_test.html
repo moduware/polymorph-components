@@ -13,15 +13,21 @@
   </head>
   <body>
 
-    <test-fixture id='sidebarFixture'>
+    <test-fixture id="sidebarFixture">
       <template>
-        <morph-sidebar platform='android'></morph-sidebar>
+        <morph-sidebar platform="android"></morph-sidebar>
       </template>
     </test-fixture>
 
-    <test-fixture id='rightSidebarFixture'>
+    <test-fixture id="rightSidebarFixture">
       <template>
-        <morph-sidebar side='right' platform='android'></morph-sidebar>
+        <morph-sidebar side="right" platform="android"></morph-sidebar>
+      </template>
+    </test-fixture>
+
+    <test-fixture id="openSidebarFixture">
+      <template>
+        <morph-sidebar open side="right" platform="ios"></morph-sidebar>
       </template>
     </test-fixture>
 
@@ -31,7 +37,7 @@
         context('Default Sidebar Property Test', function() {
           // declare variable for sidebar in this context only
           let sidebar, style;
-          // assigning button fixture for this context. This will automatically removed on the teardown phase of this test context
+          // assigning side fixture for this context. This will automatically removed on the teardown phase of this test context
           beforeEach(function() {
             sidebar = fixture('sidebarFixture');
             style = getComputedStyle(sidebar);
@@ -50,17 +56,47 @@
         context('Set Sidebar property side = right', function() {
            // declare variable for sidebar in this context only
           let sidebar;
-          // assigning button fixture for this context. This will automatically removed on the teardown phase of this test context 
+          // assigning sidebar fixture for this context. This will automatically removed on the teardown phase of this test context 
           beforeEach(function() {
             sidebar = fixture('rightSidebarFixture');
             style = getComputedStyle(sidebar);
+            console.log('transform', style.transform);
           });
 
           it('setting a property on the sidebar works', function() {
             expect(sidebar.side).to.be.equal('right');
             expect(style.right).to.be.equal('0px');
-            expect(style.left).not.to.be.equal('640px');
+            expect(style.left).not.to.be.equal('0px');
           });
+
+        });
+
+        // test for when open is true correct css are rendered
+        context('Setting the sidebar open to true in the html markup', function() {
+          // declare variable for sidebar fixture in this context only and declare style variable for this fixture
+          let sidebar, style;
+
+          // assigning sidebar fixture. This will be remove automatically on the teardown phase of this test context
+          beforeEach(function() {
+            sidebar = fixture('openSidebarFixture');
+            // getting the computed style from the shadow DOM
+            style = getComputedStyle(sidebar);
+          });
+
+          it('Will apply correct css styling to 2d transform matrix', function() {
+            // checking correct 2d transform matrix is applied on open
+            expect(sidebar.hasAttribute('open')).to.be.equal(true);
+            expect(style.transform).to.be.equal('matrix(1, 0, 0, 1, 0, 0)');
+          });
+
+
+          it('And removing the attribute in the HTML will apply correct css styling', function() {
+            // check that when open attribute is remove it will apply css changes
+            sidebar.removeAttribute('open');
+            expect(sidebar.hasAttribute('open')).to.be.equal(false);
+            expect(style.transform).to.be.equal('matrix(1, 0, 0, 1, 260, 0)');
+          });
+
 
         });
 
