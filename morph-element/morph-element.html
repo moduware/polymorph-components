@@ -53,7 +53,7 @@
       checkIfSharedStylesConnected() {
         let style = this.getStyleShadyOrDOM();
         if(style != 'deepskyblue') {
-          console.warn('WARNING: You need to include morph-shared-styles if you want to use non-standard or custom colors!');
+          console.warn('WARNING: You need to include morph-shared-colors if you want to use standard colors!');
           return false;
         }
         return true;
