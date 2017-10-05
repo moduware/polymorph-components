@@ -29,20 +29,32 @@
     <morph-view id="mainView"> 
       <h3>Android morph-sidebar demo</h3>
       <script>
-          function toggleSidebar(name) {
-            let sidebar = document.getElementById('sidebar' + name);
-            sidebar.open = !sidebar.open;
-          }
-          function openRightSidebarWithReveal() {
-            let view = document.getElementById('mainView');
-            let sidebar = document.getElementById('sidebarRight');
-            sidebar.open = true;
-            view.reveal = 'right';
-          }
-          document.addEventListener('DOMContentLoaded', function(event) {
-            document.getElementById('sidebarLeftToggler').addEventListener('click', () => toggleSidebar('Left'));
-            document.getElementById('sidebarRightToggler').addEventListener('click', openRightSidebarWithReveal);
-          });
+        /**
+         * [toggleSidebar description]
+         *
+         * @param  {String} name takes left or right
+         */
+        function toggleSidebar(name) {
+          let sidebar = document.getElementById('sidebar' + name);
+          sidebar.open = !sidebar.open;
+        }
+
+        /**
+         * [openRightSidebarWithReveal description]
+         *
+         *  Set sidebar.open to true and view.reveal to 'right'
+         */
+        function openRightSidebarWithReveal() {
+          let view = document.getElementById('mainView');
+          let sidebar = document.getElementById('sidebarRight');
+          sidebar.open = true;
+          view.reveal = 'right';
+        }
+
+        document.addEventListener('DOMContentLoaded', function(event) {
+          document.getElementById('sidebarLeftToggler').addEventListener('click', () => toggleSidebar('Left'));
+          document.getElementById('sidebarRightToggler').addEventListener('click', openRightSidebarWithReveal);
+        });
       </script>
 
       <button id="sidebarLeftToggler">Toggle Left Sidebar</button>
