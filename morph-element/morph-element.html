@@ -50,6 +50,11 @@
         };
       }
 
+      /**
+       * checkIfSharedStylesConnected
+       *
+       * @return {Boolean} - return true if style not equal to 'deepskyblue' meaning shared color file not connected and returns false otherwise
+       */   
       checkIfSharedStylesConnected() {
         let style = this.getStyleShadyOrDOM();
         if(style != 'deepskyblue') {
@@ -59,6 +64,11 @@
         return true;
       }
 
+      /**
+       * [getStyleShadyOrDOM description]
+       *
+       * @return {Object} - returns the computed style based on if ShadyCSS is used or not 
+       */
       getStyleShadyOrDOM() {
         if (ShadyCSS) {
           return ShadyCSS.getComputedStyleValue(this, '--have-access-to-shared-colors');
