@@ -3,7 +3,8 @@
   "description": "View where we put all our elements",
   "main": "morph-view.html",
   "dependencies": {
-    "polymer": "Polymer/polymer#^2.0.0"
+    "polymer": "Polymer/polymer#^2.0.0",
+    "morph-element": "../morph-element/"
   },
   "devDependencies": {
     "iron-demo-helpers": "PolymerElements/iron-demo-helpers#^2.0.0",
