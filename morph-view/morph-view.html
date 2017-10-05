@@ -1,18 +1,52 @@
 <link rel="import" href="../polymer/polymer-element.html">
+<link rel="import" href="../morph-element/morph-element.html">
 
 <dom-module id="morph-view">
   <template>
     <style>
+
+
       :host {
+        --reveal-width: 260px;
+
+
         display: block;
         position: absolute;
         left: 0;
         top: 0;
         width: 100%;
         height: 100%;
-        background-color: red;
-        overflow: scroll;
+        overflow-x: hidden;
+        overflow-y: scroll;
+        z-index: 1;
+        background-color: white;
       }
+
+      :host([reveal="left"]) {
+        transform: translate3d(var(--reveal-width), 0, 0);
+      }
+
+      :host([reveal="right"]) {
+        transform: translate3d(calc(-1 * var(--reveal-width)), 0, 0);
+      }
+
+      :host([platform="android"][reveal]) {
+        z-index: 5000;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+      }
+
+      :host([platform="android"]) {
+        transition: 300ms;
+      }
+
+      :host([platform="ios"]) {
+        transition: 400ms;
+      }
+
+      :host(.not-animated) {
+        transition: 0ms;
+      }
+
     </style>
 
     <slot></slot>
@@ -28,13 +62,13 @@
      * @polymer
      * @demo demo/index.html
      */
-    class MorphView extends Polymer.Element {
+    class MorphView extends MorphElement {
       static get is() { return 'morph-view'; }
       static get properties() {
         return {
-          prop1: {
-            type: String,
-            value: 'morph-view'
+          reveal: {
+            type: String, // reveal can take a value of left or right
+            reflectToAttribute: true
           }
         };
       }
