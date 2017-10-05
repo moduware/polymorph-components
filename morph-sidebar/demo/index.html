@@ -2,59 +2,57 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scale=no">
 
     <title>morph-sidebar demo</title>
 
-    <script src="../../webcomponentsjs/webcomponents-lite.js"></script>
-
-    <link rel="import" href="../../iron-demo-helpers/demo-pages-shared-styles.html">
-    <link rel="import" href="../../iron-demo-helpers/demo-snippet.html">
     <link rel="import" href="../../morph-shared-colors/morph-shared-colors.html">
     <link rel="import" href="../../morph-button/morph-button.html">
+    <link rel="import" href="../../morph-view/morph-view.html">
     <link rel="import" href="../morph-sidebar.html">
 
-    <custom-style>
-      <style is="custom-style" include="demo-pages-shared-styles">
-        p {
-          color: #6d6d72;
-        }
-        
-        morph-sidebar[platform="android"] {
-          --sidebar-background-color: white; 
-        }
-      </style>
-    </custom-style>
+    <style>
+      body {
+        overflow-x: hidden;
+      }
+
+      p {
+        color: #6d6d72;
+      }
+      
+      morph-sidebar[platform="android"] {
+        --sidebar-background-color: white; 
+      }
+  </style>
   </head>
   <body>
-    <div>
+    <morph-view id="mainView"> 
       <h3>Android morph-sidebar demo</h3>
       <script>
           function toggleSidebar(name) {
             let sidebar = document.getElementById('sidebar' + name);
             sidebar.open = !sidebar.open;
           }
+          function openRightSidebarWithReveal() {
+            let view = document.getElementById('mainView');
+            let sidebar = document.getElementById('sidebarRight');
+            sidebar.open = true;
+            view.reveal = 'right';
+          }
           document.addEventListener('DOMContentLoaded', function(event) {
             document.getElementById('sidebarLeftToggler').addEventListener('click', () => toggleSidebar('Left'));
-            document.getElementById('sidebarRightToggler').addEventListener('click', () => toggleSidebar('Right'));
+            document.getElementById('sidebarRightToggler').addEventListener('click', openRightSidebarWithReveal);
           });
       </script>
-      <!-- <morph-button platform="android" big filled id="sidebarToggler" on-tap="toggleSidebar">Open Left Panel</morph-button>
-      <morph-button platform="android" big filled id="sidebarToggler" on-tap="toggleSidebar">Open Left Panel</morph-button> -->
+
       <button id="sidebarLeftToggler">Toggle Left Sidebar</button>
       <button id="sidebarRightToggler">Toggle Right Sidebar</button>
-      
-      <demo-snippet>
-        <template>   
-              <morph-sidebar id="sidebarLeft" platform="android">
-                  <p>Left Panel content here</p>
-              </morph-sidebar>
-              <morph-sidebar side="right" id="sidebarRight" platform="ios">
-                  <p>Right Panel content here</p>
-              </morph-sidebar>
-        </template>
-      </demo-snippet>
-      
-    </div>
+    </morph-view>
+    <morph-sidebar id="sidebarLeft" platform="android">
+        <p>Left Panel content here</p>
+    </morph-sidebar>
+    <morph-sidebar side="right" id="sidebarRight">
+        <p>Right Panel content here</p>
+    </morph-sidebar>
   </body>
 </html>
