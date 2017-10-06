@@ -1,0 +1,14 @@
+{
+  "name": "polymorph-components",
+  "homepage": "https://github.com/nexpaq/polymorph-components",
+  "authors": [
+    "Moduware"
+  ],
+  "description": "Polymer components that look native on each platform we used",
+  "main": "",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "iron-component-page": "^3.0.1"
+  }
+}
