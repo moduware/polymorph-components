@@ -1,0 +1,1129 @@
+{
+  "schema_version": "1.0.0",
+  "elements": [
+    {
+      "description": "`morph-element`\nParent for all of Polymorph Components that can detect current platform and other common behaviour",
+      "summary": "",
+      "path": "morph-element/morph-element.html",
+      "properties": [
+        {
+          "name": "platform",
+          "type": "string",
+          "description": "",
+          "privacy": "public",
+          "sourceRange": {
+            "start": {
+              "line": 26,
+              "column": 10
+            },
+            "end": {
+              "line": 48,
+              "column": 11
+            }
+          },
+          "metadata": {
+            "polymer": {}
+          },
+          "defaultValue": "\"unknown\""
+        }
+      ],
+      "methods": [
+        {
+          "name": "checkIfSharedStylesConnected",
+          "description": "checkIfSharedStylesConnected",
+          "privacy": "public",
+          "sourceRange": {
+            "start": {
+              "line": 57,
+              "column": 6
+            },
+            "end": {
+              "line": 64,
+              "column": 7
+            }
+          },
+          "metadata": {},
+          "params": [],
+          "return": {
+            "type": "Boolean",
+            "desc": "return true if style not equal to 'deepskyblue' meaning shared color file not connected and returns false otherwise"
+          }
+        },
+        {
+          "name": "getStyleShadyOrDOM",
+          "description": "[getStyleShadyOrDOM description]",
+          "privacy": "public",
+          "sourceRange": {
+            "start": {
+              "line": 71,
+              "column": 6
+            },
+            "end": {
+              "line": 77,
+              "column": 7
+            }
+          },
+          "metadata": {},
+          "params": [],
+          "return": {
+            "type": "Object",
+            "desc": "returns the computed style based on if ShadyCSS is used or not"
+          }
+        }
+      ],
+      "staticMethods": [],
+      "demos": [
+        {
+          "url": "demo/index.html",
+          "description": ""
+        }
+      ],
+      "metadata": {},
+      "sourceRange": {
+        "start": {
+          "line": 22,
+          "column": 4
+        },
+        "end": {
+          "line": 79,
+          "column": 5
+        }
+      },
+      "privacy": "public",
+      "superclass": "HTMLElement",
+      "name": "MorphElement",
+      "attributes": [
+        {
+          "name": "platform",
+          "description": "",
+          "sourceRange": {
+            "start": {
+              "line": 26,
+              "column": 10
+            },
+            "end": {
+              "line": 48,
+              "column": 11
+            }
+          },
+          "metadata": {},
+          "type": "string"
+        }
+      ],
+      "events": [],
+      "styling": {
+        "cssVariables": [],
+        "selectors": []
+      },
+      "slots": [],
+      "tagname": "morph-element"
+    },
+    {
+      "description": "`morph-button`\nButton that morphs for current mobile OS",
+      "summary": "",
+      "path": "morph-button/morph-button.html",
+      "properties": [
+        {
+          "name": "platform",
+          "type": "string",
+          "description": "",
+          "privacy": "public",
+          "sourceRange": {
+            "file": "../morph-element/morph-element.html",
+            "start": {
+              "line": 26,
+              "column": 10
+            },
+            "end": {
+              "line": 48,
+              "column": 11
+            }
+          },
+          "metadata": {
+            "polymer": {}
+          },
+          "defaultValue": "\"unknown\"",
+          "inheritedFrom": "MorphElement"
+        },
+        {
+          "name": "big",
+          "type": "boolean",
+          "description": "Common for both platforms",
+          "privacy": "public",
+          "sourceRange": {
+            "start": {
+              "line": 229,
+              "column": 10
+            },
+            "end": {
+              "line": 233,
+              "column": 11
+            }
+          },
+          "metadata": {
+            "polymer": {}
+          },
+          "defaultValue": "false"
+        },
+        {
+          "name": "filled",
+          "type": "boolean",
+          "description": "",
+          "privacy": "public",
+          "sourceRange": {
+            "start": {
+              "line": 234,
+              "column": 10
+            },
+            "end": {
+              "line": 238,
+              "column": 11
+            }
+          },
+          "metadata": {
+            "polymer": {}
+          },
+          "defaultValue": "false"
+        },
+        {
+          "name": "color",
+          "type": "string",
+          "description": "",
+          "privacy": "public",
+          "sourceRange": {
+            "start": {
+              "line": 239,
+              "column": 10
+            },
+            "end": {
+              "line": 244,
+              "column": 11
+            }
+          },
+          "metadata": {
+            "polymer": {
+              "observer": "\"colorAssigned\""
+            }
+          },
+          "defaultValue": "\"blue\""
+        },
+        {
+          "name": "link",
+          "type": "string",
+          "description": "",
+          "privacy": "public",
+          "sourceRange": {
+            "start": {
+              "line": 245,
+              "column": 10
+            },
+            "end": {
+              "line": 245,
+              "column": 22
+            }
+          },
+          "metadata": {
+            "polymer": {}
+          }
+        },
+        {
+          "name": "target",
+          "type": "string",
+          "description": "",
+          "privacy": "public",
+          "sourceRange": {
+            "start": {
+              "line": 246,
+              "column": 10
+            },
+            "end": {
+              "line": 246,
+              "column": 24
+            }
+          },
+          "metadata": {
+            "polymer": {}
+          }
+        },
+        {
+          "name": "relation",
+          "type": "string",
+          "description": "",
+          "privacy": "public",
+          "sourceRange": {
+            "start": {
+              "line": 247,
+              "column": 10
+            },
+            "end": {
+              "line": 247,
+              "column": 26
+            }
+          },
+          "metadata": {
+            "polymer": {}
+          }
+        },
+        {
+          "name": "active",
+          "type": "boolean",
+          "description": "iOS specific",
+          "privacy": "public",
+          "sourceRange": {
+            "start": {
+              "line": 250,
+              "column": 10
+            },
+            "end": {
+              "line": 254,
+              "column": 11
+            }
+          },
+          "metadata": {
+            "polymer": {}
+          },
+          "defaultValue": "false"
+        },
+        {
+          "name": "rounded",
+          "type": "boolean",
+          "description": "",
+          "privacy": "public",
+          "sourceRange": {
+            "start": {
+              "line": 255,
+              "column": 10
+            },
+            "end": {
+              "line": 259,
+              "column": 11
+            }
+          },
+          "metadata": {
+            "polymer": {}
+          },
+          "defaultValue": "false"
+        },
+        {
+          "name": "raised",
+          "type": "boolean",
+          "description": "Android specific",
+          "privacy": "public",
+          "sourceRange": {
+            "start": {
+              "line": 262,
+              "column": 10
+            },
+            "end": {
+              "line": 266,
+              "column": 11
+            }
+          },
+          "metadata": {
+            "polymer": {}
+          },
+          "defaultValue": "false"
+        }
+      ],
+      "methods": [
+        {
+          "name": "checkIfSharedStylesConnected",
+          "description": "checkIfSharedStylesConnected",
+          "privacy": "public",
+          "sourceRange": {
+            "file": "../morph-element/morph-element.html",
+            "start": {
+              "line": 57,
+              "column": 6
+            },
+            "end": {
+              "line": 64,
+              "column": 7
+            }
+          },
+          "metadata": {},
+          "params": [],
+          "return": {
+            "type": "Boolean",
+            "desc": "return true if style not equal to 'deepskyblue' meaning shared color file not connected and returns false otherwise"
+          },
+          "inheritedFrom": "MorphElement"
+        },
+        {
+          "name": "getStyleShadyOrDOM",
+          "description": "[getStyleShadyOrDOM description]",
+          "privacy": "public",
+          "sourceRange": {
+            "file": "../morph-element/morph-element.html",
+            "start": {
+              "line": 71,
+              "column": 6
+            },
+            "end": {
+              "line": 77,
+              "column": 7
+            }
+          },
+          "metadata": {},
+          "params": [],
+          "return": {
+            "type": "Object",
+            "desc": "returns the computed style based on if ShadyCSS is used or not"
+          },
+          "inheritedFrom": "MorphElement"
+        },
+        {
+          "name": "ready",
+          "description": "",
+          "privacy": "protected",
+          "sourceRange": {
+            "start": {
+              "line": 270,
+              "column": 6
+            },
+            "end": {
+              "line": 304,
+              "column": 7
+            }
+          },
+          "metadata": {},
+          "params": []
+        },
+        {
+          "name": "colorAssigned",
+          "description": "colorAssigned function will fire a console.warn message depending on wether the standard color red gray and green were used",
+          "privacy": "public",
+          "sourceRange": {
+            "start": {
+              "line": 314,
+              "column": 6
+            },
+            "end": {
+              "line": 320,
+              "column": 7
+            }
+          },
+          "metadata": {},
+          "params": [
+            {
+              "name": "oldValue",
+              "type": "[any]",
+              "description": "old value of color property"
+            },
+            {
+              "name": "newValue",
+              "type": "any",
+              "description": "new value of color property"
+            }
+          ],
+          "return": {
+            "type": "String",
+            "desc": "gives a console warn message when shared-colors is not included"
+          }
+        },
+        {
+          "name": "checkIfStandardColorUsed",
+          "description": "checkIfStandardColorUsed checks if standard colors were used",
+          "privacy": "public",
+          "sourceRange": {
+            "start": {
+              "line": 329,
+              "column": 6
+            },
+            "end": {
+              "line": 334,
+              "column": 7
+            }
+          },
+          "metadata": {},
+          "params": [
+            {
+              "name": "oldValue",
+              "type": "String",
+              "description": "old value of the color property from its observer"
+            }
+          ],
+          "return": {
+            "type": "Boolean",
+            "desc": "returns true if oldValue is equal to color red, gray or green else returns false"
+          }
+        },
+        {
+          "name": "showRipple",
+          "description": "showRipple gives material design-like ripple effect when buttons are click",
+          "privacy": "public",
+          "sourceRange": {
+            "start": {
+              "line": 343,
+              "column": 6
+            },
+            "end": {
+              "line": 365,
+              "column": 7
+            }
+          },
+          "metadata": {},
+          "params": [
+            {
+              "name": "e",
+              "type": "Object",
+              "description": "the button element that the event key down or finger down has happen"
+            }
+          ],
+          "return": {
+            "type": "Object",
+            "desc": "returns the style attribute of the button element with corresponding css styling related to the ripple effect"
+          }
+        },
+        {
+          "name": "cleanUp",
+          "description": "cleanUp\n\nclean up the container for the ripple effect",
+          "privacy": "public",
+          "sourceRange": {
+            "start": {
+              "line": 372,
+              "column": 6
+            },
+            "end": {
+              "line": 376,
+              "column": 7
+            }
+          },
+          "metadata": {},
+          "params": []
+        }
+      ],
+      "staticMethods": [],
+      "demos": [
+        {
+          "url": "demo/index.html",
+          "description": ""
+        }
+      ],
+      "metadata": {},
+      "sourceRange": {
+        "start": {
+          "line": 224,
+          "column": 4
+        },
+        "end": {
+          "line": 378,
+          "column": 5
+        }
+      },
+      "privacy": "public",
+      "superclass": "HTMLElement",
+      "name": "MorphButton",
+      "attributes": [
+        {
+          "name": "platform",
+          "description": "",
+          "sourceRange": {
+            "file": "../morph-element/morph-element.html",
+            "start": {
+              "line": 26,
+              "column": 10
+            },
+            "end": {
+              "line": 48,
+              "column": 11
+            }
+          },
+          "metadata": {},
+          "type": "string",
+          "inheritedFrom": "MorphElement"
+        },
+        {
+          "name": "big",
+          "description": "Common for both platforms",
+          "sourceRange": {
+            "start": {
+              "line": 229,
+              "column": 10
+            },
+            "end": {
+              "line": 233,
+              "column": 11
+            }
+          },
+          "metadata": {},
+          "type": "boolean"
+        },
+        {
+          "name": "filled",
+          "description": "",
+          "sourceRange": {
+            "start": {
+              "line": 234,
+              "column": 10
+            },
+            "end": {
+              "line": 238,
+              "column": 11
+            }
+          },
+          "metadata": {},
+          "type": "boolean"
+        },
+        {
+          "name": "color",
+          "description": "",
+          "sourceRange": {
+            "start": {
+              "line": 239,
+              "column": 10
+            },
+            "end": {
+              "line": 244,
+              "column": 11
+            }
+          },
+          "metadata": {},
+          "type": "string"
+        },
+        {
+          "name": "link",
+          "description": "",
+          "sourceRange": {
+            "start": {
+              "line": 245,
+              "column": 10
+            },
+            "end": {
+              "line": 245,
+              "column": 22
+            }
+          },
+          "metadata": {},
+          "type": "string"
+        },
+        {
+          "name": "target",
+          "description": "",
+          "sourceRange": {
+            "start": {
+              "line": 246,
+              "column": 10
+            },
+            "end": {
+              "line": 246,
+              "column": 24
+            }
+          },
+          "metadata": {},
+          "type": "string"
+        },
+        {
+          "name": "relation",
+          "description": "",
+          "sourceRange": {
+            "start": {
+              "line": 247,
+              "column": 10
+            },
+            "end": {
+              "line": 247,
+              "column": 26
+            }
+          },
+          "metadata": {},
+          "type": "string"
+        },
+        {
+          "name": "active",
+          "description": "iOS specific",
+          "sourceRange": {
+            "start": {
+              "line": 250,
+              "column": 10
+            },
+            "end": {
+              "line": 254,
+              "column": 11
+            }
+          },
+          "metadata": {},
+          "type": "boolean"
+        },
+        {
+          "name": "rounded",
+          "description": "",
+          "sourceRange": {
+            "start": {
+              "line": 255,
+              "column": 10
+            },
+            "end": {
+              "line": 259,
+              "column": 11
+            }
+          },
+          "metadata": {},
+          "type": "boolean"
+        },
+        {
+          "name": "raised",
+          "description": "Android specific",
+          "sourceRange": {
+            "start": {
+              "line": 262,
+              "column": 10
+            },
+            "end": {
+              "line": 266,
+              "column": 11
+            }
+          },
+          "metadata": {},
+          "type": "boolean"
+        }
+      ],
+      "events": [],
+      "styling": {
+        "cssVariables": [],
+        "selectors": []
+      },
+      "slots": [
+        {
+          "description": "",
+          "name": "",
+          "range": {
+            "file": "morph-button/morph-button.html",
+            "start": {
+              "line": 217,
+              "column": 6
+            },
+            "end": {
+              "line": 217,
+              "column": 19
+            }
+          }
+        }
+      ],
+      "tagname": "morph-button"
+    },
+    {
+      "description": "`morph-view`\nView where we put all our elements",
+      "summary": "",
+      "path": "morph-view/morph-view.html",
+      "properties": [
+        {
+          "name": "platform",
+          "type": "string",
+          "description": "",
+          "privacy": "public",
+          "sourceRange": {
+            "file": "../morph-element/morph-element.html",
+            "start": {
+              "line": 26,
+              "column": 10
+            },
+            "end": {
+              "line": 48,
+              "column": 11
+            }
+          },
+          "metadata": {
+            "polymer": {}
+          },
+          "defaultValue": "\"unknown\"",
+          "inheritedFrom": "MorphElement"
+        },
+        {
+          "name": "reveal",
+          "type": "string",
+          "description": "",
+          "privacy": "public",
+          "sourceRange": {
+            "start": {
+              "line": 68,
+              "column": 10
+            },
+            "end": {
+              "line": 71,
+              "column": 11
+            }
+          },
+          "metadata": {
+            "polymer": {}
+          }
+        }
+      ],
+      "methods": [
+        {
+          "name": "checkIfSharedStylesConnected",
+          "description": "checkIfSharedStylesConnected",
+          "privacy": "public",
+          "sourceRange": {
+            "file": "../morph-element/morph-element.html",
+            "start": {
+              "line": 57,
+              "column": 6
+            },
+            "end": {
+              "line": 64,
+              "column": 7
+            }
+          },
+          "metadata": {},
+          "params": [],
+          "return": {
+            "type": "Boolean",
+            "desc": "return true if style not equal to 'deepskyblue' meaning shared color file not connected and returns false otherwise"
+          },
+          "inheritedFrom": "MorphElement"
+        },
+        {
+          "name": "getStyleShadyOrDOM",
+          "description": "[getStyleShadyOrDOM description]",
+          "privacy": "public",
+          "sourceRange": {
+            "file": "../morph-element/morph-element.html",
+            "start": {
+              "line": 71,
+              "column": 6
+            },
+            "end": {
+              "line": 77,
+              "column": 7
+            }
+          },
+          "metadata": {},
+          "params": [],
+          "return": {
+            "type": "Object",
+            "desc": "returns the computed style based on if ShadyCSS is used or not"
+          },
+          "inheritedFrom": "MorphElement"
+        }
+      ],
+      "staticMethods": [],
+      "demos": [
+        {
+          "url": "demo/index.html",
+          "description": ""
+        }
+      ],
+      "metadata": {},
+      "sourceRange": {
+        "start": {
+          "line": 64,
+          "column": 4
+        },
+        "end": {
+          "line": 74,
+          "column": 5
+        }
+      },
+      "privacy": "public",
+      "superclass": "HTMLElement",
+      "name": "MorphView",
+      "attributes": [
+        {
+          "name": "platform",
+          "description": "",
+          "sourceRange": {
+            "file": "../morph-element/morph-element.html",
+            "start": {
+              "line": 26,
+              "column": 10
+            },
+            "end": {
+              "line": 48,
+              "column": 11
+            }
+          },
+          "metadata": {},
+          "type": "string",
+          "inheritedFrom": "MorphElement"
+        },
+        {
+          "name": "reveal",
+          "description": "",
+          "sourceRange": {
+            "start": {
+              "line": 68,
+              "column": 10
+            },
+            "end": {
+              "line": 71,
+              "column": 11
+            }
+          },
+          "metadata": {},
+          "type": "string"
+        }
+      ],
+      "events": [],
+      "styling": {
+        "cssVariables": [],
+        "selectors": []
+      },
+      "slots": [
+        {
+          "description": "",
+          "name": "",
+          "range": {
+            "file": "morph-view/morph-view.html",
+            "start": {
+              "line": 51,
+              "column": 4
+            },
+            "end": {
+              "line": 51,
+              "column": 17
+            }
+          }
+        }
+      ],
+      "tagname": "morph-view"
+    },
+    {
+      "description": "`morph-sidebar`\nSidebar that morphs for current mobile OS",
+      "summary": "",
+      "path": "morph-sidebar/morph-sidebar.html",
+      "properties": [
+        {
+          "name": "platform",
+          "type": "string",
+          "description": "",
+          "privacy": "public",
+          "sourceRange": {
+            "file": "../morph-element/morph-element.html",
+            "start": {
+              "line": 26,
+              "column": 10
+            },
+            "end": {
+              "line": 48,
+              "column": 11
+            }
+          },
+          "metadata": {
+            "polymer": {}
+          },
+          "defaultValue": "\"unknown\"",
+          "inheritedFrom": "MorphElement"
+        },
+        {
+          "name": "side",
+          "type": "string",
+          "description": "",
+          "privacy": "public",
+          "sourceRange": {
+            "start": {
+              "line": 76,
+              "column": 10
+            },
+            "end": {
+              "line": 80,
+              "column": 11
+            }
+          },
+          "metadata": {
+            "polymer": {}
+          },
+          "defaultValue": "\"left\""
+        },
+        {
+          "name": "open",
+          "type": "boolean",
+          "description": "",
+          "privacy": "public",
+          "sourceRange": {
+            "start": {
+              "line": 81,
+              "column": 10
+            },
+            "end": {
+              "line": 85,
+              "column": 11
+            }
+          },
+          "metadata": {
+            "polymer": {}
+          },
+          "defaultValue": "false"
+        }
+      ],
+      "methods": [
+        {
+          "name": "checkIfSharedStylesConnected",
+          "description": "checkIfSharedStylesConnected",
+          "privacy": "public",
+          "sourceRange": {
+            "file": "../morph-element/morph-element.html",
+            "start": {
+              "line": 57,
+              "column": 6
+            },
+            "end": {
+              "line": 64,
+              "column": 7
+            }
+          },
+          "metadata": {},
+          "params": [],
+          "return": {
+            "type": "Boolean",
+            "desc": "return true if style not equal to 'deepskyblue' meaning shared color file not connected and returns false otherwise"
+          },
+          "inheritedFrom": "MorphElement"
+        },
+        {
+          "name": "getStyleShadyOrDOM",
+          "description": "[getStyleShadyOrDOM description]",
+          "privacy": "public",
+          "sourceRange": {
+            "file": "../morph-element/morph-element.html",
+            "start": {
+              "line": 71,
+              "column": 6
+            },
+            "end": {
+              "line": 77,
+              "column": 7
+            }
+          },
+          "metadata": {},
+          "params": [],
+          "return": {
+            "type": "Object",
+            "desc": "returns the computed style based on if ShadyCSS is used or not"
+          },
+          "inheritedFrom": "MorphElement"
+        },
+        {
+          "name": "setOpen",
+          "description": "set open property to true use to open the sidebar",
+          "privacy": "public",
+          "sourceRange": {
+            "start": {
+              "line": 92,
+              "column": 6
+            },
+            "end": {
+              "line": 94,
+              "column": 7
+            }
+          },
+          "metadata": {},
+          "params": []
+        },
+        {
+          "name": "setClosed",
+          "description": "set open property to false use to close the sidebar",
+          "privacy": "public",
+          "sourceRange": {
+            "start": {
+              "line": 99,
+              "column": 6
+            },
+            "end": {
+              "line": 101,
+              "column": 7
+            }
+          },
+          "metadata": {},
+          "params": []
+        }
+      ],
+      "staticMethods": [],
+      "demos": [
+        {
+          "url": "demo/index.html",
+          "description": ""
+        }
+      ],
+      "metadata": {},
+      "sourceRange": {
+        "start": {
+          "line": 71,
+          "column": 4
+        },
+        "end": {
+          "line": 102,
+          "column": 5
+        }
+      },
+      "privacy": "public",
+      "superclass": "HTMLElement",
+      "name": "MorphSidebar",
+      "attributes": [
+        {
+          "name": "platform",
+          "description": "",
+          "sourceRange": {
+            "file": "../morph-element/morph-element.html",
+            "start": {
+              "line": 26,
+              "column": 10
+            },
+            "end": {
+              "line": 48,
+              "column": 11
+            }
+          },
+          "metadata": {},
+          "type": "string",
+          "inheritedFrom": "MorphElement"
+        },
+        {
+          "name": "side",
+          "description": "",
+          "sourceRange": {
+            "start": {
+              "line": 76,
+              "column": 10
+            },
+            "end": {
+              "line": 80,
+              "column": 11
+            }
+          },
+          "metadata": {},
+          "type": "string"
+        },
+        {
+          "name": "open",
+          "description": "",
+          "sourceRange": {
+            "start": {
+              "line": 81,
+              "column": 10
+            },
+            "end": {
+              "line": 85,
+              "column": 11
+            }
+          },
+          "metadata": {},
+          "type": "boolean"
+        }
+      ],
+      "events": [],
+      "styling": {
+        "cssVariables": [],
+        "selectors": []
+      },
+      "slots": [
+        {
+          "description": "",
+          "name": "",
+          "range": {
+            "file": "morph-sidebar/morph-sidebar.html",
+            "start": {
+              "line": 57,
+              "column": 4
+            },
+            "end": {
+              "line": 57,
+              "column": 17
+            }
+          }
+        }
+      ],
+      "tagname": "morph-sidebar"
+    }
+  ]
+}
