@@ -168,15 +168,15 @@
         {
           "name": "filled",
           "type": "boolean",
-          "description": "",
+          "description": "Common for both platforms",
           "privacy": "public",
           "sourceRange": {
             "start": {
-              "line": 234,
+              "line": 236,
               "column": 10
             },
             "end": {
-              "line": 238,
+              "line": 240,
               "column": 11
             }
           },
@@ -188,15 +188,15 @@
         {
           "name": "color",
           "type": "string",
-          "description": "",
+          "description": "Common for both platforms",
           "privacy": "public",
           "sourceRange": {
             "start": {
-              "line": 239,
+              "line": 243,
               "column": 10
             },
             "end": {
-              "line": 244,
+              "line": 248,
               "column": 11
             }
           },
@@ -210,15 +210,15 @@
         {
           "name": "link",
           "type": "string",
-          "description": "",
+          "description": "Common for both platforms",
           "privacy": "public",
           "sourceRange": {
             "start": {
-              "line": 245,
+              "line": 251,
               "column": 10
             },
             "end": {
-              "line": 245,
+              "line": 251,
               "column": 22
             }
           },
@@ -233,11 +233,11 @@
           "privacy": "public",
           "sourceRange": {
             "start": {
-              "line": 246,
+              "line": 252,
               "column": 10
             },
             "end": {
-              "line": 246,
+              "line": 252,
               "column": 24
             }
           },
@@ -252,11 +252,11 @@
           "privacy": "public",
           "sourceRange": {
             "start": {
-              "line": 247,
+              "line": 253,
               "column": 10
             },
             "end": {
-              "line": 247,
+              "line": 253,
               "column": 26
             }
           },
@@ -267,15 +267,15 @@
         {
           "name": "active",
           "type": "boolean",
-          "description": "iOS specific",
+          "description": "iOS specific property",
           "privacy": "public",
           "sourceRange": {
             "start": {
-              "line": 250,
+              "line": 256,
               "column": 10
             },
             "end": {
-              "line": 254,
+              "line": 260,
               "column": 11
             }
           },
@@ -287,15 +287,15 @@
         {
           "name": "rounded",
           "type": "boolean",
-          "description": "",
+          "description": "iOS specific property",
           "privacy": "public",
           "sourceRange": {
             "start": {
-              "line": 255,
+              "line": 263,
               "column": 10
             },
             "end": {
-              "line": 259,
+              "line": 267,
               "column": 11
             }
           },
@@ -307,15 +307,15 @@
         {
           "name": "raised",
           "type": "boolean",
-          "description": "Android specific",
+          "description": "Android specific property",
           "privacy": "public",
           "sourceRange": {
             "start": {
-              "line": 262,
+              "line": 270,
               "column": 10
             },
             "end": {
-              "line": 266,
+              "line": 274,
               "column": 11
             }
           },
@@ -378,11 +378,11 @@
           "privacy": "protected",
           "sourceRange": {
             "start": {
-              "line": 270,
+              "line": 278,
               "column": 6
             },
             "end": {
-              "line": 304,
+              "line": 312,
               "column": 7
             }
           },
@@ -395,11 +395,11 @@
           "privacy": "public",
           "sourceRange": {
             "start": {
-              "line": 314,
+              "line": 322,
               "column": 6
             },
             "end": {
-              "line": 320,
+              "line": 328,
               "column": 7
             }
           },
@@ -427,11 +427,11 @@
           "privacy": "public",
           "sourceRange": {
             "start": {
-              "line": 329,
+              "line": 337,
               "column": 6
             },
             "end": {
-              "line": 334,
+              "line": 342,
               "column": 7
             }
           },
@@ -454,11 +454,11 @@
           "privacy": "public",
           "sourceRange": {
             "start": {
-              "line": 343,
+              "line": 351,
               "column": 6
             },
             "end": {
-              "line": 365,
+              "line": 373,
               "column": 7
             }
           },
@@ -477,15 +477,15 @@
         },
         {
           "name": "cleanUp",
-          "description": "cleanUp\n\nclean up the container for the ripple effect",
+          "description": "clean up the container for the ripple effect",
           "privacy": "public",
           "sourceRange": {
             "start": {
-              "line": 372,
+              "line": 378,
               "column": 6
             },
             "end": {
-              "line": 376,
+              "line": 382,
               "column": 7
             }
           },
@@ -507,7 +507,7 @@
           "column": 4
         },
         "end": {
-          "line": 378,
+          "line": 384,
           "column": 5
         }
       },
@@ -551,14 +551,14 @@
         },
         {
           "name": "filled",
-          "description": "",
+          "description": "Common for both platforms",
           "sourceRange": {
             "start": {
-              "line": 234,
+              "line": 236,
               "column": 10
             },
             "end": {
-              "line": 238,
+              "line": 240,
               "column": 11
             }
           },
@@ -567,14 +567,14 @@
         },
         {
           "name": "color",
-          "description": "",
+          "description": "Common for both platforms",
           "sourceRange": {
             "start": {
-              "line": 239,
+              "line": 243,
               "column": 10
             },
             "end": {
-              "line": 244,
+              "line": 248,
               "column": 11
             }
           },
@@ -583,14 +583,14 @@
         },
         {
           "name": "link",
-          "description": "",
+          "description": "Common for both platforms",
           "sourceRange": {
             "start": {
-              "line": 245,
+              "line": 251,
               "column": 10
             },
             "end": {
-              "line": 245,
+              "line": 251,
               "column": 22
             }
           },
@@ -602,11 +602,11 @@
           "description": "",
           "sourceRange": {
             "start": {
-              "line": 246,
+              "line": 252,
               "column": 10
             },
             "end": {
-              "line": 246,
+              "line": 252,
               "column": 24
             }
           },
@@ -618,11 +618,11 @@
           "description": "",
           "sourceRange": {
             "start": {
-              "line": 247,
+              "line": 253,
               "column": 10
             },
             "end": {
-              "line": 247,
+              "line": 253,
               "column": 26
             }
           },
@@ -631,14 +631,14 @@
         },
         {
           "name": "active",
-          "description": "iOS specific",
+          "description": "iOS specific property",
           "sourceRange": {
             "start": {
-              "line": 250,
+              "line": 256,
               "column": 10
             },
             "end": {
-              "line": 254,
+              "line": 260,
               "column": 11
             }
           },
@@ -647,14 +647,14 @@
         },
         {
           "name": "rounded",
-          "description": "",
+          "description": "iOS specific property",
           "sourceRange": {
             "start": {
-              "line": 255,
+              "line": 263,
               "column": 10
             },
             "end": {
-              "line": 259,
+              "line": 267,
               "column": 11
             }
           },
@@ -663,14 +663,14 @@
         },
         {
           "name": "raised",
-          "description": "Android specific",
+          "description": "Android specific property",
           "sourceRange": {
             "start": {
-              "line": 262,
+              "line": 270,
               "column": 10
             },
             "end": {
-              "line": 266,
+              "line": 274,
               "column": 11
             }
           },
