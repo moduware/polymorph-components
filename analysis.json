@@ -51,15 +51,15 @@
         },
         {
           "name": "getStyleShadyOrDOM",
-          "description": "[getStyleShadyOrDOM description]",
+          "description": "",
           "privacy": "public",
           "sourceRange": {
             "start": {
-              "line": 71,
+              "line": 69,
               "column": 6
             },
             "end": {
-              "line": 77,
+              "line": 75,
               "column": 7
             }
           },
@@ -85,7 +85,7 @@
           "column": 4
         },
         "end": {
-          "line": 79,
+          "line": 77,
           "column": 5
         }
       },
@@ -351,16 +351,16 @@
         },
         {
           "name": "getStyleShadyOrDOM",
-          "description": "[getStyleShadyOrDOM description]",
+          "description": "",
           "privacy": "public",
           "sourceRange": {
             "file": "../morph-element/morph-element.html",
             "start": {
-              "line": 71,
+              "line": 69,
               "column": 6
             },
             "end": {
-              "line": 77,
+              "line": 75,
               "column": 7
             }
           },
@@ -775,16 +775,16 @@
         },
         {
           "name": "getStyleShadyOrDOM",
-          "description": "[getStyleShadyOrDOM description]",
+          "description": "",
           "privacy": "public",
           "sourceRange": {
             "file": "../morph-element/morph-element.html",
             "start": {
-              "line": 71,
+              "line": 69,
               "column": 6
             },
             "end": {
-              "line": 77,
+              "line": 75,
               "column": 7
             }
           },
@@ -972,16 +972,16 @@
         },
         {
           "name": "getStyleShadyOrDOM",
-          "description": "[getStyleShadyOrDOM description]",
+          "description": "",
           "privacy": "public",
           "sourceRange": {
             "file": "../morph-element/morph-element.html",
             "start": {
-              "line": 71,
+              "line": 69,
               "column": 6
             },
             "end": {
-              "line": 77,
+              "line": 75,
               "column": 7
             }
           },
