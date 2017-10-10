@@ -82,6 +82,7 @@
           open: {
             type: Boolean,
             value: false,
+            notify: true,
             reflectToAttribute: true
           }
         };
@@ -99,6 +100,34 @@
        */
       setClosed() {
         this.set('open', false);
+      }
+
+      ready() {
+        super.ready();
+
+        let startPoint, endPoint, diff, travel;
+        
+        // add gesture event listener to track touch swipe
+        Polymer.Gestures.addListener(this, 'track', e => {
+          // detects tracking at the start of each tracking event
+          if(e.detail.state == 'start') {
+            // gets the x coordinate of start of track event
+            startPoint = e.detail.x;
+          }
+
+          // detects end of tracking events
+          if(e.detail.state == 'end') {
+            // gets the x coordinate of end of track event
+            endPoint = e.detail.x;
+            diff = startPoint - endPoint; // gets the difference between the start and end x coordinate
+            travel = Math.abs(diff); // gets the absolute value of the difference (positive values only)
+            if(travel > 10) {
+              // set open to false when travel is greater than 10
+              this.setClosed(); 
+            }
+          }
+
+        });
       }
     }
 
