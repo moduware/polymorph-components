@@ -51,6 +51,11 @@
           view.reveal = 'right';
         }
 
+        function closeRightSidebarWithReveal() {
+          let view = document.getElementById('mainView');
+          view.removeAttribute('reveal');
+        }
+
         document.addEventListener('DOMContentLoaded', function(event) {
           document.getElementById('sidebarLeftToggler').addEventListener('click', () => toggleSidebar('Left'));
           document.getElementById('sidebarRightToggler').addEventListener('click', openRightSidebarWithReveal);
@@ -61,10 +66,16 @@
       <button id="sidebarRightToggler">Toggle Right Sidebar</button>
     </morph-view>
     <morph-sidebar id="sidebarLeft" platform="android">
-        <p>Left Panel content here</p>
+      <p>Left Panel content here</p>
     </morph-sidebar>
     <morph-sidebar side="right" id="sidebarRight">
-        <p>Right Panel content here</p>
+      <p>Right Panel content here</p>
+
+      <script>
+        document.addEventListener('DOMContentLoaded', function(event) {
+          document.getElementById('sidebarRight').addEventListener('open-changed', closeRightSidebarWithReveal);
+        });
+      </script>
     </morph-sidebar>
   </body>
 </html>
