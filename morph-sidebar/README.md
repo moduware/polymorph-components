@@ -73,7 +73,7 @@
 
   - Our **`<morph-sidebar>`** has two properties that we are going to use to setup and use our sidebar
 
-    1. `side` - use to choose where to display sidebar, `left` or `right`. It is set to `left` by default when `side` is not added to HTML markup
+    1. **`side`** - use to choose where to display sidebar, `left` or `right`. It is set to `left` by default when `side` is not added to HTML markup
 
       ```javascript
 
@@ -90,7 +90,7 @@
       }
       ```
 
-    2. open - takes a Boolean value and use to indicate if the side bar is close or open. also used to toggle our sidebar from close to open and close again using javascript on the page
+    2. **`open`** - takes a Boolean value and use to indicate if the side bar is close or open. also used to toggle our sidebar from close to open and close again using javascript on the page
 
       ```javascript
 
