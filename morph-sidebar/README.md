@@ -75,17 +75,9 @@
 
   1. `side` - use to choose where to display sidebar, `left` or `right`. It is set to `left` by default when `side` is not added to HTML markup.
 
-    ```javascript
+    ```script
 
-    static get properties() {
-      return {
-        side: {
-          type: String,
-          value: "left",
-          reflectToAttribute: true
-        }
-      }
-    }
+    var array = {};
 
     ```
 
