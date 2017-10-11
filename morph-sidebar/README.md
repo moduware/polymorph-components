@@ -73,7 +73,7 @@
 
   - Our <morph-sidebar> has to properties that we are going to use to setup and use our sidebar
 
-  1. side - use to choose left or right side propery, it is set to left by default when side is not added to HTML markup
+  1. `side` - use to choose where to display sidebar, `left` or `right`. It is set to `left` by default when `side` is not added to HTML markup
 
   2. open - takes a Boolean value and use to indicate if the side bar is close or open. also used to toggle our sidebar from close to open and close again using javascript on the page
 
@@ -98,7 +98,7 @@
   - We may use 2 panels at the same time, one left and one right panel.
 
     ```html
-    <morph-sidebar id="sidebarLeft" platform="android">
+    <morph-sidebar id="sidebarLeft">
       <p>Left Panel content here</p>
     </morph-sidebar>
 
@@ -107,8 +107,26 @@
     </morph-sidebar>
     ```
 
+  - We need to wrap the whole body with our [**<morph-view>**][Morph View] component to make it work properly.
 
+    ```html
+    <body>
+      <morph-view id="mainView"> 
+        <h3><morph-sidebar> demo</h3>
 
+        <button id="sidebarLeftToggler">Toggle Left Sidebar</button>
+        <button id="sidebarRightToggler">Toggle Right Sidebar</button>
+      </morph-view>
+
+      <morph-sidebar id="sidebarLeft" platform="android">
+        <p>Left Panel content here</p>
+      </morph-sidebar>
+
+      <morph-sidebar side="right" id="sidebarRight">
+        <p>Right Panel content here</p>
+      </morph-sidebar>
+    </body>
+    ```
 
 
 
@@ -120,3 +138,5 @@
 [Polymer Test]: https://www.polymer-project.org/2.0/docs/tools/tests
 
 [Main Page]: https://github.com/nexpaq/polymorph-components
+
+[Morph View]: https://github.com/nexpaq/polymorph-components/tree/develop/morph-view
