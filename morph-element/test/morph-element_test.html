@@ -15,16 +15,28 @@
 
     <test-fixture id="BasicElementFixture">
       <template>
-        <morph-element platform="ios"></morph-element>
+        <morph-element></morph-element>
       </template>
     </test-fixture>
 
     <script>
       describe('morph-element', function() {
-
-        it('instantiating the element with default properties works', function() {
-          var element = fixture('BasicElementFixture');
-          expect(element.platform).to.be.equal('ios');
+        context('Detecting the platform automatically when it set to android', function() {
+          let element;
+          
+          beforeEach(function() {
+            // mocking the device is an android phone
+            navigator.__defineGetter__('userAgent', function() {
+              return 'android'
+            });
+            
+            element = fixture('BasicElementFixture');
+          });
+          
+          it('instantiating the element detects the device automatically', function() {
+            expect(element.platform).to.be.equal('android');
+          });
+          
         });
 
       });
