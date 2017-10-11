@@ -73,41 +73,15 @@
 
   - Our <morph-sidebar> has two properties that we are going to use to setup and use our sidebar
 
-  1. `side` - use to choose where to display sidebar, `left` or `right`. It is set to `left` by default when `side` is not added to HTML markup.
+  - `side` - use to choose where to display sidebar, `left` or `right`. It is set to `left` by default when `side` is not added to HTML markup.
+
+  - `open` - takes a Boolean value and use to indicate if the side bar is close or open. also used to toggle our sidebar from close to open and close again using javascript on the page
 
     ```html
-    <script>
-      static get properties() {
-        return {
-          side: {
-            type: String,
-            value: "left",
-            reflectToAttribute: true
-          },
-          // code omitted for brevity...
-        };
-      }
-    </script>
+    <div>
+      <h1>Hello, World!</h1>
+    </div>
     ```
-
-  2. open - takes a Boolean value and use to indicate if the side bar is close or open. also used to toggle our sidebar from close to open and close again using javascript on the page
-
-    ```javascript
-
-    static get properties() {
-      return {
-        // code omitted for brevity
-        open: {
-          type: Boolean,
-          value: false,
-          notify: true,
-          reflectToAttribute: true
-        }
-      };
-    }
-
-    ```
-
   - We may use 2 panels at the same time, one left and one right panel. `side` defaults to `left` when not specified. 
 
     ```html
