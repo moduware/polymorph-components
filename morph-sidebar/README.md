@@ -15,9 +15,9 @@
   2. Click **Clone or download** and copy the clone URL for the repository
 
   3. Open your Terminal and change the current working directory to the location where you want to clone this directory and Type **`git clone`**, and then paste the URL you copied in Step 2.
-  ```
-  $ git clone https://github.com/nexpaq/polymorph-components.git
-  ```
+    ```
+    $ git clone https://github.com/nexpaq/polymorph-components.git
+    ```
 
   4. Then **`$ cd morph-sidebar/`**
 
@@ -59,9 +59,9 @@
 
   - To create new test, change to the **test/** directory.
 
-  ```
-  $ polymer test
-  ```
+    ```
+    $ polymer test
+    ```
 
   - Then either add new test to existing fixture and context, or add new fixture and create new test context for new property or group of tests. Refer to [WCT][WCT] documentation for more detailed explanation about fixtures. 
 
@@ -71,17 +71,43 @@
 
   ### How to use our **<morph-sidebar>** component
 
-  - Our <morph-sidebar> has two properties that we are going to use to setup and use our sidebar
+  - Our **`<morph-sidebar>`** has two properties that we are going to use to setup and use our sidebar
 
-  - `side` - use to choose where to display sidebar, `left` or `right`. It is set to `left` by default when `side` is not added to HTML markup.
+  1. `side` - use to choose where to display sidebar, `left` or `right`. It is set to `left` by default when `side` is not added to HTML markup
 
-  - `open` - takes a Boolean value and use to indicate if the side bar is close or open. also used to toggle our sidebar from close to open and close again using javascript on the page
+    ```javascript
 
-    ```html
-    <div>
-      <h1>Hello, World!</h1>
-    </div>
+    static get properties() {
+      return {
+        side: {
+          type: String,
+          value: "left",
+          reflectToAttribute: true
+        },
+
+        // code omitted for brevity...
+      };
+    }
     ```
+
+  2. open - takes a Boolean value and use to indicate if the side bar is close or open. also used to toggle our sidebar from close to open and close again using javascript on the page
+
+    ```javascript
+
+    static get properties() {
+      return {
+        // code omitted for brevity
+        open: {
+          type: Boolean,
+          value: false,
+          notify: true,
+          reflectToAttribute: true
+        }
+      };
+    }
+
+    ```
+
   - We may use 2 panels at the same time, one left and one right panel. `side` defaults to `left` when not specified. 
 
     ```html
