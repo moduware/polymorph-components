@@ -71,33 +71,47 @@
 
   ### How to use our **<morph-sidebar>** component
 
-  - Our <morph-sidebar> has to properties that we are going to use to setup and use our sidebar
+  - Our <morph-sidebar> has two properties that we are going to use to setup and use our sidebar
 
   1. `side` - use to choose where to display sidebar, `left` or `right`. It is set to `left` by default when `side` is not added to HTML markup
 
+    ```javascript
+
+    static get properties() {
+      return {
+        side: {
+          type: String,
+          value: "left",
+          reflectToAttribute: true
+        },
+
+        // code omitted for brevity...
+      };
+    }
+    ```
+
   2. open - takes a Boolean value and use to indicate if the side bar is close or open. also used to toggle our sidebar from close to open and close again using javascript on the page
 
-      ```javascript
-      static get properties() {
-        return {
-          side: {
-            type: String,
-            value: "left",
-            reflectToAttribute: true
-          },
-          open: {
-            type: Boolean,
-            value: false,
-            notify: true,
-            reflectToAttribute: true
-          }
-        };
-      }
-      ```
+    ```javascript
 
-  - We may use 2 panels at the same time, one left and one right panel.
+    static get properties() {
+      return {
+        // code omitted for brevity
+        open: {
+          type: Boolean,
+          value: false,
+          notify: true,
+          reflectToAttribute: true
+        }
+      };
+    }
+
+    ```
+
+  - We may use 2 panels at the same time, one left and one right panel. `side` defaults to `left` when not specified. 
 
     ```html
+
     <morph-sidebar id="sidebarLeft">
       <p>Left Panel content here</p>
     </morph-sidebar>
@@ -105,11 +119,13 @@
     <morph-sidebar side="right" id="sidebarRight">
       <p>Right Panel content here</p>
     </morph-sidebar>
+
     ```
 
   - We need to wrap the whole body with our [**<morph-view>**][Morph View] component to make it work properly.
 
     ```html
+
     <body>
       // morph-view should be inside html body
       <morph-view id="mainView"> 
@@ -128,9 +144,25 @@
         <p>Right Panel content here</p>
       </morph-sidebar>
     </body>
+
     ```
 
+  - `<morph-sidebar>` has two animation when openning and closing. The default animation of the sidebar is `cover`. It covers the morph-view element when it opens. 
 
+  - The other animation is called `reveal` where morph-sidebar moves in and morph-view slides with it. `<morph-view>` moves out of the way to accomodate the width of our sidebar. To use `reveal` we add reveal attribute to morph-view html markup.
+
+    ```html
+
+    function closeRightSidebarWithReveal() {
+      let view = document.getElementById('mainView');
+      view.removeAttribute('reveal');
+    }
+
+    document.addEventListener('DOMContentLoaded', function(event) {
+      document.getElementById('sidebarRight').addEventListener('open-changed', closeRightSidebarWithReveal);
+    });
+
+    ```
 
 
 [Main Page]: https://github.com/nexpaq/polymorph-components
