@@ -69,13 +69,13 @@
 
 ## Usage Summary
 
-  ### How to use our **`<morph-sidebar>`** component
+  ### How to use our **<morph-sidebar>** component
 
-    - Our <morph-sidebar> has to properties that we are going to use to setup and use our sidebar
+  - Our <morph-sidebar> has to properties that we are going to use to setup and use our sidebar
 
-      1. side - use to choose left or right side propery, it is set to left by default when side is not added to HTML markup
+  1. side - use to choose left or right side propery, it is set to left by default when side is not added to HTML markup
 
-      2. open - takes a Boolean value and use to indicate if the side bar is close or open. also used to toggle our sidebar from close to open and close again using javascript on the page
+  2. open - takes a Boolean value and use to indicate if the side bar is close or open. also used to toggle our sidebar from close to open and close again using javascript on the page
 
       ```javascript
       static get properties() {
@@ -95,13 +95,13 @@
       }
       ```
 
-    - We may use 2 panels at the same time, one left and one right panel.
+  - We may use 2 panels at the same time, one left and one right panel.
 
     ```html
     <morph-sidebar id="sidebarLeft" platform="android">
       <p>Left Panel content here</p>
     </morph-sidebar>
-    
+
     <morph-sidebar side="right" id="sidebarRight">
       <p>Right Panel content here</p>
     </morph-sidebar>
