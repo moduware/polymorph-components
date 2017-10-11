@@ -13,36 +13,18 @@
   </head>
   <body>
 
-    <test-fixture id="BasicTestFixture">
+    <test-fixture id="BasicElementFixture">
       <template>
-        <morph-element></morph-element>
-      </template>
-    </test-fixture>
-
-    <test-fixture id="ChangedPropertyTestFixture">
-      <template>
-        <morph-element prop1="new-prop1"></morph-element>
+        <morph-element platform="ios"></morph-element>
       </template>
     </test-fixture>
 
     <script>
-      suite('morph-element', function() {
+      describe('morph-element', function() {
 
-        test('instantiating the element with default properties works', function() {
-          var element = fixture('BasicTestFixture');
-          assert.equal(element.prop1, 'morph-element');
-          var elementShadowRoot = element.shadowRoot;
-          var elementHeader = elementShadowRoot.querySelector('h2');
-          assert.equal(elementHeader.innerHTML, 'Hello morph-element!');
-        });
-
-        test('setting a property on the element works', function() {
-          // Create a test fixture
-          var element = fixture('ChangedPropertyTestFixture');
-          assert.equal(element.prop1, 'new-prop1');
-          var elementShadowRoot = element.shadowRoot;
-          var elementHeader = elementShadowRoot.querySelector('h2');
-          assert.equal(elementHeader.innerHTML, 'Hello new-prop1!');
+        it('instantiating the element with default properties works', function() {
+          var element = fixture('BasicElementFixture');
+          expect(element.platform).to.be.equal('ios');
         });
 
       });
