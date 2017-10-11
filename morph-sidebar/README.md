@@ -69,7 +69,7 @@
 
 ## Usage Summary
 
-  ### How to use our **<morph-sidebar>** component
+  ### How to use our ** `<morph-sidebar>` ** component
 
     - Our <morph-sidebar> has to properties that we are going to use to setup and use our sidebar
 
