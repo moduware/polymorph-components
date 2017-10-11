@@ -149,7 +149,7 @@
 
   - `<morph-sidebar>` has two animation when openning and closing. The default animation of the sidebar is `cover`. It covers the morph-view element when it opens. 
 
-  - The other animation is called `reveal` where morph-sidebar moves in and morph-view slides with it. `<morph-view>` moves out of the way to accomodate the width of our sidebar. To use `reveal` we add reveal attribute to morph-view html markup.
+  - The other animation is called `reveal` where morph-sidebar moves in and morph-view slides with it. `<morph-view>` moves out of the way to accomodate the width of our sidebar. To use `reveal` we add reveal attribute to `<morph-view>` component.
 
     ```html
 
