@@ -73,10 +73,24 @@
 
   - Our <morph-sidebar> has two properties that we are going to use to setup and use our sidebar
 
-  1. `side` - use to choose where to display sidebar, `left` or `right`. It is set to `left` by default when `side` is not added to HTML markup
+  1. `side` - use to choose where to display sidebar, `left` or `right`. It is set to `left` by default when `side` is not added to HTML markup.
 
     ```javascript
 
+    static get properties() {
+      return {
+        side: {
+          type: String,
+          value: "left",
+          reflectToAttribute: true
+        }
+      }
+    }
+
+    ```
+
+
+    ```
     static get properties() {
       return {
         side: {
