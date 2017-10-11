@@ -67,6 +67,24 @@
 
   - For brief overview of Polymer Testing please go to this page [Polymer Test][Polymer Test]
 
+## Usage Summary
+
+  How to use our **<morph-sidebar>** component
+
+    - our <morph-sidebar> has to properties that we are going to use to setup and use our sidebar
+
+    1. side - use to choose left or right side propery, it is set to left by default when side is not added to HTML markup
+
+    2. open - takes a Boolean value and use to indicate if the side bar is close or open. also used to toggle our sidebar from close to open and close again using javascript on the page
+
+    - We may use 2 panels at the same time, one left and one right panel.
+
+
+
+
+
+
+
 [Main Page]: https://github.com/nexpaq/polymorph-components
 
 [WCT]: https://github.com/Polymer/web-component-tester  
