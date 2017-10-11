@@ -112,10 +112,12 @@
 
     ```html
 
+    <!-- left sidebar -->
     <morph-sidebar id="sidebarLeft">
       <p>Left Panel content here</p>
     </morph-sidebar>
 
+    <!-- right panel -->
     <morph-sidebar side="right" id="sidebarRight">
       <p>Right Panel content here</p>
     </morph-sidebar>
@@ -127,7 +129,7 @@
     ```html
 
     <body>
-      // morph-view should be inside html body
+      <!-- morph-view should be inside html body -->
       <morph-view id="mainView"> 
         <h3><morph-sidebar> demo</h3>
 
@@ -135,7 +137,7 @@
         <button id="sidebarRightToggler">Toggle Right Sidebar</button>
       </morph-view>
 
-      // morph-sidebar should be outside morph-view and inside html body
+      <!-- morph-sidebar should be outside morph-view and inside html body -->
       <morph-sidebar id="sidebarLeft" platform="android">
         <p>Left Panel content here</p>
       </morph-sidebar>
