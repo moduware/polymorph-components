@@ -1,3 +1,6 @@
 [submodule "morph-shared-colors"]
 	path = morph-shared-colors
 	url = https://github.com/nexpaq/morph-shared-colors
+[submodule "morph-shared-styles"]
+	path = morph-shared-styles
+	url = https://github.com/nexpaq/morph-shared-styles
