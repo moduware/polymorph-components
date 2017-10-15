@@ -1,8 +1,0 @@
-{
-  "expanded": true,
-  "plugins": {
-    "local": {
-      "browsers": ["chrome", "safari"]
-    }
-  }
-}
