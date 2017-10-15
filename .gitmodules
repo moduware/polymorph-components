@@ -4,3 +4,6 @@
 [submodule "morph-shared-styles"]
 	path = morph-shared-styles
 	url = https://github.com/nexpaq/morph-shared-styles
+[submodule "morph-element"]
+	path = morph-element
+	url = https://github.com/nexpaq/morph-element
