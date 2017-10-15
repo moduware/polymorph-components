@@ -10,3 +10,6 @@
 [submodule "morph-button"]
 	path = morph-button
 	url = https://github.com/nexpaq/morph-button
+[submodule "morph-sidebar"]
+	path = morph-sidebar
+	url = https://github.com/nexpaq/morph-sidebar
