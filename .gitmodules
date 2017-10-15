@@ -7,3 +7,6 @@
 [submodule "morph-element"]
 	path = morph-element
 	url = https://github.com/nexpaq/morph-element
+[submodule "morph-button"]
+	path = morph-button
+	url = https://github.com/nexpaq/morph-button
