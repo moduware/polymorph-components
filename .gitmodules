@@ -13,3 +13,6 @@
 [submodule "morph-sidebar"]
 	path = morph-sidebar
 	url = https://github.com/nexpaq/morph-sidebar
+[submodule "morph-view"]
+	path = morph-view
+	url = https://github.com/nexpaq/morph-view
