@@ -7,7 +7,9 @@
   "description": "Polymer components that look native on each platform we used",
   "main": "",
   "license": "MIT",
-  "dependencies": {},
+  "dependencies": {
+    "morph-button": "https://github.com/nexpaq/morph-button.git#0.0.1"
+  },
   "devDependencies": {
     "iron-demo-helpers": "PolymerElements/iron-demo-helpers#2.0-preview",
     "iron-component-page": "^3.0.1"
