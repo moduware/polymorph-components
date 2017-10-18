@@ -9,6 +9,13 @@
   "license": "MIT",
   "dependencies": {},
   "devDependencies": {
+    "iron-demo-helpers": "PolymerElements/iron-demo-helpers#2.0-preview",
     "iron-component-page": "^3.0.1"
+  },
+  "resolutions": {
+    "iron-flex-layout": "2.0-preview",
+    "iron-location": "2.0-preview",
+    "marked-element": "2.0-preview",
+    "prism-element": "2.0-preview"
   }
 }
