@@ -8,7 +8,7 @@
   "main": "",
   "license": "MIT",
   "dependencies": {
-    "morph-button": "https://github.com/nexpaq/morph-button.git#0.0.1"
+    "morph-button": "https://github.com/nexpaq/morph-button.git#0.0.2"
   },
   "devDependencies": {
     "iron-demo-helpers": "PolymerElements/iron-demo-helpers#2.0-preview",
