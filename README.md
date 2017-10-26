@@ -24,6 +24,28 @@ You can clone the repository to create a local copy on your computer.
     $ git submodule update --init --recursive
   ``` 
 
+## Running A Local Server
+  To Run local server on your machine
+  
+  1. Open another tab  or window of your terminal
+
+  2. Use **`polymer serve`** 
+
+  ```bash
+    $ polymer serve
+  ```
+
+  - and if running correctly, this message will appear
+
+  ```bash
+  info:   Files in this directory are available under the following URLs
+        applications: http://127.0.0.1:8081
+        reusable components: http://127.0.0.1:8081/components/polymorph-components/
+  ```
+
+- Copy and paste the reusable components URL `http://127.0.0.1:8081` to your browser
+
+This will be your primary documention
 
 
   [Git Submodules]: https://github.com/blog/2104-working-with-submodules
