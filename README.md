@@ -18,12 +18,13 @@ You can clone the repository to create a local copy on your computer.
 
   5. Run **`$ bower install`** to install all packages in your bower.json and any packages that it depends on in the local bower_components folder
 
-  6. Important: This repository has folders which are [git submodules][Git Submodules]. Run this command to ensure that you will have all of the submodule's content. You need to run this only once everytime you add a new submodule to this repository. You can skip this if the content are already there (if you ran `git clone --recursive` earlier instead of just `git clone`)
+  6. Important: This repository has folders which are [git submodules][Git Submodules]. If you ran only `git clone` with no `--recursive` flag, please run the command below to ensure that you will have all of the submodule's content. You also need to run this everytime you add a new submodule to this repository. You can skip this if the content are already there (if you ran `git clone --recursive` earlier)
 
   ```bash
     $ git submodule update --init --recursive
   ``` 
 
+  For more info about git submodules here's a good [blog post][Git Submodules Blog] to read.
 ## Running A Local Server
   To Run local server on your machine
   
@@ -45,7 +46,13 @@ You can clone the repository to create a local copy on your computer.
 
 - Copy and paste the reusable components URL `http://127.0.0.1:8081` to your browser
 
-This will be your primary documention
+This will be your primary documention for all our Polymorph elements and this will also show relevant demos for them.  
+
+## Adding New Morph Element
+
+ToDo: add steps on how to add new element and explain a little bit about how it works with the documentation and 
 
 
   [Git Submodules]: https://github.com/blog/2104-working-with-submodules
+
+  [Git Submodules Blog]: http://dan.mccloy.info/2015/06/11/Git-submodules
