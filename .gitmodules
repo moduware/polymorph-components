@@ -16,3 +16,6 @@
 [submodule "morph-view"]
 	path = morph-view
 	url = https://github.com/nexpaq/morph-view
+[submodule "morph-overlay"]
+	path = morph-overlay
+	url = https://github.com/moduware/morph-overlay
