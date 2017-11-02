@@ -1,0 +1,21 @@
+[submodule "morph-shared-colors"]
+	path = morph-shared-colors
+	url = https://github.com/nexpaq/morph-shared-colors
+[submodule "morph-shared-styles"]
+	path = morph-shared-styles
+	url = https://github.com/nexpaq/morph-shared-styles
+[submodule "morph-element"]
+	path = morph-element
+	url = https://github.com/nexpaq/morph-element
+[submodule "morph-button"]
+	path = morph-button
+	url = https://github.com/nexpaq/morph-button
+[submodule "morph-sidebar"]
+	path = morph-sidebar
+	url = https://github.com/nexpaq/morph-sidebar
+[submodule "morph-view"]
+	path = morph-view
+	url = https://github.com/nexpaq/morph-view
+[submodule "morph-overlay"]
+	path = morph-overlay
+	url = https://github.com/moduware/morph-overlay
