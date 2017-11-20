@@ -19,3 +19,6 @@
 [submodule "morph-overlay"]
 	path = morph-overlay
 	url = https://github.com/moduware/morph-overlay
+[submodule "morph-tabbar"]
+	path = morph-tabbar
+	url = https://github.com/moduware/morph-tabbar
