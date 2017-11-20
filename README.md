@@ -6,7 +6,7 @@ Polymer components that look native on each platform we used
 First, make sure you have the [Polymer CLI](https://www.npmjs.com/package/polymer-cli) installed. Then run `polymer serve` to serve your element locally.
 
 ## Getting Started:
-You can clone the repository to create a local copy on your computer. 
+You can clone the repository to create a local copy on your computer.
 
   1. Navigate to the main page of the repository in Github
 
@@ -22,15 +22,15 @@ You can clone the repository to create a local copy on your computer.
 
   ```bash
     $ git submodule update --init --recursive
-  ``` 
+  ```
 
   For more info about git submodules here's a good [blog post][Git Submodules Blog] to read.
 ## Running A Local Server
   To Run local server on your machine
-  
+
   1. Open another tab  or window of your terminal
 
-  2. Use **`polymer serve`** 
+  2. Use **`polymer serve`**
 
   ```bash
     $ polymer serve
@@ -46,11 +46,11 @@ You can clone the repository to create a local copy on your computer.
 
 - Copy and paste the reusable components URL `http://127.0.0.1:8081` to your browser
 
-This will be your primary documention for all our Polymorph elements and this will also show relevant demos for them.  
+This will be your primary documentation for all our Polymorph elements and this will also show relevant demos for them.  
 
 ## Adding New Morph Element
 
-ToDo: add steps on how to add new element and explain a little bit about how it works with the documentation and 
+ToDo: add steps on how to add new element and explain a little bit about how it works with the documentation and
 
 
   [Git Submodules]: https://github.com/blog/2104-working-with-submodules
