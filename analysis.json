@@ -119,7 +119,41 @@
       "tagname": "morph-element"
     },
     {
-      "description": "`morph-sidebar`\nButton that morphs for current mobile OS",
+      "description": "`morph-element`\nParent for all of Polymorph Components that can detect current platform and other common behaviour",
+      "summary": "",
+      "path": "morph-element/morph-element.html",
+      "properties": [],
+      "methods": [],
+      "staticMethods": [],
+      "demos": [
+        {
+          "url": "demo/index.html",
+          "description": ""
+        }
+      ],
+      "metadata": {},
+      "sourceRange": {
+        "start": {
+          "line": 22,
+          "column": 32
+        },
+        "end": {
+          "line": 22,
+          "column": 64
+        }
+      },
+      "privacy": "public",
+      "superclass": "HTMLElement",
+      "attributes": [],
+      "events": [],
+      "styling": {
+        "cssVariables": [],
+        "selectors": []
+      },
+      "slots": []
+    },
+    {
+      "description": "`morph-button`\nButton that morphs for current mobile OS",
       "summary": "",
       "path": "morph-button/morph-button.html",
       "properties": [
@@ -360,7 +394,7 @@
               "column": 6
             },
             "end": {
-              "line": 76,
+              "line": 78,
               "column": 7
             }
           },
@@ -879,65 +913,24 @@
       "tagname": "morph-view"
     },
     {
-      "description": "`morph-sidebar`\nSidebar that morphs for current mobile OS",
+      "description": "`morph-sidebar`\nA navigation drawer that can slide in from the left or right and that morphs for current mobile OS",
       "summary": "",
       "path": "morph-sidebar/morph-sidebar.html",
       "properties": [
         {
-          "name": "platform",
-          "type": "string",
-          "description": "",
-          "privacy": "public",
-          "sourceRange": {
-            "file": "../morph-element/morph-element.html",
-            "start": {
-              "line": 26,
-              "column": 10
-            },
-            "end": {
-              "line": 48,
-              "column": 11
-            }
-          },
-          "metadata": {
-            "polymer": {}
-          },
-          "defaultValue": "\"unknown\"",
-          "inheritedFrom": "MorphElement"
-        },
-        {
-          "name": "side",
-          "type": "string",
-          "description": "",
-          "privacy": "public",
-          "sourceRange": {
-            "start": {
-              "line": 76,
-              "column": 10
-            },
-            "end": {
-              "line": 80,
-              "column": 11
-            }
-          },
-          "metadata": {
-            "polymer": {}
-          },
-          "defaultValue": "\"left\""
-        },
-        {
-          "name": "open",
+          "name": "opened",
           "type": "boolean",
-          "description": "",
+          "description": "The opened state of the drawer.",
           "privacy": "public",
           "sourceRange": {
+            "file": "../bower_components/app-layout/app-drawer/app-drawer.html",
             "start": {
-              "line": 81,
-              "column": 10
+              "line": 192,
+              "column": 8
             },
             "end": {
-              "line": 86,
-              "column": 11
+              "line": 197,
+              "column": 9
             }
           },
           "metadata": {
@@ -946,105 +939,950 @@
             }
           },
           "defaultValue": "false"
+        },
+        {
+          "name": "persistent",
+          "type": "boolean",
+          "description": "The drawer does not have a scrim and cannot be swiped close.",
+          "privacy": "public",
+          "sourceRange": {
+            "file": "../bower_components/app-layout/app-drawer/app-drawer.html",
+            "start": {
+              "line": 202,
+              "column": 8
+            },
+            "end": {
+              "line": 206,
+              "column": 9
+            }
+          },
+          "metadata": {
+            "polymer": {}
+          },
+          "defaultValue": "false"
+        },
+        {
+          "name": "transitionDuration",
+          "type": "number",
+          "description": "",
+          "privacy": "public",
+          "sourceRange": {
+            "start": {
+              "line": 53,
+              "column": 12
+            },
+            "end": {
+              "line": 56,
+              "column": 13
+            }
+          },
+          "metadata": {
+            "polymer": {
+              "readOnly": true
+            }
+          }
+        },
+        {
+          "name": "align",
+          "type": "string",
+          "description": "The alignment of the drawer on the screen ('left', 'right', 'start' or 'end').\n'start' computes to left and 'end' to right in LTR layout and vice versa in RTL\nlayout.",
+          "privacy": "public",
+          "sourceRange": {
+            "file": "../bower_components/app-layout/app-drawer/app-drawer.html",
+            "start": {
+              "line": 221,
+              "column": 8
+            },
+            "end": {
+              "line": 224,
+              "column": 9
+            }
+          },
+          "metadata": {
+            "polymer": {}
+          },
+          "defaultValue": "\"left\""
+        },
+        {
+          "name": "position",
+          "type": "string",
+          "description": "The computed, read-only position of the drawer on the screen ('left' or 'right').",
+          "privacy": "public",
+          "sourceRange": {
+            "file": "../bower_components/app-layout/app-drawer/app-drawer.html",
+            "start": {
+              "line": 229,
+              "column": 8
+            },
+            "end": {
+              "line": 233,
+              "column": 9
+            }
+          },
+          "metadata": {
+            "polymer": {
+              "readOnly": true
+            }
+          }
+        },
+        {
+          "name": "swipeOpen",
+          "type": "boolean",
+          "description": "Create an area at the edge of the screen to swipe open the drawer.",
+          "privacy": "public",
+          "sourceRange": {
+            "file": "../bower_components/app-layout/app-drawer/app-drawer.html",
+            "start": {
+              "line": 238,
+              "column": 8
+            },
+            "end": {
+              "line": 242,
+              "column": 9
+            }
+          },
+          "metadata": {
+            "polymer": {}
+          },
+          "defaultValue": "false"
+        },
+        {
+          "name": "noFocusTrap",
+          "type": "boolean",
+          "description": "Trap keyboard focus when the drawer is opened and not persistent.",
+          "privacy": "public",
+          "sourceRange": {
+            "file": "../bower_components/app-layout/app-drawer/app-drawer.html",
+            "start": {
+              "line": 247,
+              "column": 8
+            },
+            "end": {
+              "line": 250,
+              "column": 9
+            }
+          },
+          "metadata": {
+            "polymer": {}
+          },
+          "defaultValue": "false"
+        },
+        {
+          "name": "disableSwipe",
+          "type": "boolean",
+          "description": "Disables swiping on the drawer.",
+          "privacy": "public",
+          "sourceRange": {
+            "file": "../bower_components/app-layout/app-drawer/app-drawer.html",
+            "start": {
+              "line": 255,
+              "column": 8
+            },
+            "end": {
+              "line": 258,
+              "column": 9
+            }
+          },
+          "metadata": {
+            "polymer": {}
+          },
+          "defaultValue": "false"
+        },
+        {
+          "name": "_translateOffset",
+          "type": "number",
+          "description": "",
+          "privacy": "protected",
+          "sourceRange": {
+            "file": "../bower_components/app-layout/app-drawer/app-drawer.html",
+            "start": {
+              "line": 268,
+              "column": 6
+            },
+            "end": {
+              "line": 268,
+              "column": 25
+            }
+          },
+          "metadata": {
+            "polymer": {}
+          }
+        },
+        {
+          "name": "_trackDetails",
+          "type": "object",
+          "description": "",
+          "privacy": "protected",
+          "sourceRange": {
+            "file": "../bower_components/app-layout/app-drawer/app-drawer.html",
+            "start": {
+              "line": 270,
+              "column": 6
+            },
+            "end": {
+              "line": 270,
+              "column": 25
+            }
+          },
+          "metadata": {
+            "polymer": {}
+          }
+        },
+        {
+          "name": "_drawerState",
+          "type": "number",
+          "description": "",
+          "privacy": "protected",
+          "sourceRange": {
+            "file": "../bower_components/app-layout/app-drawer/app-drawer.html",
+            "start": {
+              "line": 272,
+              "column": 6
+            },
+            "end": {
+              "line": 272,
+              "column": 21
+            }
+          },
+          "metadata": {
+            "polymer": {}
+          }
+        },
+        {
+          "name": "_boundEscKeydownHandler",
+          "type": "object",
+          "description": "",
+          "privacy": "protected",
+          "sourceRange": {
+            "file": "../bower_components/app-layout/app-drawer/app-drawer.html",
+            "start": {
+              "line": 274,
+              "column": 6
+            },
+            "end": {
+              "line": 274,
+              "column": 35
+            }
+          },
+          "metadata": {
+            "polymer": {}
+          }
+        },
+        {
+          "name": "_firstTabStop",
+          "type": "object",
+          "description": "",
+          "privacy": "protected",
+          "sourceRange": {
+            "file": "../bower_components/app-layout/app-drawer/app-drawer.html",
+            "start": {
+              "line": 276,
+              "column": 6
+            },
+            "end": {
+              "line": 276,
+              "column": 25
+            }
+          },
+          "metadata": {
+            "polymer": {}
+          }
+        },
+        {
+          "name": "_lastTabStop",
+          "type": "object",
+          "description": "",
+          "privacy": "protected",
+          "sourceRange": {
+            "file": "../bower_components/app-layout/app-drawer/app-drawer.html",
+            "start": {
+              "line": 278,
+              "column": 6
+            },
+            "end": {
+              "line": 278,
+              "column": 24
+            }
+          },
+          "metadata": {
+            "polymer": {}
+          }
+        },
+        {
+          "name": "_MIN_FLING_THRESHOLD",
+          "type": "number",
+          "description": "",
+          "privacy": "protected",
+          "sourceRange": {
+            "file": "../bower_components/app-layout/app-drawer/app-drawer.html",
+            "start": {
+              "line": 656,
+              "column": 6
+            },
+            "end": {
+              "line": 656,
+              "column": 31
+            }
+          },
+          "metadata": {
+            "polymer": {}
+          }
+        },
+        {
+          "name": "_MIN_TRANSITION_VELOCITY",
+          "type": "number",
+          "description": "",
+          "privacy": "protected",
+          "sourceRange": {
+            "file": "../bower_components/app-layout/app-drawer/app-drawer.html",
+            "start": {
+              "line": 658,
+              "column": 6
+            },
+            "end": {
+              "line": 658,
+              "column": 35
+            }
+          },
+          "metadata": {
+            "polymer": {}
+          }
+        },
+        {
+          "name": "_FLING_TIMING_FUNCTION",
+          "type": "string",
+          "description": "",
+          "privacy": "protected",
+          "sourceRange": {
+            "file": "../bower_components/app-layout/app-drawer/app-drawer.html",
+            "start": {
+              "line": 660,
+              "column": 6
+            },
+            "end": {
+              "line": 660,
+              "column": 64
+            }
+          },
+          "metadata": {
+            "polymer": {}
+          }
+        },
+        {
+          "name": "_FLING_INITIAL_SLOPE",
+          "type": "number",
+          "description": "",
+          "privacy": "protected",
+          "sourceRange": {
+            "file": "../bower_components/app-layout/app-drawer/app-drawer.html",
+            "start": {
+              "line": 662,
+              "column": 6
+            },
+            "end": {
+              "line": 662,
+              "column": 31
+            }
+          },
+          "metadata": {
+            "polymer": {}
+          }
+        },
+        {
+          "name": "_DRAWER_STATE",
+          "type": "Object",
+          "description": "",
+          "privacy": "protected",
+          "sourceRange": {
+            "file": "../bower_components/app-layout/app-drawer/app-drawer.html",
+            "start": {
+              "line": 664,
+              "column": 6
+            },
+            "end": {
+              "line": 671,
+              "column": 7
+            }
+          },
+          "metadata": {
+            "polymer": {}
+          }
+        },
+        {
+          "name": "transitionDurationAndroid",
+          "type": "number",
+          "description": "",
+          "privacy": "public",
+          "sourceRange": {
+            "start": {
+              "line": 57,
+              "column": 12
+            },
+            "end": {
+              "line": 60,
+              "column": 13
+            }
+          },
+          "metadata": {
+            "polymer": {}
+          },
+          "defaultValue": "300"
+        },
+        {
+          "name": "transitionDurationIos",
+          "type": "number",
+          "description": "",
+          "privacy": "public",
+          "sourceRange": {
+            "start": {
+              "line": 61,
+              "column": 12
+            },
+            "end": {
+              "line": 64,
+              "column": 13
+            }
+          },
+          "metadata": {
+            "polymer": {}
+          },
+          "defaultValue": "400"
+        },
+        {
+          "name": "transitionDurationWeb",
+          "type": "number",
+          "description": "",
+          "privacy": "public",
+          "sourceRange": {
+            "start": {
+              "line": 65,
+              "column": 12
+            },
+            "end": {
+              "line": 68,
+              "column": 13
+            }
+          },
+          "metadata": {
+            "polymer": {}
+          },
+          "defaultValue": "200"
         }
       ],
       "methods": [
         {
-          "name": "checkIfSharedStylesConnected",
-          "description": "checkIfSharedStylesConnected",
-          "privacy": "public",
-          "sourceRange": {
-            "file": "../morph-element/morph-element.html",
-            "start": {
-              "line": 57,
-              "column": 6
-            },
-            "end": {
-              "line": 65,
-              "column": 7
-            }
-          },
-          "metadata": {},
-          "params": [],
-          "return": {
-            "type": "Boolean",
-            "desc": "return true if style not equal to 'deepskyblue' meaning shared color file not connected and returns false otherwise"
-          },
-          "inheritedFrom": "MorphElement"
-        },
-        {
-          "name": "getStyleShadyOrDOM",
-          "description": "",
-          "privacy": "public",
-          "sourceRange": {
-            "file": "../morph-element/morph-element.html",
-            "start": {
-              "line": 70,
-              "column": 6
-            },
-            "end": {
-              "line": 78,
-              "column": 7
-            }
-          },
-          "metadata": {},
-          "params": [],
-          "return": {
-            "type": "Object",
-            "desc": "returns the computed style based on if ShadyCSS is used or not"
-          },
-          "inheritedFrom": "MorphElement"
-        },
-        {
-          "name": "setOpen",
-          "description": "set open property to true use to open the sidebar",
-          "privacy": "public",
-          "sourceRange": {
-            "start": {
-              "line": 93,
-              "column": 6
-            },
-            "end": {
-              "line": 95,
-              "column": 7
-            }
-          },
-          "metadata": {},
-          "params": []
-        },
-        {
-          "name": "setClosed",
-          "description": "set open property to false use to close the sidebar",
-          "privacy": "public",
-          "sourceRange": {
-            "start": {
-              "line": 100,
-              "column": 6
-            },
-            "end": {
-              "line": 102,
-              "column": 7
-            }
-          },
-          "metadata": {},
-          "params": []
-        },
-        {
-          "name": "ready",
+          "name": "attached",
           "description": "",
           "privacy": "protected",
           "sourceRange": {
+            "file": "../bower_components/app-layout/app-drawer/app-drawer.html",
             "start": {
-              "line": 104,
+              "line": 280,
               "column": 6
             },
             "end": {
-              "line": 130,
+              "line": 291,
               "column": 7
             }
           },
           "metadata": {},
           "params": []
+        },
+        {
+          "name": "detached",
+          "description": "",
+          "privacy": "protected",
+          "sourceRange": {
+            "file": "../bower_components/app-layout/app-drawer/app-drawer.html",
+            "start": {
+              "line": 293,
+              "column": 6
+            },
+            "end": {
+              "line": 295,
+              "column": 7
+            }
+          },
+          "metadata": {},
+          "params": []
+        },
+        {
+          "name": "open",
+          "description": "Opens the drawer.",
+          "privacy": "public",
+          "sourceRange": {
+            "file": "../bower_components/app-layout/app-drawer/app-drawer.html",
+            "start": {
+              "line": 300,
+              "column": 6
+            },
+            "end": {
+              "line": 302,
+              "column": 7
+            }
+          },
+          "metadata": {},
+          "params": []
+        },
+        {
+          "name": "close",
+          "description": "Closes the drawer.",
+          "privacy": "public",
+          "sourceRange": {
+            "file": "../bower_components/app-layout/app-drawer/app-drawer.html",
+            "start": {
+              "line": 307,
+              "column": 6
+            },
+            "end": {
+              "line": 309,
+              "column": 7
+            }
+          },
+          "metadata": {},
+          "params": []
+        },
+        {
+          "name": "toggle",
+          "description": "Toggles the drawer open and close.",
+          "privacy": "public",
+          "sourceRange": {
+            "file": "../bower_components/app-layout/app-drawer/app-drawer.html",
+            "start": {
+              "line": 314,
+              "column": 6
+            },
+            "end": {
+              "line": 316,
+              "column": 7
+            }
+          },
+          "metadata": {},
+          "params": []
+        },
+        {
+          "name": "getWidth",
+          "description": "Gets the width of the drawer.",
+          "privacy": "public",
+          "sourceRange": {
+            "file": "../bower_components/app-layout/app-drawer/app-drawer.html",
+            "start": {
+              "line": 323,
+              "column": 6
+            },
+            "end": {
+              "line": 325,
+              "column": 7
+            }
+          },
+          "metadata": {},
+          "params": [],
+          "return": {
+            "type": "number",
+            "desc": "The width of the drawer in pixels."
+          }
+        },
+        {
+          "name": "_isRTL",
+          "description": "",
+          "privacy": "protected",
+          "sourceRange": {
+            "file": "../bower_components/app-layout/app-drawer/app-drawer.html",
+            "start": {
+              "line": 327,
+              "column": 6
+            },
+            "end": {
+              "line": 329,
+              "column": 7
+            }
+          },
+          "metadata": {},
+          "params": []
+        },
+        {
+          "name": "_resetPosition",
+          "description": "",
+          "privacy": "protected",
+          "sourceRange": {
+            "file": "../bower_components/app-layout/app-drawer/app-drawer.html",
+            "start": {
+              "line": 331,
+              "column": 6
+            },
+            "end": {
+              "line": 341,
+              "column": 7
+            }
+          },
+          "metadata": {},
+          "params": []
+        },
+        {
+          "name": "_escKeydownHandler",
+          "description": "",
+          "privacy": "protected",
+          "sourceRange": {
+            "file": "../bower_components/app-layout/app-drawer/app-drawer.html",
+            "start": {
+              "line": 343,
+              "column": 6
+            },
+            "end": {
+              "line": 350,
+              "column": 7
+            }
+          },
+          "metadata": {},
+          "params": [
+            {
+              "name": "event"
+            }
+          ]
+        },
+        {
+          "name": "_track",
+          "description": "",
+          "privacy": "protected",
+          "sourceRange": {
+            "file": "../bower_components/app-layout/app-drawer/app-drawer.html",
+            "start": {
+              "line": 352,
+              "column": 6
+            },
+            "end": {
+              "line": 371,
+              "column": 7
+            }
+          },
+          "metadata": {},
+          "params": [
+            {
+              "name": "event"
+            }
+          ]
+        },
+        {
+          "name": "_trackStart",
+          "description": "",
+          "privacy": "protected",
+          "sourceRange": {
+            "file": "../bower_components/app-layout/app-drawer/app-drawer.html",
+            "start": {
+              "line": 373,
+              "column": 6
+            },
+            "end": {
+              "line": 389,
+              "column": 7
+            }
+          },
+          "metadata": {},
+          "params": [
+            {
+              "name": "event"
+            }
+          ]
+        },
+        {
+          "name": "_trackMove",
+          "description": "",
+          "privacy": "protected",
+          "sourceRange": {
+            "file": "../bower_components/app-layout/app-drawer/app-drawer.html",
+            "start": {
+              "line": 391,
+              "column": 6
+            },
+            "end": {
+              "line": 400,
+              "column": 7
+            }
+          },
+          "metadata": {},
+          "params": [
+            {
+              "name": "event"
+            }
+          ]
+        },
+        {
+          "name": "_trackEnd",
+          "description": "",
+          "privacy": "protected",
+          "sourceRange": {
+            "file": "../bower_components/app-layout/app-drawer/app-drawer.html",
+            "start": {
+              "line": 402,
+              "column": 6
+            },
+            "end": {
+              "line": 438,
+              "column": 7
+            }
+          },
+          "metadata": {},
+          "params": [
+            {
+              "name": "event"
+            }
+          ]
+        },
+        {
+          "name": "_calculateVelocity",
+          "description": "",
+          "privacy": "protected",
+          "sourceRange": {
+            "file": "../bower_components/app-layout/app-drawer/app-drawer.html",
+            "start": {
+              "line": 440,
+              "column": 6
+            },
+            "end": {
+              "line": 466,
+              "column": 7
+            }
+          },
+          "metadata": {},
+          "params": [
+            {
+              "name": "event"
+            },
+            {
+              "name": "trackDetails"
+            }
+          ]
+        },
+        {
+          "name": "_flingDrawer",
+          "description": "",
+          "privacy": "protected",
+          "sourceRange": {
+            "file": "../bower_components/app-layout/app-drawer/app-drawer.html",
+            "start": {
+              "line": 468,
+              "column": 6
+            },
+            "end": {
+              "line": 510,
+              "column": 7
+            }
+          },
+          "metadata": {},
+          "params": [
+            {
+              "name": "event"
+            },
+            {
+              "name": "trackDetails"
+            }
+          ]
+        },
+        {
+          "name": "_styleTransitionDuration",
+          "description": "",
+          "privacy": "protected",
+          "sourceRange": {
+            "file": "../bower_components/app-layout/app-drawer/app-drawer.html",
+            "start": {
+              "line": 512,
+              "column": 6
+            },
+            "end": {
+              "line": 516,
+              "column": 7
+            }
+          },
+          "metadata": {},
+          "params": [
+            {
+              "name": "duration"
+            }
+          ]
+        },
+        {
+          "name": "_styleTransitionTimingFunction",
+          "description": "",
+          "privacy": "protected",
+          "sourceRange": {
+            "file": "../bower_components/app-layout/app-drawer/app-drawer.html",
+            "start": {
+              "line": 518,
+              "column": 6
+            },
+            "end": {
+              "line": 521,
+              "column": 7
+            }
+          },
+          "metadata": {},
+          "params": [
+            {
+              "name": "timingFunction"
+            }
+          ]
+        },
+        {
+          "name": "_translateDrawer",
+          "description": "",
+          "privacy": "protected",
+          "sourceRange": {
+            "file": "../bower_components/app-layout/app-drawer/app-drawer.html",
+            "start": {
+              "line": 523,
+              "column": 6
+            },
+            "end": {
+              "line": 535,
+              "column": 7
+            }
+          },
+          "metadata": {},
+          "params": [
+            {
+              "name": "x"
+            }
+          ]
+        },
+        {
+          "name": "_resetDrawerTranslate",
+          "description": "",
+          "privacy": "protected",
+          "sourceRange": {
+            "file": "../bower_components/app-layout/app-drawer/app-drawer.html",
+            "start": {
+              "line": 537,
+              "column": 6
+            },
+            "end": {
+              "line": 540,
+              "column": 7
+            }
+          },
+          "metadata": {},
+          "params": []
+        },
+        {
+          "name": "_resetDrawerState",
+          "description": "",
+          "privacy": "protected",
+          "sourceRange": {
+            "file": "../bower_components/app-layout/app-drawer/app-drawer.html",
+            "start": {
+              "line": 542,
+              "column": 6
+            },
+            "end": {
+              "line": 576,
+              "column": 7
+            }
+          },
+          "metadata": {},
+          "params": []
+        },
+        {
+          "name": "resetLayout",
+          "description": "Resets the layout.",
+          "privacy": "public",
+          "sourceRange": {
+            "file": "../bower_components/app-layout/app-drawer/app-drawer.html",
+            "start": {
+              "line": 583,
+              "column": 6
+            },
+            "end": {
+              "line": 585,
+              "column": 7
+            }
+          },
+          "metadata": {},
+          "params": []
+        },
+        {
+          "name": "_setKeyboardFocusTrap",
+          "description": "",
+          "privacy": "protected",
+          "sourceRange": {
+            "file": "../bower_components/app-layout/app-drawer/app-drawer.html",
+            "start": {
+              "line": 587,
+              "column": 6
+            },
+            "end": {
+              "line": 625,
+              "column": 7
+            }
+          },
+          "metadata": {},
+          "params": []
+        },
+        {
+          "name": "_tabKeydownHandler",
+          "description": "",
+          "privacy": "protected",
+          "sourceRange": {
+            "file": "../bower_components/app-layout/app-drawer/app-drawer.html",
+            "start": {
+              "line": 627,
+              "column": 6
+            },
+            "end": {
+              "line": 646,
+              "column": 7
+            }
+          },
+          "metadata": {},
+          "params": [
+            {
+              "name": "event"
+            }
+          ]
+        },
+        {
+          "name": "_openedPersistentChanged",
+          "description": "",
+          "privacy": "protected",
+          "sourceRange": {
+            "file": "../bower_components/app-layout/app-drawer/app-drawer.html",
+            "start": {
+              "line": 648,
+              "column": 6
+            },
+            "end": {
+              "line": 654,
+              "column": 7
+            }
+          },
+          "metadata": {},
+          "params": [
+            {
+              "name": "opened"
+            },
+            {
+              "name": "persistent"
+            }
+          ]
+        },
+        {
+          "name": "computedTransitionDuration",
+          "description": "",
+          "privacy": "public",
+          "sourceRange": {
+            "start": {
+              "line": 94,
+              "column": 8
+            },
+            "end": {
+              "line": 102,
+              "column": 9
+            }
+          },
+          "metadata": {},
+          "params": [
+            {
+              "name": "platform"
+            }
+          ]
         }
       ],
       "staticMethods": [],
@@ -1057,12 +1895,12 @@
       "metadata": {},
       "sourceRange": {
         "start": {
-          "line": 71,
-          "column": 4
+          "line": 50,
+          "column": 6
         },
         "end": {
-          "line": 131,
-          "column": 5
+          "line": 104,
+          "column": 7
         }
       },
       "privacy": "public",
@@ -1070,61 +1908,206 @@
       "name": "MorphSidebar",
       "attributes": [
         {
-          "name": "platform",
-          "description": "",
+          "name": "opened",
+          "description": "The opened state of the drawer.",
           "sourceRange": {
-            "file": "../morph-element/morph-element.html",
+            "file": "../bower_components/app-layout/app-drawer/app-drawer.html",
             "start": {
-              "line": 26,
-              "column": 10
+              "line": 192,
+              "column": 8
             },
             "end": {
-              "line": 48,
-              "column": 11
+              "line": 197,
+              "column": 9
             }
           },
           "metadata": {},
-          "type": "string",
-          "inheritedFrom": "MorphElement"
+          "type": "boolean"
         },
         {
-          "name": "side",
+          "name": "persistent",
+          "description": "The drawer does not have a scrim and cannot be swiped close.",
+          "sourceRange": {
+            "file": "../bower_components/app-layout/app-drawer/app-drawer.html",
+            "start": {
+              "line": 202,
+              "column": 8
+            },
+            "end": {
+              "line": 206,
+              "column": 9
+            }
+          },
+          "metadata": {},
+          "type": "boolean"
+        },
+        {
+          "name": "transition-duration",
           "description": "",
           "sourceRange": {
             "start": {
-              "line": 76,
-              "column": 10
+              "line": 53,
+              "column": 12
             },
             "end": {
-              "line": 80,
-              "column": 11
+              "line": 56,
+              "column": 13
+            }
+          },
+          "metadata": {},
+          "type": "number"
+        },
+        {
+          "name": "align",
+          "description": "The alignment of the drawer on the screen ('left', 'right', 'start' or 'end').\n'start' computes to left and 'end' to right in LTR layout and vice versa in RTL\nlayout.",
+          "sourceRange": {
+            "file": "../bower_components/app-layout/app-drawer/app-drawer.html",
+            "start": {
+              "line": 221,
+              "column": 8
+            },
+            "end": {
+              "line": 224,
+              "column": 9
             }
           },
           "metadata": {},
           "type": "string"
         },
         {
-          "name": "open",
-          "description": "",
+          "name": "position",
+          "description": "The computed, read-only position of the drawer on the screen ('left' or 'right').",
           "sourceRange": {
+            "file": "../bower_components/app-layout/app-drawer/app-drawer.html",
             "start": {
-              "line": 81,
-              "column": 10
+              "line": 229,
+              "column": 8
             },
             "end": {
-              "line": 86,
-              "column": 11
+              "line": 233,
+              "column": 9
+            }
+          },
+          "metadata": {},
+          "type": "string"
+        },
+        {
+          "name": "swipe-open",
+          "description": "Create an area at the edge of the screen to swipe open the drawer.",
+          "sourceRange": {
+            "file": "../bower_components/app-layout/app-drawer/app-drawer.html",
+            "start": {
+              "line": 238,
+              "column": 8
+            },
+            "end": {
+              "line": 242,
+              "column": 9
             }
           },
           "metadata": {},
           "type": "boolean"
+        },
+        {
+          "name": "no-focus-trap",
+          "description": "Trap keyboard focus when the drawer is opened and not persistent.",
+          "sourceRange": {
+            "file": "../bower_components/app-layout/app-drawer/app-drawer.html",
+            "start": {
+              "line": 247,
+              "column": 8
+            },
+            "end": {
+              "line": 250,
+              "column": 9
+            }
+          },
+          "metadata": {},
+          "type": "boolean"
+        },
+        {
+          "name": "disable-swipe",
+          "description": "Disables swiping on the drawer.",
+          "sourceRange": {
+            "file": "../bower_components/app-layout/app-drawer/app-drawer.html",
+            "start": {
+              "line": 255,
+              "column": 8
+            },
+            "end": {
+              "line": 258,
+              "column": 9
+            }
+          },
+          "metadata": {},
+          "type": "boolean"
+        },
+        {
+          "name": "transition-duration-android",
+          "description": "",
+          "sourceRange": {
+            "start": {
+              "line": 57,
+              "column": 12
+            },
+            "end": {
+              "line": 60,
+              "column": 13
+            }
+          },
+          "metadata": {},
+          "type": "number"
+        },
+        {
+          "name": "transition-duration-ios",
+          "description": "",
+          "sourceRange": {
+            "start": {
+              "line": 61,
+              "column": 12
+            },
+            "end": {
+              "line": 64,
+              "column": 13
+            }
+          },
+          "metadata": {},
+          "type": "number"
+        },
+        {
+          "name": "transition-duration-web",
+          "description": "",
+          "sourceRange": {
+            "start": {
+              "line": 65,
+              "column": 12
+            },
+            "end": {
+              "line": 68,
+              "column": 13
+            }
+          },
+          "metadata": {},
+          "type": "number"
         }
       ],
       "events": [
         {
           "type": "CustomEvent",
-          "name": "open-changed",
-          "description": "Fired when the `open` property changes.",
+          "name": "app-drawer-transitioned",
+          "description": "app-drawer-transitioned",
+          "metadata": {}
+        },
+        {
+          "type": "CustomEvent",
+          "name": "app-reset-layout",
+          "description": "app-reset-layout",
+          "metadata": {}
+        },
+        {
+          "type": "CustomEvent",
+          "name": "opened-changed",
+          "description": "Fired when the `opened` property changes.",
           "metadata": {}
         }
       ],
@@ -1132,27 +2115,11 @@
         "cssVariables": [],
         "selectors": []
       },
-      "slots": [
-        {
-          "description": "",
-          "name": "",
-          "range": {
-            "file": "morph-sidebar/morph-sidebar.html",
-            "start": {
-              "line": 57,
-              "column": 4
-            },
-            "end": {
-              "line": 57,
-              "column": 17
-            }
-          }
-        }
-      ],
+      "slots": [],
       "tagname": "morph-sidebar"
     },
     {
-      "description": "`morph-overlay`",
+      "description": "`morph-overlay`\n Overlay that morphs for current mobile OS",
       "summary": "",
       "path": "morph-overlay/morph-overlay.html",
       "properties": [
@@ -1185,11 +2152,11 @@
           "privacy": "public",
           "sourceRange": {
             "start": {
-              "line": 47,
+              "line": 53,
               "column": 10
             },
             "end": {
-              "line": 50,
+              "line": 56,
               "column": 11
             }
           },
@@ -1233,7 +2200,7 @@
               "column": 6
             },
             "end": {
-              "line": 76,
+              "line": 78,
               "column": 7
             }
           },
@@ -1256,11 +2223,11 @@
       "metadata": {},
       "sourceRange": {
         "start": {
-          "line": 43,
+          "line": 49,
           "column": 4
         },
         "end": {
-          "line": 53,
+          "line": 59,
           "column": 5
         }
       },
@@ -1291,11 +2258,11 @@
           "description": "",
           "sourceRange": {
             "start": {
-              "line": 47,
+              "line": 53,
               "column": 10
             },
             "end": {
-              "line": 50,
+              "line": 56,
               "column": 11
             }
           },
