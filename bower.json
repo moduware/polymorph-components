@@ -12,7 +12,8 @@
     "morph-sidebar": "https://github.com/nexpaq/morph-sidebar.git#master",
     "morph-element": "https://github.com/nexpaq/morph-element.git#master",
     "morph-overlay": "https://github.com/moduware/morph-overlay.git#master",
-    "morph-view": "https://github.com/moduware/morph-view.git#master"
+    "morph-view": "https://github.com/moduware/morph-view.git#master",
+    "morph-tabbar": "https://github.com/moduware/morph-tabbar.git#master"
   },
   "devDependencies": {
     "iron-demo-helpers": "PolymerElements/iron-demo-helpers#2.0-preview",
