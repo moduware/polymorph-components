@@ -18,10 +18,10 @@ You can clone the repository to create a local copy on your computer.
 
   5. Run **`$ bower install`** to install all packages in your bower.json and any packages that it depends on in the local bower_components folder
 
-  6. Important: This repository has folders which are [git submodules][Git Submodules]. If you ran only `git clone` with no `--recursive` flag, please run the command below to ensure that you will have all of the submodule's content. You also need to run this everytime you add a new submodule to this repository. You can skip this if the content are already there (if you ran `git clone --recursive` earlier)
+  6. Important: This repository has folders which are [git submodules][Git Submodules]. If you ran only `git clone` with no `--recursive` flag, please run the command below to ensure that you will have all of the submodule's content. You also need to run this every time you add a new submodule to this repository. You can skip this if the content are already there (if you ran `git clone --recursive` earlier)
 
   ```bash
-    $ git submodule update --init --recursive
+    $ git submodule foreach git pull origin master
   ```
 
   For more info about git submodules here's a good [blog post][Git Submodules Blog] to read.
@@ -51,6 +51,19 @@ This will be your primary documentation for all our Polymorph elements and this 
 ## Adding New Morph Element
 
 ToDo: add steps on how to add new element and explain a little bit about how it works with the documentation and
+```bash
+  $ git submodule add repoURL submoduleName
+```
+Example: `git submodule add https://github.com/moduware/morph-tabbar-item.git morph-tabbar-item`
+
+```bash
+  $ bower install repoURL --save
+```
+Example: `bower install https://github.com/moduware/morph-tabbar.git#master --save`
+
+```bash
+  $ polymer analyze > analysis.json
+```
 
 
   [Git Submodules]: https://github.com/blog/2104-working-with-submodules
