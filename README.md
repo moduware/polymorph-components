@@ -18,7 +18,9 @@ You can clone the repository to create a local copy on your computer.
 
   5. Run **`$ bower install`** to install all packages in your bower.json and any packages that it depends on in the local bower_components folder
 
-  6. Important: This repository has folders which are [git submodules][Git Submodules]. If you ran only `git clone` with no `--recursive` flag, please run the command below to ensure that you will have all of the submodule's content. You also need to run this every time you add a new submodule to this repository. You can skip this if the content are already there (if you ran `git clone --recursive` earlier)
+  6. Run **`git submodule foreach git checkout master`** to switch all submodules to be on master branch instead of detached head branch.
+
+  7. Important: This repository has folders which are [git submodules][Git Submodules]. If you ran only `git clone` with no `--recursive` flag, please run the command below to ensure that you will have all of the submodule's content. You also need to run this every time you add a new submodule to this repository. You can skip this if the content are already there (if you ran `git clone --recursive` earlier)
 
   ```bash
     $ git submodule foreach git pull origin master
@@ -48,21 +50,41 @@ You can clone the repository to create a local copy on your computer.
 
 This will be your primary documentation for all our Polymorph elements and this will also show relevant demos for them.  
 
-## Adding New Morph Element
+## Adding New Morph Element as Submodules
 
-ToDo: add steps on how to add new element and explain a little bit about how it works with the documentation and
+Firstly, to add submodule repo into polymorph-components, run the code below.
 ```bash
   $ git submodule add repoURL submoduleName
 ```
 Example: `git submodule add https://github.com/moduware/morph-tabbar-item.git morph-tabbar-item`
 
+
+Then make sure you installed all the dependencies by running the code below.
 ```bash
   $ bower install repoURL --save
 ```
 Example: `bower install https://github.com/moduware/morph-tabbar.git#master --save`
 
+
+Lastly, run the code to update the analysis.json file.
 ```bash
   $ polymer analyze > analysis.json
+```
+## Editing the submodules inside polymorph-components
+
+After you go into your submodule folder,
+-First make sure you are on master branch, commit your changes and push origin master.
+
+Then you come back to polymorph-components, and commit the changes you got from submodule element.
+
+** Please follow the instructions below to push the changes in to polymorph-components.
+
+##Pushing the changes of Submodules
+
+After committing the changes on submodules, make sure to run the command below in our polymorph-components to push the any new changes on the submodules.
+
+```bash
+  $ git push --recurse-submodules=on-demand
 ```
 
 
