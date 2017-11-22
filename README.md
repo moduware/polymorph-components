@@ -58,7 +58,6 @@ Firstly, to add submodule repo into polymorph-components, run the code below.
 ```
 Example: `git submodule add https://github.com/moduware/morph-tabbar-item.git morph-tabbar-item`
 
-
 Then make sure you installed all the dependencies by running the code below.
 ```bash
   $ bower install repoURL --save
@@ -77,9 +76,9 @@ After you go into your submodule folder,
 
 Then you come back to polymorph-components, and commit the changes you got from submodule element.
 
-** Please follow the instructions below to push the changes in to polymorph-components.
+**Note:** Please follow the instructions below to push the changes in to polymorph-components.
 
-##Pushing the changes of Submodules
+## Pushing the changes of Submodules
 
 After committing the changes on submodules, make sure to run the command below in our polymorph-components to push the any new changes on the submodules.
 
