@@ -1,0 +1,63 @@
+<link rel="import" href="/bower_components/app-layout/app-drawer/app-drawer.html">
+
+<dom-module id="app-drawer-morph-element">
+  <template id="styles">
+    <style>
+      
+    </style>
+
+  </template>
+
+  <script>
+    (function () {
+      let subTemplate;
+
+      /**
+       * `app-drawer-morph-element`
+       * A navigation drawer that can slide in from the left or right and that morphs for current mobile OS
+       *
+       * @extends app-drawer
+       */
+      class AppDrawerMorphElement extends customElements.get('app-drawer') {
+        static get properties() {
+          return {
+            /** Detects the platform if it is either  - 'ios', 'android' or 'windows-phone' or if none of the 3 were identified returns 'unkown' */
+            platform: {
+              type: String,
+              reflectToAttribute: true
+            }
+          };
+        }
+
+        /**
+         * This will return our template inherited from superclass <app-drawer> with our styles inserted
+         */
+        static get template() {
+          if (!subTemplate) {
+            // first clone our superclass <app-drawer> template
+            let superClass = customElements.get('app-drawer');
+            subTemplate = superClass.template.cloneNode(true);
+
+            // here we will get the content of our <style> so we can insert them into the superclass <style>
+            // note the added id="styles" in our template tag above
+            const subStyle = Polymer.DomModule.import('app-drawer-morph-element', 'template#styles').content;
+
+            // get the content of current style from superClass
+            const superStyle = subTemplate.content.querySelector('style');
+
+            // append our added style at the bottom of the current style to get higher priority
+            superStyle.parentNode.appendChild(subStyle);
+          }
+          return subTemplate;
+        }
+
+        
+
+      }
+
+      customElements.define('app-drawer-morph-element', AppDrawerMorphElement);
+
+    })();
+
+  </script>
+</dom-module>
