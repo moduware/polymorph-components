@@ -19,3 +19,11 @@
 [submodule "morph-overlay"]
 	path = morph-overlay
 	url = https://github.com/moduware/morph-overlay
+[submodule "morph-tabbar-item"]
+	path = morph-tabbar-item
+	url = https://github.com/moduware/morph-tabbar-item.git
+	branch = master
+[submodule "morph-tabbar"]
+	path = morph-tabbar
+	url = https://github.com/moduware/morph-tabbar.git
+	branch = master
