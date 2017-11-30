@@ -6,13 +6,16 @@
 	url = https://github.com/nexpaq/morph-shared-styles
 [submodule "morph-element"]
 	path = morph-element
-	url = https://github.com/nexpaq/morph-element
+	url = https://github.com/moduware/morph-element
+	branch = master
 [submodule "morph-button"]
 	path = morph-button
 	url = https://github.com/nexpaq/morph-button
+	branch = master
 [submodule "morph-sidebar"]
 	path = morph-sidebar
-	url = https://github.com/nexpaq/morph-sidebar
+	url = https://github.com/moduware/morph-sidebar
+	branch = master
 [submodule "morph-view"]
 	path = morph-view
 	url = https://github.com/nexpaq/morph-view
