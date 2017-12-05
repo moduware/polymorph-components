@@ -2,6 +2,10 @@
 
 First, make sure you have the [Polymer CLI](https://www.npmjs.com/package/polymer-cli) installed. Then run `polymer serve` to serve your element locally.
 
+
+**<h4>Our examples are demonstrated with specific morph components such as `<morph-overlay>` and `<morph-button>`. Please change them with your desired component that you want to clone and use!!</h4>**
+
+
 ## Getting Started:
 You can clone the desired repository to create a local copy on your computer.
 
@@ -10,10 +14,12 @@ You can clone the desired repository to create a local copy on your computer.
   2. Click **Clone or download** and copy the clone URL for the repository
 
   3. Open your Terminal and change the current working directory to the location where you want the cloned directory to be made and Type **`git clone`**, and then paste the URL you copied in Step 2.
+
+  **As an example, we will clone our `<morph-overlay>` component.**
+
   ```bash
   $ git clone https://github.com/moduware/morph-overlay.git
   ```
-    **Please change morph-ovelay with your desired component that you want to clone and use.
 
   4. Then **`$ cd morph-overlay/`**
 
@@ -46,7 +52,7 @@ You can clone the desired repository to create a local copy on your computer.
   3. **Important:** Running this local server is needed for running Polymer Test. More about this below.
 
 ## Test
-  - This `<morph-overlay> element` is ready to be tested using [**web-component-tester**][WCT] or WCT for short. Our tests is setup to use `--expanded: true` configuration for creating a more readable output of test results in the console. It will show all the test that were run and also show all the test that failed if any. Additional configuration for WCT can be found and further configured in the `wct-conf.json` file in the root of `<morph-overlay>` directory.
+  - Our morph component is ready to be tested using [**web-component-tester**][WCT] or WCT for short. Our tests is setup to use `--expanded: true` configuration for creating a more readable output of test results in the console. It will show all the test that were run and also show all the test that failed if any. Additional configuration for WCT can be found and further configured in the `wct-conf.json` file in the root of your desired component's directory.
 
   - To start **Polymer Unit Test** you can run **`$ polymer test`**
 
@@ -56,71 +62,77 @@ You can clone the desired repository to create a local copy on your computer.
 
   - To create new test, change to the **test/** directory. See file structure below.
 
+  **As an example, we will use our `<morph-button>` component.**
+
     ```bash
-    morph-overlay/
+    morph-button/
     │
     ├── bower-components/
     ├── demo/
     ├── test/
     │    │
-    │    └── morph-overlay_test.html
+    │    └── morph-button_test.html
     │
-    ├── morph-overlay.html
+    ├── morph-button.html
     │
     └── README.md
     ```
   - Then either add new test to existing fixture and context, or add new fixture and create new test context for new property or group of tests. Refer to [WCT][WCT] documentation for more detailed explanation about fixtures.
 
-  - Example test for `<**morph-overlay**>`
+  - Example test for **`<morph-button>`**.
 
 ```html
     example test fixtures
     <test-fixture id="BasicAndroidFixture">
       <template>
-        <morph-overlay platform="android"></morph-overlay>
+        <morph-button platform="android">Android</morph-button>
       </template>
     </test-fixture>
 
     <test-fixture id="BasicIosFixture">
       <template>
-        <morph-overlay platform="ios"></morph-overlay>
+        <morph-button platform="ios">Submit</morph-button>
       </template>
     </test-fixture>
 
     other fixtures are omitted...
 
     <script>
-    describe('morph-overlay', function() {
+      describe('morph-button', function() {
+        // declare colors for testing in the whole button testing suite
+        const androidBlue = 'rgb(33, 150, 243)';
+        const iosblueBackground = 'rgb(0, 122, 255)'
+        const white = 'rgb(255, 255, 255)';
+        const iosBorderRadius = '27px';
 
-      //Declares background-color for overlay testing suite.
-      const iosBackgroundColor = 'rgba(0, 0, 0, 0)';
-      const androidBackgroundColor = 'rgba(0, 0, 0, 0.2)';
+        // testing default Android Buttons properties
+        context('Android Default Usual Buttons', function() {
+          // declare variable for button in this context only
+          let button, morphRipple, rippleStyle;
 
-      // testing default Android overlay properties
-      context('Android Default Overlay', function() {
-        // declares variable for overlay in this scope
-        let overlay, style;
+          // Create a test fixture
+          beforeEach(function() {
+            // assigning button fixture for this context. This will automatically removed on the teardown phase of this test context
+            button = fixture('BasicAndroidFixture');
 
+            // getting style our morph-ripple
+            morphRipple = button.root.querySelector('morph-ripple');
+            rippleStyle = getComputedStyle(morphRipple);
+          });
 
-        // Create a test fixture
-        beforeEach(function() {
-          // Assigning overlay fixture for this context.
-          // This will automatically removed on the teardown phase of this test context!
-          overlay = fixture('BasicAndroidFixture');
+          it('instantiating the button on android platform with default properties works', function() {
+            // testing for default colors and which platform was set in html markup
+            expect(button.color).to.be.equal('blue');
+            expect(button.innerHTML).to.be.equal('Android');
+          });
 
-          // getting actual CSS of overlay rendered in the shadow DOM for testing purposes
-          style = getComputedStyle(overlay);
+          it('should have <morph-ripple> display = "block" ', function() {
+            expect(rippleStyle.display).to.be.equal('block');
+          });
+
         });
+      })
 
-        it('instantiating the overlay on android platform with default properties works', function() {
-          // testing for default display and which platform was set in html markup
-          expect(style.display).to.be.equal('none');
-          expect(overlay.platform).to.be.equal('android');
-        });
-
-      });
-
-    });
     </script>
 ```
 
