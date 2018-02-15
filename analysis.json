@@ -5,123 +5,6 @@
       "description": "`morph-element`\nParent for all of Polymorph Components that can detect current platform and other common behaviour",
       "summary": "",
       "path": "morph-element/morph-element.html",
-      "properties": [
-        {
-          "name": "platform",
-          "type": "string",
-          "description": "",
-          "privacy": "public",
-          "sourceRange": {
-            "start": {
-              "line": 26,
-              "column": 10
-            },
-            "end": {
-              "line": 48,
-              "column": 11
-            }
-          },
-          "metadata": {
-            "polymer": {}
-          },
-          "defaultValue": "\"unknown\""
-        }
-      ],
-      "methods": [
-        {
-          "name": "checkIfSharedStylesConnected",
-          "description": "checkIfSharedStylesConnected",
-          "privacy": "public",
-          "sourceRange": {
-            "start": {
-              "line": 57,
-              "column": 6
-            },
-            "end": {
-              "line": 65,
-              "column": 7
-            }
-          },
-          "metadata": {},
-          "params": [],
-          "return": {
-            "type": "Boolean",
-            "desc": "return true if style not equal to 'deepskyblue' meaning shared color file not connected and returns false otherwise"
-          }
-        },
-        {
-          "name": "getStyleShadyOrDOM",
-          "description": "",
-          "privacy": "public",
-          "sourceRange": {
-            "start": {
-              "line": 70,
-              "column": 6
-            },
-            "end": {
-              "line": 78,
-              "column": 7
-            }
-          },
-          "metadata": {},
-          "params": [],
-          "return": {
-            "type": "Object",
-            "desc": "returns the computed style based on if ShadyCSS is used or not"
-          }
-        }
-      ],
-      "staticMethods": [],
-      "demos": [
-        {
-          "url": "demo/index.html",
-          "description": ""
-        }
-      ],
-      "metadata": {},
-      "sourceRange": {
-        "start": {
-          "line": 22,
-          "column": 4
-        },
-        "end": {
-          "line": 80,
-          "column": 5
-        }
-      },
-      "privacy": "public",
-      "superclass": "HTMLElement",
-      "name": "MorphElement",
-      "attributes": [
-        {
-          "name": "platform",
-          "description": "",
-          "sourceRange": {
-            "start": {
-              "line": 26,
-              "column": 10
-            },
-            "end": {
-              "line": 48,
-              "column": 11
-            }
-          },
-          "metadata": {},
-          "type": "string"
-        }
-      ],
-      "events": [],
-      "styling": {
-        "cssVariables": [],
-        "selectors": []
-      },
-      "slots": [],
-      "tagname": "morph-element"
-    },
-    {
-      "description": "`morph-element`\nParent for all of Polymorph Components that can detect current platform and other common behaviour",
-      "summary": "",
-      "path": "morph-element/morph-element.html",
       "properties": [],
       "methods": [],
       "staticMethods": [],
@@ -134,16 +17,17 @@
       "metadata": {},
       "sourceRange": {
         "start": {
-          "line": 22,
-          "column": 32
+          "line": 9,
+          "column": 19
         },
         "end": {
-          "line": 22,
-          "column": 64
+          "line": 70,
+          "column": 1
         }
       },
       "privacy": "public",
       "superclass": "HTMLElement",
+      "name": "MorphElement",
       "attributes": [],
       "events": [],
       "styling": {
@@ -186,11 +70,11 @@
           "privacy": "public",
           "sourceRange": {
             "start": {
-              "line": 228,
+              "line": 216,
               "column": 10
             },
             "end": {
-              "line": 232,
+              "line": 220,
               "column": 11
             }
           },
@@ -206,11 +90,11 @@
           "privacy": "public",
           "sourceRange": {
             "start": {
-              "line": 235,
+              "line": 223,
               "column": 10
             },
             "end": {
-              "line": 239,
+              "line": 227,
               "column": 11
             }
           },
@@ -226,11 +110,11 @@
           "privacy": "public",
           "sourceRange": {
             "start": {
-              "line": 242,
+              "line": 230,
               "column": 10
             },
             "end": {
-              "line": 247,
+              "line": 235,
               "column": 11
             }
           },
@@ -248,11 +132,11 @@
           "privacy": "public",
           "sourceRange": {
             "start": {
-              "line": 250,
+              "line": 238,
               "column": 10
             },
             "end": {
-              "line": 250,
+              "line": 238,
               "column": 22
             }
           },
@@ -267,11 +151,11 @@
           "privacy": "public",
           "sourceRange": {
             "start": {
-              "line": 251,
+              "line": 239,
               "column": 10
             },
             "end": {
-              "line": 251,
+              "line": 239,
               "column": 24
             }
           },
@@ -286,11 +170,11 @@
           "privacy": "public",
           "sourceRange": {
             "start": {
-              "line": 252,
+              "line": 240,
               "column": 10
             },
             "end": {
-              "line": 252,
+              "line": 240,
               "column": 26
             }
           },
@@ -305,11 +189,11 @@
           "privacy": "public",
           "sourceRange": {
             "start": {
-              "line": 255,
+              "line": 243,
               "column": 10
             },
             "end": {
-              "line": 259,
+              "line": 247,
               "column": 11
             }
           },
@@ -325,11 +209,11 @@
           "privacy": "public",
           "sourceRange": {
             "start": {
-              "line": 262,
+              "line": 250,
               "column": 10
             },
             "end": {
-              "line": 266,
+              "line": 254,
               "column": 11
             }
           },
@@ -345,11 +229,11 @@
           "privacy": "public",
           "sourceRange": {
             "start": {
-              "line": 269,
+              "line": 257,
               "column": 10
             },
             "end": {
-              "line": 273,
+              "line": 261,
               "column": 11
             }
           },
@@ -407,33 +291,16 @@
           "inheritedFrom": "MorphElement"
         },
         {
-          "name": "ready",
-          "description": "",
-          "privacy": "protected",
-          "sourceRange": {
-            "start": {
-              "line": 277,
-              "column": 6
-            },
-            "end": {
-              "line": 311,
-              "column": 7
-            }
-          },
-          "metadata": {},
-          "params": []
-        },
-        {
           "name": "colorAssigned",
           "description": "colorAssigned function will fire a console.warn message depending on wether the standard color red gray and green were used",
           "privacy": "public",
           "sourceRange": {
             "start": {
-              "line": 321,
+              "line": 273,
               "column": 6
             },
             "end": {
-              "line": 327,
+              "line": 279,
               "column": 7
             }
           },
@@ -461,11 +328,11 @@
           "privacy": "public",
           "sourceRange": {
             "start": {
-              "line": 336,
+              "line": 288,
               "column": 6
             },
             "end": {
-              "line": 341,
+              "line": 293,
               "column": 7
             }
           },
@@ -481,50 +348,6 @@
             "type": "Boolean",
             "desc": "returns true if oldValue is equal to color red, gray or green else returns false"
           }
-        },
-        {
-          "name": "showRipple",
-          "description": "showRipple gives material design-like ripple effect when buttons are click",
-          "privacy": "public",
-          "sourceRange": {
-            "start": {
-              "line": 350,
-              "column": 6
-            },
-            "end": {
-              "line": 372,
-              "column": 7
-            }
-          },
-          "metadata": {},
-          "params": [
-            {
-              "name": "e",
-              "type": "Object",
-              "description": "the button element that the event key down or finger down has happen"
-            }
-          ],
-          "return": {
-            "type": "Object",
-            "desc": "returns the style attribute of the button element with corresponding css styling related to the ripple effect"
-          }
-        },
-        {
-          "name": "cleanUp",
-          "description": "clean up the container for the ripple effect",
-          "privacy": "public",
-          "sourceRange": {
-            "start": {
-              "line": 377,
-              "column": 6
-            },
-            "end": {
-              "line": 381,
-              "column": 7
-            }
-          },
-          "metadata": {},
-          "params": []
         }
       ],
       "staticMethods": [],
@@ -537,11 +360,11 @@
       "metadata": {},
       "sourceRange": {
         "start": {
-          "line": 223,
+          "line": 211,
           "column": 4
         },
         "end": {
-          "line": 383,
+          "line": 294,
           "column": 5
         }
       },
@@ -572,11 +395,11 @@
           "description": "Common for both platforms",
           "sourceRange": {
             "start": {
-              "line": 228,
+              "line": 216,
               "column": 10
             },
             "end": {
-              "line": 232,
+              "line": 220,
               "column": 11
             }
           },
@@ -588,11 +411,11 @@
           "description": "Common for both platforms",
           "sourceRange": {
             "start": {
-              "line": 235,
+              "line": 223,
               "column": 10
             },
             "end": {
-              "line": 239,
+              "line": 227,
               "column": 11
             }
           },
@@ -604,11 +427,11 @@
           "description": "Common for both platforms",
           "sourceRange": {
             "start": {
-              "line": 242,
+              "line": 230,
               "column": 10
             },
             "end": {
-              "line": 247,
+              "line": 235,
               "column": 11
             }
           },
@@ -620,11 +443,11 @@
           "description": "Common for both platforms",
           "sourceRange": {
             "start": {
-              "line": 250,
+              "line": 238,
               "column": 10
             },
             "end": {
-              "line": 250,
+              "line": 238,
               "column": 22
             }
           },
@@ -636,11 +459,11 @@
           "description": "",
           "sourceRange": {
             "start": {
-              "line": 251,
+              "line": 239,
               "column": 10
             },
             "end": {
-              "line": 251,
+              "line": 239,
               "column": 24
             }
           },
@@ -652,11 +475,11 @@
           "description": "",
           "sourceRange": {
             "start": {
-              "line": 252,
+              "line": 240,
               "column": 10
             },
             "end": {
-              "line": 252,
+              "line": 240,
               "column": 26
             }
           },
@@ -668,11 +491,11 @@
           "description": "iOS specific property",
           "sourceRange": {
             "start": {
-              "line": 255,
+              "line": 243,
               "column": 10
             },
             "end": {
-              "line": 259,
+              "line": 247,
               "column": 11
             }
           },
@@ -684,11 +507,11 @@
           "description": "iOS specific property",
           "sourceRange": {
             "start": {
-              "line": 262,
+              "line": 250,
               "column": 10
             },
             "end": {
-              "line": 266,
+              "line": 254,
               "column": 11
             }
           },
@@ -700,11 +523,11 @@
           "description": "Android specific property",
           "sourceRange": {
             "start": {
-              "line": 269,
+              "line": 257,
               "column": 10
             },
             "end": {
-              "line": 273,
+              "line": 261,
               "column": 11
             }
           },
@@ -724,45 +547,26 @@
           "range": {
             "file": "morph-button/morph-button.html",
             "start": {
-              "line": 209,
+              "line": 196,
               "column": 6
             },
             "end": {
-              "line": 209,
+              "line": 196,
               "column": 19
             }
           }
         }
       ],
-      "tagname": "morph-button"
+      "tagname": "morph-button",
+      "mixins": [
+        "MorphElement"
+      ]
     },
     {
       "description": "`morph-view`\nView where we put all our elements",
       "summary": "",
       "path": "morph-view/morph-view.html",
       "properties": [
-        {
-          "name": "platform",
-          "type": "string",
-          "description": "",
-          "privacy": "public",
-          "sourceRange": {
-            "file": "../morph-element/morph-element.html",
-            "start": {
-              "line": 26,
-              "column": 10
-            },
-            "end": {
-              "line": 48,
-              "column": 11
-            }
-          },
-          "metadata": {
-            "polymer": {}
-          },
-          "defaultValue": "\"unknown\"",
-          "inheritedFrom": "MorphElement"
-        },
         {
           "name": "reveal",
           "type": "string",
@@ -783,54 +587,7 @@
           }
         }
       ],
-      "methods": [
-        {
-          "name": "checkIfSharedStylesConnected",
-          "description": "checkIfSharedStylesConnected",
-          "privacy": "public",
-          "sourceRange": {
-            "file": "../morph-element/morph-element.html",
-            "start": {
-              "line": 57,
-              "column": 6
-            },
-            "end": {
-              "line": 65,
-              "column": 7
-            }
-          },
-          "metadata": {},
-          "params": [],
-          "return": {
-            "type": "Boolean",
-            "desc": "return true if style not equal to 'deepskyblue' meaning shared color file not connected and returns false otherwise"
-          },
-          "inheritedFrom": "MorphElement"
-        },
-        {
-          "name": "getStyleShadyOrDOM",
-          "description": "",
-          "privacy": "public",
-          "sourceRange": {
-            "file": "../morph-element/morph-element.html",
-            "start": {
-              "line": 70,
-              "column": 6
-            },
-            "end": {
-              "line": 78,
-              "column": 7
-            }
-          },
-          "metadata": {},
-          "params": [],
-          "return": {
-            "type": "Object",
-            "desc": "returns the computed style based on if ShadyCSS is used or not"
-          },
-          "inheritedFrom": "MorphElement"
-        }
-      ],
+      "methods": [],
       "staticMethods": [],
       "demos": [
         {
@@ -853,24 +610,6 @@
       "superclass": "HTMLElement",
       "name": "MorphView",
       "attributes": [
-        {
-          "name": "platform",
-          "description": "",
-          "sourceRange": {
-            "file": "../morph-element/morph-element.html",
-            "start": {
-              "line": 26,
-              "column": 10
-            },
-            "end": {
-              "line": 48,
-              "column": 11
-            }
-          },
-          "metadata": {},
-          "type": "string",
-          "inheritedFrom": "MorphElement"
-        },
         {
           "name": "reveal",
           "description": "",
@@ -911,6 +650,300 @@
         }
       ],
       "tagname": "morph-view"
+    },
+    {
+      "description": "<link rel=\"import\" href=\"../morph-builder/app-drawer-morph-element.html\">\n\n`morph-sidebar`\nA navigation drawer that can slide in from the left or right and that morphs for current mobile OS",
+      "summary": "",
+      "path": "morph-sidebar/morph-sidebar.html",
+      "properties": [
+        {
+          "name": "platform",
+          "type": "string",
+          "description": "",
+          "privacy": "public",
+          "sourceRange": {
+            "file": "../bower_components/morph-element/morph-element.html",
+            "start": {
+              "line": 26,
+              "column": 10
+            },
+            "end": {
+              "line": 48,
+              "column": 11
+            }
+          },
+          "metadata": {
+            "polymer": {}
+          },
+          "defaultValue": "\"unknown\"",
+          "inheritedFrom": "MorphElement"
+        },
+        {
+          "name": "transitionDuration",
+          "type": "number",
+          "description": "",
+          "privacy": "public",
+          "sourceRange": {
+            "start": {
+              "line": 55,
+              "column": 12
+            },
+            "end": {
+              "line": 58,
+              "column": 13
+            }
+          },
+          "metadata": {
+            "polymer": {
+              "readOnly": true
+            }
+          }
+        },
+        {
+          "name": "transitionDurationAndroid",
+          "type": "number",
+          "description": "",
+          "privacy": "public",
+          "sourceRange": {
+            "start": {
+              "line": 59,
+              "column": 12
+            },
+            "end": {
+              "line": 62,
+              "column": 13
+            }
+          },
+          "metadata": {
+            "polymer": {}
+          },
+          "defaultValue": "300"
+        },
+        {
+          "name": "transitionDurationIos",
+          "type": "number",
+          "description": "",
+          "privacy": "public",
+          "sourceRange": {
+            "start": {
+              "line": 63,
+              "column": 12
+            },
+            "end": {
+              "line": 66,
+              "column": 13
+            }
+          },
+          "metadata": {
+            "polymer": {}
+          },
+          "defaultValue": "400"
+        },
+        {
+          "name": "transitionDurationWeb",
+          "type": "number",
+          "description": "",
+          "privacy": "public",
+          "sourceRange": {
+            "start": {
+              "line": 67,
+              "column": 12
+            },
+            "end": {
+              "line": 70,
+              "column": 13
+            }
+          },
+          "metadata": {
+            "polymer": {}
+          },
+          "defaultValue": "200"
+        }
+      ],
+      "methods": [
+        {
+          "name": "checkIfSharedStylesConnected",
+          "description": "checkIfSharedStylesConnected",
+          "privacy": "public",
+          "sourceRange": {
+            "file": "../bower_components/morph-element/morph-element.html",
+            "start": {
+              "line": 57,
+              "column": 6
+            },
+            "end": {
+              "line": 65,
+              "column": 7
+            }
+          },
+          "metadata": {},
+          "params": [],
+          "return": {
+            "type": "Boolean",
+            "desc": "return true if style not equal to 'deepskyblue' meaning shared color file not connected and returns false otherwise"
+          },
+          "inheritedFrom": "MorphElement"
+        },
+        {
+          "name": "getStyleShadyOrDOM",
+          "description": "",
+          "privacy": "public",
+          "sourceRange": {
+            "file": "../bower_components/morph-element/morph-element.html",
+            "start": {
+              "line": 70,
+              "column": 6
+            },
+            "end": {
+              "line": 78,
+              "column": 7
+            }
+          },
+          "metadata": {},
+          "params": [],
+          "return": {
+            "type": "Object",
+            "desc": "returns the computed style based on if ShadyCSS is used or not"
+          },
+          "inheritedFrom": "MorphElement"
+        },
+        {
+          "name": "computedTransitionDuration",
+          "description": "",
+          "privacy": "public",
+          "sourceRange": {
+            "start": {
+              "line": 96,
+              "column": 8
+            },
+            "end": {
+              "line": 104,
+              "column": 9
+            }
+          },
+          "metadata": {},
+          "params": [
+            {
+              "name": "platform"
+            }
+          ]
+        }
+      ],
+      "staticMethods": [],
+      "demos": [
+        {
+          "url": "morph-sidebar/demo/index.html",
+          "description": ""
+        }
+      ],
+      "metadata": {},
+      "sourceRange": {
+        "start": {
+          "line": 52,
+          "column": 6
+        },
+        "end": {
+          "line": 106,
+          "column": 7
+        }
+      },
+      "privacy": "public",
+      "superclass": "AppDrawerMorphElement",
+      "name": "MorphSidebar",
+      "attributes": [
+        {
+          "name": "platform",
+          "description": "",
+          "sourceRange": {
+            "file": "../bower_components/morph-element/morph-element.html",
+            "start": {
+              "line": 26,
+              "column": 10
+            },
+            "end": {
+              "line": 48,
+              "column": 11
+            }
+          },
+          "metadata": {},
+          "type": "string",
+          "inheritedFrom": "MorphElement"
+        },
+        {
+          "name": "transition-duration",
+          "description": "",
+          "sourceRange": {
+            "start": {
+              "line": 55,
+              "column": 12
+            },
+            "end": {
+              "line": 58,
+              "column": 13
+            }
+          },
+          "metadata": {},
+          "type": "number"
+        },
+        {
+          "name": "transition-duration-android",
+          "description": "",
+          "sourceRange": {
+            "start": {
+              "line": 59,
+              "column": 12
+            },
+            "end": {
+              "line": 62,
+              "column": 13
+            }
+          },
+          "metadata": {},
+          "type": "number"
+        },
+        {
+          "name": "transition-duration-ios",
+          "description": "",
+          "sourceRange": {
+            "start": {
+              "line": 63,
+              "column": 12
+            },
+            "end": {
+              "line": 66,
+              "column": 13
+            }
+          },
+          "metadata": {},
+          "type": "number"
+        },
+        {
+          "name": "transition-duration-web",
+          "description": "",
+          "sourceRange": {
+            "start": {
+              "line": 67,
+              "column": 12
+            },
+            "end": {
+              "line": 70,
+              "column": 13
+            }
+          },
+          "metadata": {},
+          "type": "number"
+        }
+      ],
+      "events": [],
+      "styling": {
+        "cssVariables": [],
+        "selectors": []
+      },
+      "slots": [],
+      "tagname": "morph-sidebar",
+      "mixins": [
+        "MorphElement"
+      ]
     },
     {
       "description": "`app-drawer-morph-element`\nA navigation drawer that can slide in from the left or right and that morphs for current mobile OS",
@@ -1837,7 +1870,7 @@
         }
       },
       "privacy": "public",
-      "superclass": "HTMLElement",
+      "superclass": "app-drawer",
       "name": "AppDrawerMorphElement",
       "attributes": [
         {
@@ -2021,1303 +2054,6 @@
       "tagname": "app-drawer-morph-element"
     },
     {
-      "description": "`morph-sidebar`\nA navigation drawer that can slide in from the left or right and that morphs for current mobile OS",
-      "summary": "",
-      "path": "morph-sidebar/morph-sidebar.html",
-      "properties": [
-        {
-          "name": "opened",
-          "type": "boolean",
-          "description": "The opened state of the drawer.",
-          "privacy": "public",
-          "sourceRange": {
-            "file": "../bower_components/app-layout/app-drawer/app-drawer.html",
-            "start": {
-              "line": 192,
-              "column": 8
-            },
-            "end": {
-              "line": 197,
-              "column": 9
-            }
-          },
-          "metadata": {
-            "polymer": {
-              "notify": true
-            }
-          },
-          "defaultValue": "false",
-          "inheritedFrom": "AppDrawerMorphElement"
-        },
-        {
-          "name": "persistent",
-          "type": "boolean",
-          "description": "The drawer does not have a scrim and cannot be swiped close.",
-          "privacy": "public",
-          "sourceRange": {
-            "file": "../bower_components/app-layout/app-drawer/app-drawer.html",
-            "start": {
-              "line": 202,
-              "column": 8
-            },
-            "end": {
-              "line": 206,
-              "column": 9
-            }
-          },
-          "metadata": {
-            "polymer": {}
-          },
-          "defaultValue": "false",
-          "inheritedFrom": "AppDrawerMorphElement"
-        },
-        {
-          "name": "transitionDuration",
-          "type": "number",
-          "description": "",
-          "privacy": "public",
-          "sourceRange": {
-            "start": {
-              "line": 54,
-              "column": 12
-            },
-            "end": {
-              "line": 57,
-              "column": 13
-            }
-          },
-          "metadata": {
-            "polymer": {
-              "readOnly": true
-            }
-          }
-        },
-        {
-          "name": "align",
-          "type": "string",
-          "description": "The alignment of the drawer on the screen ('left', 'right', 'start' or 'end').\n'start' computes to left and 'end' to right in LTR layout and vice versa in RTL\nlayout.",
-          "privacy": "public",
-          "sourceRange": {
-            "file": "../bower_components/app-layout/app-drawer/app-drawer.html",
-            "start": {
-              "line": 221,
-              "column": 8
-            },
-            "end": {
-              "line": 224,
-              "column": 9
-            }
-          },
-          "metadata": {
-            "polymer": {}
-          },
-          "defaultValue": "\"left\"",
-          "inheritedFrom": "AppDrawerMorphElement"
-        },
-        {
-          "name": "position",
-          "type": "string",
-          "description": "The computed, read-only position of the drawer on the screen ('left' or 'right').",
-          "privacy": "public",
-          "sourceRange": {
-            "file": "../bower_components/app-layout/app-drawer/app-drawer.html",
-            "start": {
-              "line": 229,
-              "column": 8
-            },
-            "end": {
-              "line": 233,
-              "column": 9
-            }
-          },
-          "metadata": {
-            "polymer": {
-              "readOnly": true
-            }
-          },
-          "inheritedFrom": "AppDrawerMorphElement"
-        },
-        {
-          "name": "swipeOpen",
-          "type": "boolean",
-          "description": "Create an area at the edge of the screen to swipe open the drawer.",
-          "privacy": "public",
-          "sourceRange": {
-            "file": "../bower_components/app-layout/app-drawer/app-drawer.html",
-            "start": {
-              "line": 238,
-              "column": 8
-            },
-            "end": {
-              "line": 242,
-              "column": 9
-            }
-          },
-          "metadata": {
-            "polymer": {}
-          },
-          "defaultValue": "false",
-          "inheritedFrom": "AppDrawerMorphElement"
-        },
-        {
-          "name": "noFocusTrap",
-          "type": "boolean",
-          "description": "Trap keyboard focus when the drawer is opened and not persistent.",
-          "privacy": "public",
-          "sourceRange": {
-            "file": "../bower_components/app-layout/app-drawer/app-drawer.html",
-            "start": {
-              "line": 247,
-              "column": 8
-            },
-            "end": {
-              "line": 250,
-              "column": 9
-            }
-          },
-          "metadata": {
-            "polymer": {}
-          },
-          "defaultValue": "false",
-          "inheritedFrom": "AppDrawerMorphElement"
-        },
-        {
-          "name": "disableSwipe",
-          "type": "boolean",
-          "description": "Disables swiping on the drawer.",
-          "privacy": "public",
-          "sourceRange": {
-            "file": "../bower_components/app-layout/app-drawer/app-drawer.html",
-            "start": {
-              "line": 255,
-              "column": 8
-            },
-            "end": {
-              "line": 258,
-              "column": 9
-            }
-          },
-          "metadata": {
-            "polymer": {}
-          },
-          "defaultValue": "false",
-          "inheritedFrom": "AppDrawerMorphElement"
-        },
-        {
-          "name": "_translateOffset",
-          "type": "number",
-          "description": "",
-          "privacy": "protected",
-          "sourceRange": {
-            "file": "../bower_components/app-layout/app-drawer/app-drawer.html",
-            "start": {
-              "line": 268,
-              "column": 6
-            },
-            "end": {
-              "line": 268,
-              "column": 25
-            }
-          },
-          "metadata": {
-            "polymer": {}
-          },
-          "inheritedFrom": "AppDrawerMorphElement"
-        },
-        {
-          "name": "_trackDetails",
-          "type": "object",
-          "description": "",
-          "privacy": "protected",
-          "sourceRange": {
-            "file": "../bower_components/app-layout/app-drawer/app-drawer.html",
-            "start": {
-              "line": 270,
-              "column": 6
-            },
-            "end": {
-              "line": 270,
-              "column": 25
-            }
-          },
-          "metadata": {
-            "polymer": {}
-          },
-          "inheritedFrom": "AppDrawerMorphElement"
-        },
-        {
-          "name": "_drawerState",
-          "type": "number",
-          "description": "",
-          "privacy": "protected",
-          "sourceRange": {
-            "file": "../bower_components/app-layout/app-drawer/app-drawer.html",
-            "start": {
-              "line": 272,
-              "column": 6
-            },
-            "end": {
-              "line": 272,
-              "column": 21
-            }
-          },
-          "metadata": {
-            "polymer": {}
-          },
-          "inheritedFrom": "AppDrawerMorphElement"
-        },
-        {
-          "name": "_boundEscKeydownHandler",
-          "type": "object",
-          "description": "",
-          "privacy": "protected",
-          "sourceRange": {
-            "file": "../bower_components/app-layout/app-drawer/app-drawer.html",
-            "start": {
-              "line": 274,
-              "column": 6
-            },
-            "end": {
-              "line": 274,
-              "column": 35
-            }
-          },
-          "metadata": {
-            "polymer": {}
-          },
-          "inheritedFrom": "AppDrawerMorphElement"
-        },
-        {
-          "name": "_firstTabStop",
-          "type": "object",
-          "description": "",
-          "privacy": "protected",
-          "sourceRange": {
-            "file": "../bower_components/app-layout/app-drawer/app-drawer.html",
-            "start": {
-              "line": 276,
-              "column": 6
-            },
-            "end": {
-              "line": 276,
-              "column": 25
-            }
-          },
-          "metadata": {
-            "polymer": {}
-          },
-          "inheritedFrom": "AppDrawerMorphElement"
-        },
-        {
-          "name": "_lastTabStop",
-          "type": "object",
-          "description": "",
-          "privacy": "protected",
-          "sourceRange": {
-            "file": "../bower_components/app-layout/app-drawer/app-drawer.html",
-            "start": {
-              "line": 278,
-              "column": 6
-            },
-            "end": {
-              "line": 278,
-              "column": 24
-            }
-          },
-          "metadata": {
-            "polymer": {}
-          },
-          "inheritedFrom": "AppDrawerMorphElement"
-        },
-        {
-          "name": "_MIN_FLING_THRESHOLD",
-          "type": "number",
-          "description": "",
-          "privacy": "protected",
-          "sourceRange": {
-            "file": "../bower_components/app-layout/app-drawer/app-drawer.html",
-            "start": {
-              "line": 656,
-              "column": 6
-            },
-            "end": {
-              "line": 656,
-              "column": 31
-            }
-          },
-          "metadata": {
-            "polymer": {}
-          },
-          "inheritedFrom": "AppDrawerMorphElement"
-        },
-        {
-          "name": "_MIN_TRANSITION_VELOCITY",
-          "type": "number",
-          "description": "",
-          "privacy": "protected",
-          "sourceRange": {
-            "file": "../bower_components/app-layout/app-drawer/app-drawer.html",
-            "start": {
-              "line": 658,
-              "column": 6
-            },
-            "end": {
-              "line": 658,
-              "column": 35
-            }
-          },
-          "metadata": {
-            "polymer": {}
-          },
-          "inheritedFrom": "AppDrawerMorphElement"
-        },
-        {
-          "name": "_FLING_TIMING_FUNCTION",
-          "type": "string",
-          "description": "",
-          "privacy": "protected",
-          "sourceRange": {
-            "file": "../bower_components/app-layout/app-drawer/app-drawer.html",
-            "start": {
-              "line": 660,
-              "column": 6
-            },
-            "end": {
-              "line": 660,
-              "column": 64
-            }
-          },
-          "metadata": {
-            "polymer": {}
-          },
-          "inheritedFrom": "AppDrawerMorphElement"
-        },
-        {
-          "name": "_FLING_INITIAL_SLOPE",
-          "type": "number",
-          "description": "",
-          "privacy": "protected",
-          "sourceRange": {
-            "file": "../bower_components/app-layout/app-drawer/app-drawer.html",
-            "start": {
-              "line": 662,
-              "column": 6
-            },
-            "end": {
-              "line": 662,
-              "column": 31
-            }
-          },
-          "metadata": {
-            "polymer": {}
-          },
-          "inheritedFrom": "AppDrawerMorphElement"
-        },
-        {
-          "name": "_DRAWER_STATE",
-          "type": "Object",
-          "description": "",
-          "privacy": "protected",
-          "sourceRange": {
-            "file": "../bower_components/app-layout/app-drawer/app-drawer.html",
-            "start": {
-              "line": 664,
-              "column": 6
-            },
-            "end": {
-              "line": 671,
-              "column": 7
-            }
-          },
-          "metadata": {
-            "polymer": {}
-          },
-          "inheritedFrom": "AppDrawerMorphElement"
-        },
-        {
-          "name": "platform",
-          "type": "string",
-          "description": "Detects the platform if it is either  - 'ios', 'android' or 'windows-phone' or if none of the 3 were identified returns 'unkown'",
-          "privacy": "public",
-          "sourceRange": {
-            "file": "../morph-builder/app-drawer-morph-element.html",
-            "start": {
-              "line": 24,
-              "column": 12
-            },
-            "end": {
-              "line": 27,
-              "column": 13
-            }
-          },
-          "metadata": {
-            "polymer": {}
-          },
-          "inheritedFrom": "AppDrawerMorphElement"
-        },
-        {
-          "name": "transitionDurationAndroid",
-          "type": "number",
-          "description": "",
-          "privacy": "public",
-          "sourceRange": {
-            "start": {
-              "line": 58,
-              "column": 12
-            },
-            "end": {
-              "line": 61,
-              "column": 13
-            }
-          },
-          "metadata": {
-            "polymer": {}
-          },
-          "defaultValue": "300"
-        },
-        {
-          "name": "transitionDurationIos",
-          "type": "number",
-          "description": "",
-          "privacy": "public",
-          "sourceRange": {
-            "start": {
-              "line": 62,
-              "column": 12
-            },
-            "end": {
-              "line": 65,
-              "column": 13
-            }
-          },
-          "metadata": {
-            "polymer": {}
-          },
-          "defaultValue": "400"
-        },
-        {
-          "name": "transitionDurationWeb",
-          "type": "number",
-          "description": "",
-          "privacy": "public",
-          "sourceRange": {
-            "start": {
-              "line": 66,
-              "column": 12
-            },
-            "end": {
-              "line": 69,
-              "column": 13
-            }
-          },
-          "metadata": {
-            "polymer": {}
-          },
-          "defaultValue": "200"
-        }
-      ],
-      "methods": [
-        {
-          "name": "attached",
-          "description": "",
-          "privacy": "protected",
-          "sourceRange": {
-            "file": "../bower_components/app-layout/app-drawer/app-drawer.html",
-            "start": {
-              "line": 280,
-              "column": 6
-            },
-            "end": {
-              "line": 291,
-              "column": 7
-            }
-          },
-          "metadata": {},
-          "params": [],
-          "inheritedFrom": "AppDrawerMorphElement"
-        },
-        {
-          "name": "detached",
-          "description": "",
-          "privacy": "protected",
-          "sourceRange": {
-            "file": "../bower_components/app-layout/app-drawer/app-drawer.html",
-            "start": {
-              "line": 293,
-              "column": 6
-            },
-            "end": {
-              "line": 295,
-              "column": 7
-            }
-          },
-          "metadata": {},
-          "params": [],
-          "inheritedFrom": "AppDrawerMorphElement"
-        },
-        {
-          "name": "open",
-          "description": "Opens the drawer.",
-          "privacy": "public",
-          "sourceRange": {
-            "file": "../bower_components/app-layout/app-drawer/app-drawer.html",
-            "start": {
-              "line": 300,
-              "column": 6
-            },
-            "end": {
-              "line": 302,
-              "column": 7
-            }
-          },
-          "metadata": {},
-          "params": [],
-          "inheritedFrom": "AppDrawerMorphElement"
-        },
-        {
-          "name": "close",
-          "description": "Closes the drawer.",
-          "privacy": "public",
-          "sourceRange": {
-            "file": "../bower_components/app-layout/app-drawer/app-drawer.html",
-            "start": {
-              "line": 307,
-              "column": 6
-            },
-            "end": {
-              "line": 309,
-              "column": 7
-            }
-          },
-          "metadata": {},
-          "params": [],
-          "inheritedFrom": "AppDrawerMorphElement"
-        },
-        {
-          "name": "toggle",
-          "description": "Toggles the drawer open and close.",
-          "privacy": "public",
-          "sourceRange": {
-            "file": "../bower_components/app-layout/app-drawer/app-drawer.html",
-            "start": {
-              "line": 314,
-              "column": 6
-            },
-            "end": {
-              "line": 316,
-              "column": 7
-            }
-          },
-          "metadata": {},
-          "params": [],
-          "inheritedFrom": "AppDrawerMorphElement"
-        },
-        {
-          "name": "getWidth",
-          "description": "Gets the width of the drawer.",
-          "privacy": "public",
-          "sourceRange": {
-            "file": "../bower_components/app-layout/app-drawer/app-drawer.html",
-            "start": {
-              "line": 323,
-              "column": 6
-            },
-            "end": {
-              "line": 325,
-              "column": 7
-            }
-          },
-          "metadata": {},
-          "params": [],
-          "return": {
-            "type": "number",
-            "desc": "The width of the drawer in pixels."
-          },
-          "inheritedFrom": "AppDrawerMorphElement"
-        },
-        {
-          "name": "_isRTL",
-          "description": "",
-          "privacy": "protected",
-          "sourceRange": {
-            "file": "../bower_components/app-layout/app-drawer/app-drawer.html",
-            "start": {
-              "line": 327,
-              "column": 6
-            },
-            "end": {
-              "line": 329,
-              "column": 7
-            }
-          },
-          "metadata": {},
-          "params": [],
-          "inheritedFrom": "AppDrawerMorphElement"
-        },
-        {
-          "name": "_resetPosition",
-          "description": "",
-          "privacy": "protected",
-          "sourceRange": {
-            "file": "../bower_components/app-layout/app-drawer/app-drawer.html",
-            "start": {
-              "line": 331,
-              "column": 6
-            },
-            "end": {
-              "line": 341,
-              "column": 7
-            }
-          },
-          "metadata": {},
-          "params": [],
-          "inheritedFrom": "AppDrawerMorphElement"
-        },
-        {
-          "name": "_escKeydownHandler",
-          "description": "",
-          "privacy": "protected",
-          "sourceRange": {
-            "file": "../bower_components/app-layout/app-drawer/app-drawer.html",
-            "start": {
-              "line": 343,
-              "column": 6
-            },
-            "end": {
-              "line": 350,
-              "column": 7
-            }
-          },
-          "metadata": {},
-          "params": [
-            {
-              "name": "event"
-            }
-          ],
-          "inheritedFrom": "AppDrawerMorphElement"
-        },
-        {
-          "name": "_track",
-          "description": "",
-          "privacy": "protected",
-          "sourceRange": {
-            "file": "../bower_components/app-layout/app-drawer/app-drawer.html",
-            "start": {
-              "line": 352,
-              "column": 6
-            },
-            "end": {
-              "line": 371,
-              "column": 7
-            }
-          },
-          "metadata": {},
-          "params": [
-            {
-              "name": "event"
-            }
-          ],
-          "inheritedFrom": "AppDrawerMorphElement"
-        },
-        {
-          "name": "_trackStart",
-          "description": "",
-          "privacy": "protected",
-          "sourceRange": {
-            "file": "../bower_components/app-layout/app-drawer/app-drawer.html",
-            "start": {
-              "line": 373,
-              "column": 6
-            },
-            "end": {
-              "line": 389,
-              "column": 7
-            }
-          },
-          "metadata": {},
-          "params": [
-            {
-              "name": "event"
-            }
-          ],
-          "inheritedFrom": "AppDrawerMorphElement"
-        },
-        {
-          "name": "_trackMove",
-          "description": "",
-          "privacy": "protected",
-          "sourceRange": {
-            "file": "../bower_components/app-layout/app-drawer/app-drawer.html",
-            "start": {
-              "line": 391,
-              "column": 6
-            },
-            "end": {
-              "line": 400,
-              "column": 7
-            }
-          },
-          "metadata": {},
-          "params": [
-            {
-              "name": "event"
-            }
-          ],
-          "inheritedFrom": "AppDrawerMorphElement"
-        },
-        {
-          "name": "_trackEnd",
-          "description": "",
-          "privacy": "protected",
-          "sourceRange": {
-            "file": "../bower_components/app-layout/app-drawer/app-drawer.html",
-            "start": {
-              "line": 402,
-              "column": 6
-            },
-            "end": {
-              "line": 438,
-              "column": 7
-            }
-          },
-          "metadata": {},
-          "params": [
-            {
-              "name": "event"
-            }
-          ],
-          "inheritedFrom": "AppDrawerMorphElement"
-        },
-        {
-          "name": "_calculateVelocity",
-          "description": "",
-          "privacy": "protected",
-          "sourceRange": {
-            "file": "../bower_components/app-layout/app-drawer/app-drawer.html",
-            "start": {
-              "line": 440,
-              "column": 6
-            },
-            "end": {
-              "line": 466,
-              "column": 7
-            }
-          },
-          "metadata": {},
-          "params": [
-            {
-              "name": "event"
-            },
-            {
-              "name": "trackDetails"
-            }
-          ],
-          "inheritedFrom": "AppDrawerMorphElement"
-        },
-        {
-          "name": "_flingDrawer",
-          "description": "",
-          "privacy": "protected",
-          "sourceRange": {
-            "file": "../bower_components/app-layout/app-drawer/app-drawer.html",
-            "start": {
-              "line": 468,
-              "column": 6
-            },
-            "end": {
-              "line": 510,
-              "column": 7
-            }
-          },
-          "metadata": {},
-          "params": [
-            {
-              "name": "event"
-            },
-            {
-              "name": "trackDetails"
-            }
-          ],
-          "inheritedFrom": "AppDrawerMorphElement"
-        },
-        {
-          "name": "_styleTransitionDuration",
-          "description": "",
-          "privacy": "protected",
-          "sourceRange": {
-            "file": "../bower_components/app-layout/app-drawer/app-drawer.html",
-            "start": {
-              "line": 512,
-              "column": 6
-            },
-            "end": {
-              "line": 516,
-              "column": 7
-            }
-          },
-          "metadata": {},
-          "params": [
-            {
-              "name": "duration"
-            }
-          ],
-          "inheritedFrom": "AppDrawerMorphElement"
-        },
-        {
-          "name": "_styleTransitionTimingFunction",
-          "description": "",
-          "privacy": "protected",
-          "sourceRange": {
-            "file": "../bower_components/app-layout/app-drawer/app-drawer.html",
-            "start": {
-              "line": 518,
-              "column": 6
-            },
-            "end": {
-              "line": 521,
-              "column": 7
-            }
-          },
-          "metadata": {},
-          "params": [
-            {
-              "name": "timingFunction"
-            }
-          ],
-          "inheritedFrom": "AppDrawerMorphElement"
-        },
-        {
-          "name": "_translateDrawer",
-          "description": "",
-          "privacy": "protected",
-          "sourceRange": {
-            "file": "../bower_components/app-layout/app-drawer/app-drawer.html",
-            "start": {
-              "line": 523,
-              "column": 6
-            },
-            "end": {
-              "line": 535,
-              "column": 7
-            }
-          },
-          "metadata": {},
-          "params": [
-            {
-              "name": "x"
-            }
-          ],
-          "inheritedFrom": "AppDrawerMorphElement"
-        },
-        {
-          "name": "_resetDrawerTranslate",
-          "description": "",
-          "privacy": "protected",
-          "sourceRange": {
-            "file": "../bower_components/app-layout/app-drawer/app-drawer.html",
-            "start": {
-              "line": 537,
-              "column": 6
-            },
-            "end": {
-              "line": 540,
-              "column": 7
-            }
-          },
-          "metadata": {},
-          "params": [],
-          "inheritedFrom": "AppDrawerMorphElement"
-        },
-        {
-          "name": "_resetDrawerState",
-          "description": "",
-          "privacy": "protected",
-          "sourceRange": {
-            "file": "../bower_components/app-layout/app-drawer/app-drawer.html",
-            "start": {
-              "line": 542,
-              "column": 6
-            },
-            "end": {
-              "line": 576,
-              "column": 7
-            }
-          },
-          "metadata": {},
-          "params": [],
-          "inheritedFrom": "AppDrawerMorphElement"
-        },
-        {
-          "name": "resetLayout",
-          "description": "Resets the layout.",
-          "privacy": "public",
-          "sourceRange": {
-            "file": "../bower_components/app-layout/app-drawer/app-drawer.html",
-            "start": {
-              "line": 583,
-              "column": 6
-            },
-            "end": {
-              "line": 585,
-              "column": 7
-            }
-          },
-          "metadata": {},
-          "params": [],
-          "inheritedFrom": "AppDrawerMorphElement"
-        },
-        {
-          "name": "_setKeyboardFocusTrap",
-          "description": "",
-          "privacy": "protected",
-          "sourceRange": {
-            "file": "../bower_components/app-layout/app-drawer/app-drawer.html",
-            "start": {
-              "line": 587,
-              "column": 6
-            },
-            "end": {
-              "line": 625,
-              "column": 7
-            }
-          },
-          "metadata": {},
-          "params": [],
-          "inheritedFrom": "AppDrawerMorphElement"
-        },
-        {
-          "name": "_tabKeydownHandler",
-          "description": "",
-          "privacy": "protected",
-          "sourceRange": {
-            "file": "../bower_components/app-layout/app-drawer/app-drawer.html",
-            "start": {
-              "line": 627,
-              "column": 6
-            },
-            "end": {
-              "line": 646,
-              "column": 7
-            }
-          },
-          "metadata": {},
-          "params": [
-            {
-              "name": "event"
-            }
-          ],
-          "inheritedFrom": "AppDrawerMorphElement"
-        },
-        {
-          "name": "_openedPersistentChanged",
-          "description": "",
-          "privacy": "protected",
-          "sourceRange": {
-            "file": "../bower_components/app-layout/app-drawer/app-drawer.html",
-            "start": {
-              "line": 648,
-              "column": 6
-            },
-            "end": {
-              "line": 654,
-              "column": 7
-            }
-          },
-          "metadata": {},
-          "params": [
-            {
-              "name": "opened"
-            },
-            {
-              "name": "persistent"
-            }
-          ],
-          "inheritedFrom": "AppDrawerMorphElement"
-        },
-        {
-          "name": "computedTransitionDuration",
-          "description": "",
-          "privacy": "public",
-          "sourceRange": {
-            "start": {
-              "line": 95,
-              "column": 8
-            },
-            "end": {
-              "line": 103,
-              "column": 9
-            }
-          },
-          "metadata": {},
-          "params": [
-            {
-              "name": "platform"
-            }
-          ]
-        }
-      ],
-      "staticMethods": [],
-      "demos": [
-        {
-          "url": "morph-sidebar/demo/index.html",
-          "description": ""
-        }
-      ],
-      "metadata": {},
-      "sourceRange": {
-        "start": {
-          "line": 51,
-          "column": 6
-        },
-        "end": {
-          "line": 105,
-          "column": 7
-        }
-      },
-      "privacy": "public",
-      "superclass": "HTMLElement",
-      "name": "MorphSidebar",
-      "attributes": [
-        {
-          "name": "opened",
-          "description": "The opened state of the drawer.",
-          "sourceRange": {
-            "file": "../bower_components/app-layout/app-drawer/app-drawer.html",
-            "start": {
-              "line": 192,
-              "column": 8
-            },
-            "end": {
-              "line": 197,
-              "column": 9
-            }
-          },
-          "metadata": {},
-          "type": "boolean",
-          "inheritedFrom": "AppDrawerMorphElement"
-        },
-        {
-          "name": "persistent",
-          "description": "The drawer does not have a scrim and cannot be swiped close.",
-          "sourceRange": {
-            "file": "../bower_components/app-layout/app-drawer/app-drawer.html",
-            "start": {
-              "line": 202,
-              "column": 8
-            },
-            "end": {
-              "line": 206,
-              "column": 9
-            }
-          },
-          "metadata": {},
-          "type": "boolean",
-          "inheritedFrom": "AppDrawerMorphElement"
-        },
-        {
-          "name": "transition-duration",
-          "description": "",
-          "sourceRange": {
-            "start": {
-              "line": 54,
-              "column": 12
-            },
-            "end": {
-              "line": 57,
-              "column": 13
-            }
-          },
-          "metadata": {},
-          "type": "number"
-        },
-        {
-          "name": "align",
-          "description": "The alignment of the drawer on the screen ('left', 'right', 'start' or 'end').\n'start' computes to left and 'end' to right in LTR layout and vice versa in RTL\nlayout.",
-          "sourceRange": {
-            "file": "../bower_components/app-layout/app-drawer/app-drawer.html",
-            "start": {
-              "line": 221,
-              "column": 8
-            },
-            "end": {
-              "line": 224,
-              "column": 9
-            }
-          },
-          "metadata": {},
-          "type": "string",
-          "inheritedFrom": "AppDrawerMorphElement"
-        },
-        {
-          "name": "position",
-          "description": "The computed, read-only position of the drawer on the screen ('left' or 'right').",
-          "sourceRange": {
-            "file": "../bower_components/app-layout/app-drawer/app-drawer.html",
-            "start": {
-              "line": 229,
-              "column": 8
-            },
-            "end": {
-              "line": 233,
-              "column": 9
-            }
-          },
-          "metadata": {},
-          "type": "string",
-          "inheritedFrom": "AppDrawerMorphElement"
-        },
-        {
-          "name": "swipe-open",
-          "description": "Create an area at the edge of the screen to swipe open the drawer.",
-          "sourceRange": {
-            "file": "../bower_components/app-layout/app-drawer/app-drawer.html",
-            "start": {
-              "line": 238,
-              "column": 8
-            },
-            "end": {
-              "line": 242,
-              "column": 9
-            }
-          },
-          "metadata": {},
-          "type": "boolean",
-          "inheritedFrom": "AppDrawerMorphElement"
-        },
-        {
-          "name": "no-focus-trap",
-          "description": "Trap keyboard focus when the drawer is opened and not persistent.",
-          "sourceRange": {
-            "file": "../bower_components/app-layout/app-drawer/app-drawer.html",
-            "start": {
-              "line": 247,
-              "column": 8
-            },
-            "end": {
-              "line": 250,
-              "column": 9
-            }
-          },
-          "metadata": {},
-          "type": "boolean",
-          "inheritedFrom": "AppDrawerMorphElement"
-        },
-        {
-          "name": "disable-swipe",
-          "description": "Disables swiping on the drawer.",
-          "sourceRange": {
-            "file": "../bower_components/app-layout/app-drawer/app-drawer.html",
-            "start": {
-              "line": 255,
-              "column": 8
-            },
-            "end": {
-              "line": 258,
-              "column": 9
-            }
-          },
-          "metadata": {},
-          "type": "boolean",
-          "inheritedFrom": "AppDrawerMorphElement"
-        },
-        {
-          "name": "platform",
-          "description": "Detects the platform if it is either  - 'ios', 'android' or 'windows-phone' or if none of the 3 were identified returns 'unkown'",
-          "sourceRange": {
-            "file": "../morph-builder/app-drawer-morph-element.html",
-            "start": {
-              "line": 24,
-              "column": 12
-            },
-            "end": {
-              "line": 27,
-              "column": 13
-            }
-          },
-          "metadata": {},
-          "type": "string",
-          "inheritedFrom": "AppDrawerMorphElement"
-        },
-        {
-          "name": "transition-duration-android",
-          "description": "",
-          "sourceRange": {
-            "start": {
-              "line": 58,
-              "column": 12
-            },
-            "end": {
-              "line": 61,
-              "column": 13
-            }
-          },
-          "metadata": {},
-          "type": "number"
-        },
-        {
-          "name": "transition-duration-ios",
-          "description": "",
-          "sourceRange": {
-            "start": {
-              "line": 62,
-              "column": 12
-            },
-            "end": {
-              "line": 65,
-              "column": 13
-            }
-          },
-          "metadata": {},
-          "type": "number"
-        },
-        {
-          "name": "transition-duration-web",
-          "description": "",
-          "sourceRange": {
-            "start": {
-              "line": 66,
-              "column": 12
-            },
-            "end": {
-              "line": 69,
-              "column": 13
-            }
-          },
-          "metadata": {},
-          "type": "number"
-        }
-      ],
-      "events": [
-        {
-          "type": "CustomEvent",
-          "name": "app-drawer-transitioned",
-          "description": "app-drawer-transitioned",
-          "metadata": {},
-          "inheritedFrom": "AppDrawerMorphElement"
-        },
-        {
-          "type": "CustomEvent",
-          "name": "app-reset-layout",
-          "description": "app-reset-layout",
-          "metadata": {},
-          "inheritedFrom": "AppDrawerMorphElement"
-        },
-        {
-          "type": "CustomEvent",
-          "name": "opened-changed",
-          "description": "Fired when the `opened` property changes.",
-          "metadata": {},
-          "inheritedFrom": "AppDrawerMorphElement"
-        }
-      ],
-      "styling": {
-        "cssVariables": [],
-        "selectors": []
-      },
-      "slots": [],
-      "tagname": "morph-sidebar"
-    },
-    {
       "description": "`morph-overlay`\n Overlay that morphs for current mobile OS",
       "summary": "",
       "path": "morph-overlay/morph-overlay.html",
@@ -3431,7 +2167,7 @@
         }
       },
       "privacy": "public",
-      "superclass": "HTMLElement",
+      "superclass": "MorphElement",
       "name": "MorphOverlay",
       "attributes": [
         {
@@ -3478,32 +2214,492 @@
       "tagname": "morph-overlay"
     },
     {
-      "description": "`morph-tabbar`\nTab bar for polymorph components",
+      "description": "",
       "summary": "",
-      "path": "morph-tabbar/morph-tabbar.html",
+      "path": "morph-pages/morph-location.html",
       "properties": [
         {
-          "name": "platform",
+          "name": "lastNavigationDirection",
           "type": "string",
           "description": "",
           "privacy": "public",
           "sourceRange": {
-            "file": "../bower_components/morph-element/morph-element.html",
             "start": {
-              "line": 26,
+              "line": 13,
               "column": 10
             },
             "end": {
-              "line": 48,
+              "line": 18,
+              "column": 11
+            }
+          },
+          "metadata": {
+            "polymer": {
+              "notify": true
+            }
+          }
+        }
+      ],
+      "methods": [
+        {
+          "name": "ready",
+          "description": "",
+          "privacy": "protected",
+          "sourceRange": {
+            "start": {
+              "line": 26,
+              "column": 6
+            },
+            "end": {
+              "line": 28,
+              "column": 7
+            }
+          },
+          "metadata": {},
+          "params": []
+        },
+        {
+          "name": "connectedCallback",
+          "description": "",
+          "privacy": "public",
+          "sourceRange": {
+            "start": {
+              "line": 30,
+              "column": 6
+            },
+            "end": {
+              "line": 33,
+              "column": 7
+            }
+          },
+          "metadata": {},
+          "params": []
+        },
+        {
+          "name": "disconnectedCallback",
+          "description": "",
+          "privacy": "public",
+          "sourceRange": {
+            "start": {
+              "line": 35,
+              "column": 6
+            },
+            "end": {
+              "line": 40,
+              "column": 7
+            }
+          },
+          "metadata": {},
+          "params": []
+        }
+      ],
+      "staticMethods": [],
+      "demos": [],
+      "metadata": {},
+      "sourceRange": {
+        "start": {
+          "line": 8,
+          "column": 4
+        },
+        "end": {
+          "line": 41,
+          "column": 5
+        }
+      },
+      "privacy": "public",
+      "superclass": "HTMLElement",
+      "name": "MorphLocation",
+      "attributes": [
+        {
+          "name": "last-navigation-direction",
+          "description": "",
+          "sourceRange": {
+            "start": {
+              "line": 13,
+              "column": 10
+            },
+            "end": {
+              "line": 18,
+              "column": 11
+            }
+          },
+          "metadata": {},
+          "type": "string"
+        }
+      ],
+      "events": [
+        {
+          "type": "CustomEvent",
+          "name": "last-navigation-direction-changed",
+          "description": "Fired when the `lastNavigationDirection` property changes.",
+          "metadata": {}
+        }
+      ],
+      "styling": {
+        "cssVariables": [],
+        "selectors": []
+      },
+      "slots": [],
+      "tagname": "morph-location"
+    },
+    {
+      "description": "`morph-pages`\nPages element that morphs for current mobile OS",
+      "summary": "",
+      "path": "morph-pages/morph-pages.html",
+      "properties": [
+        {
+          "name": "animationInProgress",
+          "type": "boolean",
+          "description": "",
+          "privacy": "public",
+          "sourceRange": {
+            "start": {
+              "line": 51,
+              "column": 10
+            },
+            "end": {
+              "line": 53,
+              "column": 11
+            }
+          },
+          "metadata": {
+            "polymer": {}
+          }
+        },
+        {
+          "name": "threshold",
+          "type": "number",
+          "description": "Value used to decide if page get swipe or not",
+          "privacy": "public",
+          "sourceRange": {
+            "start": {
+              "line": 58,
+              "column": 10
+            },
+            "end": {
+              "line": 61,
               "column": 11
             }
           },
           "metadata": {
             "polymer": {}
           },
-          "defaultValue": "\"unknown\"",
-          "inheritedFrom": "MorphElement"
+          "defaultValue": "0.4"
         },
+        {
+          "name": "transitionTimingFunction",
+          "type": "string",
+          "description": "The CSS transition timing function applied.",
+          "privacy": "public",
+          "sourceRange": {
+            "start": {
+              "line": 66,
+              "column": 10
+            },
+            "end": {
+              "line": 69,
+              "column": 11
+            }
+          },
+          "metadata": {
+            "polymer": {}
+          },
+          "defaultValue": "\"cubic-bezier(0.4, 0.0, 0.2, 1)\""
+        },
+        {
+          "name": "navigationHistory",
+          "type": "Array",
+          "description": "Array of previous pages location hash or value",
+          "privacy": "public",
+          "sourceRange": {
+            "start": {
+              "line": 72,
+              "column": 10
+            },
+            "end": {
+              "line": 75,
+              "column": 11
+            }
+          },
+          "metadata": {
+            "polymer": {}
+          },
+          "defaultValue": "[]"
+        },
+        {
+          "name": "pageChangeAnimationDirection",
+          "type": "string",
+          "description": "Page animation direction setter that links wiht morph-location's last-navigation-direction",
+          "privacy": "public",
+          "sourceRange": {
+            "start": {
+              "line": 78,
+              "column": 10
+            },
+            "end": {
+              "line": 81,
+              "column": 11
+            }
+          },
+          "metadata": {
+            "polymer": {}
+          },
+          "defaultValue": "\"forward\""
+        }
+      ],
+      "methods": [
+        {
+          "name": "ready",
+          "description": "",
+          "privacy": "protected",
+          "sourceRange": {
+            "start": {
+              "line": 112,
+              "column": 6
+            },
+            "end": {
+              "line": 117,
+              "column": 7
+            }
+          },
+          "metadata": {},
+          "params": []
+        },
+        {
+          "name": "connectedCallback",
+          "description": "",
+          "privacy": "public",
+          "sourceRange": {
+            "start": {
+              "line": 119,
+              "column": 6
+            },
+            "end": {
+              "line": 121,
+              "column": 7
+            }
+          },
+          "metadata": {},
+          "params": []
+        },
+        {
+          "name": "disconnectedCallback",
+          "description": "",
+          "privacy": "public",
+          "sourceRange": {
+            "start": {
+              "line": 123,
+              "column": 6
+            },
+            "end": {
+              "line": 128,
+              "column": 7
+            }
+          },
+          "metadata": {},
+          "params": []
+        },
+        {
+          "name": "animationEnd",
+          "description": "Used by android-animation.js and ios-animation.js to remove styles on current and previous pages",
+          "privacy": "public",
+          "sourceRange": {
+            "start": {
+              "line": 133,
+              "column": 6
+            },
+            "end": {
+              "line": 136,
+              "column": 7
+            }
+          },
+          "metadata": {},
+          "params": [
+            {
+              "name": "props"
+            }
+          ]
+        },
+        {
+          "name": "_handleTrackSwipe",
+          "description": "This method is called when event 'track' is fired. This event listener is set up in constructor",
+          "privacy": "protected",
+          "sourceRange": {
+            "start": {
+              "line": 141,
+              "column": 6
+            },
+            "end": {
+              "line": 143,
+              "column": 7
+            }
+          },
+          "metadata": {},
+          "params": [
+            {
+              "name": "event"
+            }
+          ]
+        },
+        {
+          "name": "_onIronSelectItem",
+          "description": "Listens to 'iron-select' and calls animation unless not needed",
+          "privacy": "protected",
+          "sourceRange": {
+            "start": {
+              "line": 148,
+              "column": 6
+            },
+            "end": {
+              "line": 150,
+              "column": 7
+            }
+          },
+          "metadata": {},
+          "params": [
+            {
+              "name": "event"
+            }
+          ]
+        },
+        {
+          "name": "_onIronDeselectItem",
+          "description": "deselectItem listening to 'iron-deselect' event. Fires everytime selected is deselected",
+          "privacy": "protected",
+          "sourceRange": {
+            "start": {
+              "line": 155,
+              "column": 6
+            },
+            "end": {
+              "line": 162,
+              "column": 7
+            }
+          },
+          "metadata": {},
+          "params": [
+            {
+              "name": "event"
+            }
+          ]
+        }
+      ],
+      "staticMethods": [],
+      "demos": [
+        {
+          "url": "morph-pages/demo/index.html",
+          "description": ""
+        }
+      ],
+      "metadata": {},
+      "sourceRange": {
+        "start": {
+          "line": 46,
+          "column": 4
+        },
+        "end": {
+          "line": 164,
+          "column": 5
+        }
+      },
+      "privacy": "public",
+      "superclass": "HTMLElement",
+      "name": "MorphPages",
+      "attributes": [
+        {
+          "name": "animation-in-progress",
+          "description": "",
+          "sourceRange": {
+            "start": {
+              "line": 51,
+              "column": 10
+            },
+            "end": {
+              "line": 53,
+              "column": 11
+            }
+          },
+          "metadata": {},
+          "type": "boolean"
+        },
+        {
+          "name": "threshold",
+          "description": "Value used to decide if page get swipe or not",
+          "sourceRange": {
+            "start": {
+              "line": 58,
+              "column": 10
+            },
+            "end": {
+              "line": 61,
+              "column": 11
+            }
+          },
+          "metadata": {},
+          "type": "number"
+        },
+        {
+          "name": "transition-timing-function",
+          "description": "The CSS transition timing function applied.",
+          "sourceRange": {
+            "start": {
+              "line": 66,
+              "column": 10
+            },
+            "end": {
+              "line": 69,
+              "column": 11
+            }
+          },
+          "metadata": {},
+          "type": "string"
+        },
+        {
+          "name": "navigation-history",
+          "description": "Array of previous pages location hash or value",
+          "sourceRange": {
+            "start": {
+              "line": 72,
+              "column": 10
+            },
+            "end": {
+              "line": 75,
+              "column": 11
+            }
+          },
+          "metadata": {},
+          "type": "Array"
+        },
+        {
+          "name": "page-change-animation-direction",
+          "description": "Page animation direction setter that links wiht morph-location's last-navigation-direction",
+          "sourceRange": {
+            "start": {
+              "line": 78,
+              "column": 10
+            },
+            "end": {
+              "line": 81,
+              "column": 11
+            }
+          },
+          "metadata": {},
+          "type": "string"
+        }
+      ],
+      "events": [],
+      "styling": {
+        "cssVariables": [],
+        "selectors": []
+      },
+      "slots": [],
+      "tagname": "morph-pages"
+    },
+    {
+      "description": "`morph-tabbar`\nTab bar for polymorph components",
+      "summary": "",
+      "path": "morph-tabbar/morph-tabbar.html",
+      "properties": [
         {
           "name": "selected",
           "type": "string",
@@ -3511,11 +2707,11 @@
           "privacy": "public",
           "sourceRange": {
             "start": {
-              "line": 154,
+              "line": 155,
               "column": 10
             },
             "end": {
-              "line": 158,
+              "line": 159,
               "column": 11
             }
           },
@@ -3532,11 +2728,11 @@
           "privacy": "public",
           "sourceRange": {
             "start": {
-              "line": 159,
+              "line": 160,
               "column": 10
             },
             "end": {
-              "line": 164,
+              "line": 165,
               "column": 11
             }
           },
@@ -3554,11 +2750,11 @@
           "privacy": "public",
           "sourceRange": {
             "start": {
-              "line": 165,
+              "line": 166,
               "column": 10
             },
             "end": {
-              "line": 168,
+              "line": 169,
               "column": 11
             }
           },
@@ -3570,62 +2766,16 @@
       ],
       "methods": [
         {
-          "name": "checkIfSharedStylesConnected",
-          "description": "checkIfSharedStylesConnected",
-          "privacy": "public",
-          "sourceRange": {
-            "file": "../bower_components/morph-element/morph-element.html",
-            "start": {
-              "line": 57,
-              "column": 6
-            },
-            "end": {
-              "line": 65,
-              "column": 7
-            }
-          },
-          "metadata": {},
-          "params": [],
-          "return": {
-            "type": "Boolean",
-            "desc": "return true if style not equal to 'deepskyblue' meaning shared color file not connected and returns false otherwise"
-          },
-          "inheritedFrom": "MorphElement"
-        },
-        {
-          "name": "getStyleShadyOrDOM",
-          "description": "",
-          "privacy": "public",
-          "sourceRange": {
-            "file": "../bower_components/morph-element/morph-element.html",
-            "start": {
-              "line": 70,
-              "column": 6
-            },
-            "end": {
-              "line": 78,
-              "column": 7
-            }
-          },
-          "metadata": {},
-          "params": [],
-          "return": {
-            "type": "Object",
-            "desc": "returns the computed style based on if ShadyCSS is used or not"
-          },
-          "inheritedFrom": "MorphElement"
-        },
-        {
           "name": "connectedCallback",
           "description": "",
           "privacy": "public",
           "sourceRange": {
             "start": {
-              "line": 173,
+              "line": 174,
               "column": 6
             },
             "end": {
-              "line": 182,
+              "line": 183,
               "column": 7
             }
           },
@@ -3638,11 +2788,11 @@
           "privacy": "public",
           "sourceRange": {
             "start": {
-              "line": 184,
+              "line": 185,
               "column": 6
             },
             "end": {
-              "line": 187,
+              "line": 188,
               "column": 7
             }
           },
@@ -3655,11 +2805,11 @@
           "privacy": "protected",
           "sourceRange": {
             "start": {
-              "line": 189,
+              "line": 190,
               "column": 6
             },
             "end": {
-              "line": 205,
+              "line": 206,
               "column": 7
             }
           },
@@ -3676,11 +2826,11 @@
           "privacy": "protected",
           "sourceRange": {
             "start": {
-              "line": 207,
+              "line": 208,
               "column": 6
             },
             "end": {
-              "line": 224,
+              "line": 225,
               "column": 7
             }
           },
@@ -3697,11 +2847,11 @@
           "privacy": "protected",
           "sourceRange": {
             "start": {
-              "line": 226,
+              "line": 227,
               "column": 6
             },
             "end": {
-              "line": 234,
+              "line": 235,
               "column": 7
             }
           },
@@ -3718,11 +2868,11 @@
           "privacy": "protected",
           "sourceRange": {
             "start": {
-              "line": 236,
+              "line": 237,
               "column": 6
             },
             "end": {
-              "line": 238,
+              "line": 239,
               "column": 7
             }
           },
@@ -3739,11 +2889,11 @@
           "privacy": "public",
           "sourceRange": {
             "start": {
-              "line": 240,
+              "line": 241,
               "column": 6
             },
             "end": {
-              "line": 258,
+              "line": 259,
               "column": 7
             }
           },
@@ -3765,11 +2915,11 @@
       "metadata": {},
       "sourceRange": {
         "start": {
-          "line": 150,
+          "line": 151,
           "column": 4
         },
         "end": {
-          "line": 259,
+          "line": 260,
           "column": 5
         }
       },
@@ -3778,33 +2928,15 @@
       "name": "MorphTabbar",
       "attributes": [
         {
-          "name": "platform",
-          "description": "",
-          "sourceRange": {
-            "file": "../bower_components/morph-element/morph-element.html",
-            "start": {
-              "line": 26,
-              "column": 10
-            },
-            "end": {
-              "line": 48,
-              "column": 11
-            }
-          },
-          "metadata": {},
-          "type": "string",
-          "inheritedFrom": "MorphElement"
-        },
-        {
           "name": "selected",
           "description": "",
           "sourceRange": {
             "start": {
-              "line": 154,
+              "line": 155,
               "column": 10
             },
             "end": {
-              "line": 158,
+              "line": 159,
               "column": 11
             }
           },
@@ -3816,11 +2948,11 @@
           "description": "",
           "sourceRange": {
             "start": {
-              "line": 159,
+              "line": 160,
               "column": 10
             },
             "end": {
-              "line": 164,
+              "line": 165,
               "column": 11
             }
           },
@@ -3832,11 +2964,11 @@
           "description": "",
           "sourceRange": {
             "start": {
-              "line": 165,
+              "line": 166,
               "column": 10
             },
             "end": {
-              "line": 168,
+              "line": 169,
               "column": 11
             }
           },
@@ -3869,11 +3001,11 @@
           "range": {
             "file": "morph-tabbar/morph-tabbar.html",
             "start": {
-              "line": 135,
+              "line": 136,
               "column": 6
             },
             "end": {
-              "line": 135,
+              "line": 136,
               "column": 29
             }
           }
@@ -3887,39 +3019,17 @@
       "path": "morph-tabbar-item/morph-tabbar-item.html",
       "properties": [
         {
-          "name": "platform",
-          "type": "string",
-          "description": "",
-          "privacy": "public",
-          "sourceRange": {
-            "file": "../bower_components/morph-element/morph-element.html",
-            "start": {
-              "line": 26,
-              "column": 10
-            },
-            "end": {
-              "line": 48,
-              "column": 11
-            }
-          },
-          "metadata": {
-            "polymer": {}
-          },
-          "defaultValue": "\"unknown\"",
-          "inheritedFrom": "MorphElement"
-        },
-        {
           "name": "name",
           "type": "string",
           "description": "",
           "privacy": "public",
           "sourceRange": {
             "start": {
-              "line": 151,
+              "line": 147,
               "column": 10
             },
             "end": {
-              "line": 155,
+              "line": 151,
               "column": 11
             }
           },
@@ -3936,11 +3046,11 @@
           "privacy": "public",
           "sourceRange": {
             "start": {
-              "line": 156,
+              "line": 152,
               "column": 10
             },
             "end": {
-              "line": 160,
+              "line": 156,
               "column": 11
             }
           },
@@ -3957,11 +3067,11 @@
           "privacy": "public",
           "sourceRange": {
             "start": {
-              "line": 161,
+              "line": 157,
               "column": 10
             },
             "end": {
-              "line": 165,
+              "line": 161,
               "column": 11
             }
           },
@@ -3978,11 +3088,11 @@
           "privacy": "public",
           "sourceRange": {
             "start": {
-              "line": 166,
+              "line": 162,
               "column": 10
             },
             "end": {
-              "line": 171,
+              "line": 167,
               "column": 11
             }
           },
@@ -4000,11 +3110,11 @@
           "privacy": "public",
           "sourceRange": {
             "start": {
-              "line": 172,
+              "line": 168,
               "column": 10
             },
             "end": {
-              "line": 177,
+              "line": 173,
               "column": 11
             }
           },
@@ -4018,79 +3128,16 @@
       ],
       "methods": [
         {
-          "name": "checkIfSharedStylesConnected",
-          "description": "checkIfSharedStylesConnected",
+          "name": "selectedObserver",
+          "description": "Observer for the changes of selected attribute.",
           "privacy": "public",
-          "sourceRange": {
-            "file": "../bower_components/morph-element/morph-element.html",
-            "start": {
-              "line": 57,
-              "column": 6
-            },
-            "end": {
-              "line": 65,
-              "column": 7
-            }
-          },
-          "metadata": {},
-          "params": [],
-          "return": {
-            "type": "Boolean",
-            "desc": "return true if style not equal to 'deepskyblue' meaning shared color file not connected and returns false otherwise"
-          },
-          "inheritedFrom": "MorphElement"
-        },
-        {
-          "name": "getStyleShadyOrDOM",
-          "description": "",
-          "privacy": "public",
-          "sourceRange": {
-            "file": "../bower_components/morph-element/morph-element.html",
-            "start": {
-              "line": 70,
-              "column": 6
-            },
-            "end": {
-              "line": 78,
-              "column": 7
-            }
-          },
-          "metadata": {},
-          "params": [],
-          "return": {
-            "type": "Object",
-            "desc": "returns the computed style based on if ShadyCSS is used or not"
-          },
-          "inheritedFrom": "MorphElement"
-        },
-        {
-          "name": "ready",
-          "description": "",
-          "privacy": "protected",
           "sourceRange": {
             "start": {
               "line": 185,
               "column": 6
             },
             "end": {
-              "line": 223,
-              "column": 7
-            }
-          },
-          "metadata": {},
-          "params": []
-        },
-        {
-          "name": "selectedObserver",
-          "description": "Observer for the changes of selected attribute.",
-          "privacy": "public",
-          "sourceRange": {
-            "start": {
-              "line": 228,
-              "column": 6
-            },
-            "end": {
-              "line": 230,
+              "line": 187,
               "column": 7
             }
           },
@@ -4107,55 +3154,11 @@
           "privacy": "public",
           "sourceRange": {
             "start": {
-              "line": 236,
+              "line": 193,
               "column": 6
             },
             "end": {
-              "line": 243,
-              "column": 7
-            }
-          },
-          "metadata": {},
-          "params": []
-        },
-        {
-          "name": "showRipple",
-          "description": "showRipple gives material design-like ripple effect when buttons are click",
-          "privacy": "public",
-          "sourceRange": {
-            "start": {
-              "line": 252,
-              "column": 6
-            },
-            "end": {
-              "line": 275,
-              "column": 7
-            }
-          },
-          "metadata": {},
-          "params": [
-            {
-              "name": "e",
-              "type": "Object",
-              "description": "the button element that the event key down or finger down has happen"
-            }
-          ],
-          "return": {
-            "type": "Object",
-            "desc": "returns the style attribute of the button element with corresponding css styling related to the ripple effect"
-          }
-        },
-        {
-          "name": "cleanUp",
-          "description": "Cleans up the container for the ripple effect",
-          "privacy": "public",
-          "sourceRange": {
-            "start": {
-              "line": 280,
-              "column": 6
-            },
-            "end": {
-              "line": 284,
+              "line": 200,
               "column": 7
             }
           },
@@ -4173,11 +3176,11 @@
       "metadata": {},
       "sourceRange": {
         "start": {
-          "line": 147,
+          "line": 143,
           "column": 4
         },
         "end": {
-          "line": 285,
+          "line": 201,
           "column": 5
         }
       },
@@ -4186,33 +3189,15 @@
       "name": "MorphTabbarItem",
       "attributes": [
         {
-          "name": "platform",
-          "description": "",
-          "sourceRange": {
-            "file": "../bower_components/morph-element/morph-element.html",
-            "start": {
-              "line": 26,
-              "column": 10
-            },
-            "end": {
-              "line": 48,
-              "column": 11
-            }
-          },
-          "metadata": {},
-          "type": "string",
-          "inheritedFrom": "MorphElement"
-        },
-        {
           "name": "name",
           "description": "",
           "sourceRange": {
             "start": {
-              "line": 151,
+              "line": 147,
               "column": 10
             },
             "end": {
-              "line": 155,
+              "line": 151,
               "column": 11
             }
           },
@@ -4224,11 +3209,11 @@
           "description": "",
           "sourceRange": {
             "start": {
-              "line": 156,
+              "line": 152,
               "column": 10
             },
             "end": {
-              "line": 160,
+              "line": 156,
               "column": 11
             }
           },
@@ -4240,11 +3225,11 @@
           "description": "",
           "sourceRange": {
             "start": {
-              "line": 161,
+              "line": 157,
               "column": 10
             },
             "end": {
-              "line": 165,
+              "line": 161,
               "column": 11
             }
           },
@@ -4256,11 +3241,11 @@
           "description": "",
           "sourceRange": {
             "start": {
-              "line": 166,
+              "line": 162,
               "column": 10
             },
             "end": {
-              "line": 171,
+              "line": 167,
               "column": 11
             }
           },
@@ -4272,11 +3257,11 @@
           "description": "",
           "sourceRange": {
             "start": {
-              "line": 172,
+              "line": 168,
               "column": 10
             },
             "end": {
-              "line": 177,
+              "line": 173,
               "column": 11
             }
           },
@@ -4327,17 +3312,84 @@
           "range": {
             "file": "morph-tabbar-item/morph-tabbar-item.html",
             "start": {
-              "line": 131,
+              "line": 127,
               "column": 10
             },
             "end": {
-              "line": 131,
+              "line": 127,
               "column": 33
             }
           }
         }
       ],
       "tagname": "morph-tabbar-item"
+    }
+  ],
+  "classes": [
+    {
+      "description": "",
+      "summary": "",
+      "path": "morph-element/morph-element.html",
+      "properties": [],
+      "methods": [
+        {
+          "name": "checkIfSharedStylesConnected",
+          "description": "checkIfSharedStylesConnected",
+          "privacy": "public",
+          "sourceRange": {
+            "start": {
+              "line": 48,
+              "column": 4
+            },
+            "end": {
+              "line": 56,
+              "column": 5
+            }
+          },
+          "metadata": {},
+          "params": [],
+          "return": {
+            "type": "Boolean",
+            "desc": "return true if style not equal to 'deepskyblue' meaning shared color file not connected and returns false otherwise"
+          }
+        },
+        {
+          "name": "getStyleShadyOrDOM",
+          "description": "",
+          "privacy": "public",
+          "sourceRange": {
+            "start": {
+              "line": 61,
+              "column": 4
+            },
+            "end": {
+              "line": 67,
+              "column": 5
+            }
+          },
+          "metadata": {},
+          "params": [],
+          "return": {
+            "type": "Object",
+            "desc": "returns the computed style based on if ShadyCSS is used or not"
+          }
+        }
+      ],
+      "staticMethods": [],
+      "demos": [],
+      "metadata": {},
+      "sourceRange": {
+        "start": {
+          "line": 10,
+          "column": 9
+        },
+        "end": {
+          "line": 69,
+          "column": 3
+        }
+      },
+      "privacy": "public",
+      "superclass": "superClass"
     }
   ]
 }

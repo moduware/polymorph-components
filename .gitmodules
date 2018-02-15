@@ -30,3 +30,7 @@
 	path = morph-tabbar
 	url = https://github.com/moduware/morph-tabbar.git
 	branch = master
+[submodule "morph-pages"]
+	path = morph-pages
+	url = https://github.com/moduware/morph-pages
+	branch = master
