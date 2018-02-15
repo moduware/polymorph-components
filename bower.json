@@ -14,7 +14,8 @@
     "morph-overlay": "https://github.com/moduware/morph-overlay.git#master",
     "morph-view": "https://github.com/moduware/morph-view.git#master",
     "morph-tabbar": "https://github.com/moduware/morph-tabbar.git#master",
-    "morph-tabbar-item": "https://github.com/moduware/morph-tabbar-item.git#master"
+    "morph-tabbar-item": "https://github.com/moduware/morph-tabbar-item.git#master",
+    "morph-ripple": "https://github.com/moduware/morph-ripple.git#master"
   },
   "devDependencies": {
     "iron-demo-helpers": "PolymerElements/iron-demo-helpers#2.0-preview",
