@@ -1,0 +1,30 @@
+{
+  "name": "morph-collection",
+  "homepage": "https://github.com/clint77/morph-collection",
+  "authors": [
+    "Alex Chernov <alex.chernov@moduware.com>",
+    "Clint Pijuan <clintp1@gmail.com>"
+  ],
+  "description": "Elements that morphs for current mobile OS.",
+  "main": "",
+  "keywords": [
+    "element-collection"
+  ],
+  "license": "Apache-2.0",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "morph-button": "moduware/morph-button",
+    "morph-list-view": "moduware/morph-list-view",
+    "morph-list-view-item": "moduware/morph-list-view-item",
+    "morph-list-view-title": "moduware/morph-list-view-title",
+    "morph-list-view-divider": "moduware/morph-list-view-divider",
+    "morph-tabbar": "moduware/morph-tabbar",
+    "morph-tabbar-item": "moduware/morph-tabbar-item"
+  }
+}
