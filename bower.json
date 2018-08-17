@@ -28,6 +28,7 @@
     "morph-tabbar-item": "moduware/morph-tabbar-item",
     "morph-ripple": "moduware/morph-ripple",
     "morph-swipeout": "moduware/morph-swipeout",
-    "morph-view": "moduware/morph-view"
+    "morph-view": "moduware/morph-view",
+    "morph-overlay": "moduware/morph-overlay"
   }
 }
