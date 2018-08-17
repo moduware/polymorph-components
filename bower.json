@@ -30,6 +30,7 @@
     "morph-swipeout": "moduware/morph-swipeout",
     "morph-view": "moduware/morph-view",
     "morph-overlay": "moduware/morph-overlay",
-    "morph-sidebar": "moduware/morph-sidebar"
+    "morph-sidebar": "moduware/morph-sidebar",
+    "morph-pages": "moduware/morph-pages"
   }
 }
