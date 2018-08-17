@@ -26,6 +26,7 @@
     "morph-list-view-divider": "moduware/morph-list-view-divider",
     "morph-tabbar": "moduware/morph-tabbar",
     "morph-tabbar-item": "moduware/morph-tabbar-item",
-    "morph-ripple": "moduware/morph-ripple"
+    "morph-ripple": "moduware/morph-ripple",
+    "morph-swipeout": "moduware/morph-swipeout"
   }
 }
