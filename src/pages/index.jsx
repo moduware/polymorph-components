@@ -19,7 +19,7 @@ class Index extends React.Component {
           <IndexHeadContainer>
             <Navigation />
             <Hero>
-              <img src={config.siteLogo} width="150px" alt="" />
+              <img src={config.siteLogo} width="150px" alt="moduware logo" />
               <h1>{config.siteTitle}</h1>
               <h4>{config.siteDescription}</h4>
             </Hero>
