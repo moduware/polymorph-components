@@ -9,9 +9,9 @@ import TableOfContents from '../components/Layout/TableOfContents'
 
 export default class LessonTemplate extends React.Component {
   render() {
-    const { slug } = this.props.pathContext
-    const postNode = this.props.data.postBySlug
-    const post = postNode.frontmatter
+    const { slug } = this.props.pathContext;
+    const postNode = this.props.data.postBySlug;
+    const post = postNode.frontmatter;
     if (!post.id) {
       post.id = slug
     }
@@ -126,38 +126,6 @@ export const pageQuery = graphql`
               }
               frontmatter {
                 title
-              }
-            }
-          }
-        }
-        chapters {
-          title
-          entries {
-            entry {
-              id
-              childMarkdownRemark {
-                fields {
-                  slug
-                }
-                frontmatter {
-                  title
-                }
-              }
-            }
-          }
-          chapters {
-            title
-            entries {
-              entry {
-                id
-                childMarkdownRemark {
-                  fields {
-                    slug
-                  }
-                  frontmatter {
-                    title
-                  }
-                }
               }
             }
           }

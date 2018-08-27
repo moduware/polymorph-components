@@ -30,14 +30,15 @@ class Index extends React.Component {
               A collection of polymorph elements with their documentation and usage examples.{' '}
             </p>
             <CtaButton to={'/lesson-one'}>See Our First Element</CtaButton>
+            <CtaButton to={'/morph-button'}>Morph Button</CtaButton>
 
             <div className="contributors">
               <p>
                 Created by Moduware.{' '}
                 <a href="https:twitter.com/moduwareinc">
-                  You should follow us on Twitter.
+                  Follow us on Twitter.
                 </a>{' '}
-                Also, <a href="https://github.com/moduware">Moduware</a> for
+                Also, click <a href="https://github.com/moduware">Moduware Github</a> for
                 our github profile.
               </p>
             </div>
