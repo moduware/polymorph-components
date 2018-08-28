@@ -1,0 +1,25 @@
+{
+  "name": "morph-element",
+  "description": "Parent for all of Polymorph Components that can detect current platform and other common behaviour",
+  "main": "morph-element.html",
+  "authors": [
+    "Clint",
+    "Alex Chernov"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#^2.0.0"
+  },
+  "devDependencies": {
+    "iron-demo-helpers": "PolymerElements/iron-demo-helpers#^2.0.0",
+    "web-component-tester": "Polymer/web-component-tester#^6.0.0",
+    "webcomponentsjs": "webcomponents/webcomponentsjs#^1.0.0"
+  },
+  "resolutions": {
+    "polymer": "^2.0.0"
+  },
+  "repository" : {
+    "type": "git",
+    "url": "https://github.com/moduware/morph-element"
+  },
+  "license": "Apache 2.0"
+}

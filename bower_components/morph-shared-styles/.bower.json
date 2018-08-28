@@ -1,0 +1,28 @@
+{
+  "name": "morph-shared-styles",
+  "homepage": "https://github.com/nexpaq/polymorph-components",
+  "authors": [
+    "Alex Chernov <alexusblack@gmail.com>",
+    "Clint Pijuan <clintp1@gmail.com"
+  ],
+  "description": "Shared styles for Polymorph Components",
+  "main": "morph-shared-styles.html",
+  "license": "Apache 2.0",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "_release": "2538e1df21",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "2538e1df21c47c046e7cc0626afc33757bcfd064"
+  },
+  "_source": "https://github.com/moduware/morph-shared-styles.git",
+  "_target": "master",
+  "_originalSource": "https://github.com/moduware/morph-shared-styles.git"
+}

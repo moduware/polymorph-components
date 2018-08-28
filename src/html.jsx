@@ -16,6 +16,27 @@ if (process.env.NODE_ENV === 'production') {
 }
 
 export default class HTML extends React.Component {
+
+  // componentDidMount() {
+  //   const scriptWeb = document.createElement("script");
+  //   scriptWeb.src = "https://unpkg.com/@webcomponents/webcomponentsjs@next/webcomponents-loader.js";
+  //   scriptWeb.async = true;
+  //   document.body.appendChild(scriptWeb);
+
+  //   const scriptHTML = document.createElement("script");
+  //   scriptHTML.src = "https://unpkg.com/@webcomponents/html-imports@1.1.1/src/html-imports.js";
+  //   scriptHTML.async = true;
+  //   document.body.appendChild(scriptWeb);
+
+  //   const linkPaper = document.createElement("link");
+  //   linkPaper.href = "https://polygit.org/polymer+:2.x/paper-checkbox+polymerelements+:master/components/paper-checkbox/paper-checkbox.html";
+  //   linkPaper.rel = "import";
+  //   linkPaper.async = true;
+  //   document.body.appendChild(linkPaper);
+  //   console.log('componentDidMount');
+  // }
+
+
   render() {
     let css
     if (process.env.NODE_ENV === 'production') {

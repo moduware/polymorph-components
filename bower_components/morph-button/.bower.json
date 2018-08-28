@@ -1,0 +1,35 @@
+{
+  "name": "morph-button",
+  "description": "Button that morphs for current mobile OS",
+  "main": "morph-button.html",
+  "author": [
+    "Clint Pijuan <clintp1@gmail.com>",
+    "Alex Chernov <alexusblack@gmail.com>"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#^2.0.0-rc.2",
+    "morph-shared-styles": "https://github.com/moduware/morph-shared-styles.git#master",
+    "morph-shared-colors": "https://github.com/moduware/morph-shared-colors.git#master",
+    "morph-element": "https://github.com/nexpaq/morph-element.git#master",
+    "morph-ripple": "https://github.com/moduware/morph-ripple.git#master"
+  },
+  "devDependencies": {
+    "iron-demo-helpers": "PolymerElements/iron-demo-helpers#2.0-preview",
+    "web-component-tester": "^6.0.0-prerelease.5",
+    "webcomponentsjs": "webcomponents/webcomponentsjs#^1.0.0-rc.5"
+  },
+  "resolutions": {
+    "polymer": "^2.0.0-rc.2"
+  },
+  "homepage": "https://github.com/moduware/morph-button",
+  "_release": "b2a4dc9a72",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "b2a4dc9a72ffaa5b18cbd9afd51f590a572fff42"
+  },
+  "_source": "https://github.com/moduware/morph-button.git",
+  "_target": "master",
+  "_originalSource": "https://github.com/moduware/morph-button.git",
+  "_direct": true
+}

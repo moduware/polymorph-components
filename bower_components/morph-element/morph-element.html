@@ -1,0 +1,72 @@
+ <script>
+/**
+  * `morph-element`
+  * Parent for all of Polymorph Components that can detect current platform and other common behaviour
+  *
+  * @customElement
+  * @polymer
+  * @demo demo/index.html
+  */
+window.MorphElement = function(superClass) {
+  return class extends superClass {
+    constructor() {
+      super();
+    }
+
+    static get properties() {
+      return {
+        platform: {
+          type: String,
+          reflectToAttribute: true,
+          value: function() {
+            let userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+            // Windows Phone must come first because its UA also contains "Android"
+            if (/windows phone/i.test(userAgent)) {
+              return 'windows-phone';
+            }
+
+            if (/android/i.test(userAgent)) {
+              return 'android';
+            }
+
+            // iOS detection from: http://stackoverflow.com/a/9039885/177710
+            if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+              return 'ios';
+            }
+
+            return 'unknown';
+          }
+        }
+      };
+    }
+
+    /**
+    * checkIfSharedStylesConnected
+    *
+    * @return {Boolean} - return true if style not equal to 'deepskyblue' meaning shared color file not connected and returns false otherwise
+    */   
+    checkIfSharedStylesConnected() {
+      let styleIncludedColor = this.getStyleShadyOrDOM();
+      styleIncludedColor = styleIncludedColor.replace(/\s+/, '');
+      if(styleIncludedColor != 'deepskyblue') {
+        console.warn('WARNING: You need to include morph-shared-colors if you want to use standard colors!');
+        return false;
+      }
+      return true;
+    }
+
+    /**
+    * @return {Object} - returns the computed style based on if ShadyCSS is used or not 
+    */
+    getStyleShadyOrDOM() {
+      if (typeof(ShadyCSS) != 'undefined') {
+        return ShadyCSS.getComputedStyleValue(this, '--have-access-to-shared-colors');
+      } else {
+        return getComputedStyle(this).getPropertyValue('--have-access-to-shared-colors');
+      }
+    }
+
+  }
+};
+</script>

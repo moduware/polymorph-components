@@ -1,0 +1,18 @@
+{
+  "name": "morph-shared-colors",
+  "homepage": "https://github.com/nexpaq/polymorph-components",
+  "authors": [
+    "Moduware"
+  ],
+  "description": "Shared colors for Polymorph Components",
+  "main": "morph-shared-colors.html",
+  "license": "Apache 2.0",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

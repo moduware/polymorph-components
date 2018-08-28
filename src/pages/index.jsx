@@ -29,8 +29,8 @@ class Index extends React.Component {
             <p>
               A collection of polymorph elements with their documentation and usage examples.{' '}
             </p>
-            <CtaButton to={'/lesson-one'}>See Our First Element</CtaButton>
             <CtaButton to={'/morph-button'}>Morph Button</CtaButton>
+            <paper-checkbox></paper-checkbox>
 
             <div className="contributors">
               <p>

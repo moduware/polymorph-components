@@ -8,6 +8,39 @@
           "entry": "./morph_button.md"
         },
         {
+          "entry": "./morph_pages.md"
+        },
+        {
+          "entry": "./morph_overlay.md"
+        },
+        {
+          "entry": "./morph_view.md"
+        },
+        {
+          "entry": "./morph_swipeout.md"
+        },
+        {
+          "entry": "./morph_ripple.md"
+        },
+        {
+          "entry": "./morph_tabbar.md"
+        },
+        {
+          "entry": "./morph_tabbar_item.md"
+        },
+        {
+          "entry": "./morph_list_view.md"
+        },
+        {
+          "entry": "./morph_list_view_item.md"
+        },
+        {
+          "entry": "./morph_list_view_title.md"
+        },
+        {
+          "entry": "./morph_list_view_divider.md"
+        },
+        {
           "entry": "./morph_sidebar.md"
         }
       ]

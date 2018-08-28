@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
+
+    <title>morph-element test</title>
+
+    <script src="../../webcomponentsjs/webcomponents-lite.js"></script>
+    <script src="../../web-component-tester/browser.js"></script>
+
+    <link rel="import" href="../morph-element.html">
+  </head>
+  <body>
+
+    <test-fixture id="BasicElementFixture">
+      <template>
+        <morph-element></morph-element>
+      </template>
+    </test-fixture>
+
+    <script>
+      describe('morph-element', function() {
+        context('Detecting the platform automatically when it set to android', function() {
+          let element;
+          let androidUserAgent = 'Mozilla/5.0 (Linux; U; Android 4.0.3; ko-kr; LG-L160L Build/IML74K) AppleWebkit/534.30 (KHTML, like Gecko) Version/4.0 Mobile Safari/534.30.'
+          
+          beforeEach(function() {
+            // mocking the device is an android phone
+            navigator.__defineGetter__('userAgent', function() {
+              return androidUserAgent;
+            });
+            
+            element = fixture('BasicElementFixture');
+          });
+          
+          it('instantiating the element detects the device automatically', function() {
+            expect(element.platform).to.be.equal('android');
+          });
+
+          
+        });
+
+        context('iOS platform', function() {
+          let element;
+          let iphone7plusUserAgent = 'Mozilla/5.0 (iPhone; CPU iPhone OS 10_2_1 like Mac OS X) AppleWebKit/602.4.6 (KHTML, like Gecko) Version/10.0 Mobile/14D27 Safari/602.1';
+        
+          beforeEach(function() {
+            // mocking the device is an ios device
+            navigator.__defineGetter__('userAgent', function() {
+              return iphone7plusUserAgent;
+            });
+
+            window.__defineGetter__('MSStream', function() {
+              return undefined;
+            });
+
+            element = fixture('BasicElementFixture');
+          });
+
+          it('automatically detects iOS platform through userAgent', function() {
+            expect(element.platform).to.be.equal('ios');
+          });
+          
+        });
+
+        context('Windows phone platform', function() {
+          let element;
+          let windowsPhoneUserAgent = 'Mozilla/5.0 (compatible; MSIE 9.0; Windows Phone OS 7.5; Trident/5.0; IEMobile/9.0; NOKIA; Lumia 710)';
+        
+          beforeEach(function() {
+            // mocking the device is an windows phone
+            navigator.__defineGetter__('userAgent', function() {
+              return windowsPhoneUserAgent;
+            });
+            
+            element = fixture('BasicElementFixture');
+          });
+
+          it('automatically detects windows phone platform through userAgent', function() {
+            expect(element.platform).to.be.equal('windows-phone');
+          });
+          
+        });
+
+      });
+    </script>
+
+  </body>
+</html>
