@@ -53,7 +53,7 @@ For the information about how to clone the desired repository, running the local
 - Here is a quick demo of the morph-tabbar element.
 
 <p align="center">
-  <img src="demo-images/ios-demo.gif" alt="IOS morph-tabbar demo"/>
+  <img src="/images/tabbar-ios-demo.gif" alt="IOS morph-tabbar demo"/>
 </p>
 
 ```html
@@ -70,7 +70,7 @@ For the information about how to clone the desired repository, running the local
 ```
 
   <p align="center">
-    <img src="demo-images/android-demo.gif" alt="IOS morph-tabbar demo"/>
+    <img src="/images/tabbar-android-demo.gif" alt="IOS morph-tabbar demo"/>
   </p>
 
   ```html

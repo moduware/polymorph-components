@@ -96,7 +96,7 @@ For the information about how to clone the desired repository, running the local
 - Here is a quick demo of the morph-list-view element for IOS.
 
   <p align="center">
-    <img src="demo-images/ios-demo.png" alt="IOS morph-list-view demo"/>
+    <img src="/images/list-view-ios-demo.png" alt="IOS morph-list-view demo"/>
   </p>
 
 ```html
@@ -130,7 +130,7 @@ For the information about how to clone the desired repository, running the local
 - Here is a quick demo of the morph-list-view element for Android.
 
   <p align="center">
-    <img src="demo-images/android-demo.png" alt="Android morph-list-view demo"/>
+    <img src="/images/list-view-android-demo.png" alt="Android morph-list-view demo"/>
   </p>
 
 ```html
@@ -168,7 +168,7 @@ For the information about how to clone the desired repository, running the local
 - Here is a quick demo of the morph-list-view element with accordion option
 
   <p align="center">
-    <img src="demo-images/list-view-accordion.gif" alt="Android morph-list-view accordion option demo"/>
+    <img src="/images/list-view-accordion.gif" alt="Android morph-list-view accordion option demo"/>
   </p>
 
 - Sample HTML markup for accordion list

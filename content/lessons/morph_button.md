@@ -37,11 +37,11 @@ For the information about how to clone the desired repository, running the local
 Here is a quick demo of morph button
 
 <p align="center" >
-  <img src="poly-logo-3.png" alt="morph button demo image" />
+  <img src="/images/button-basic-demo.gif" alt="morph button demo image" />
 </p>
 
 <p align="center" >
-  <img src="poly-logo-3.png" alt="morph button demo image" />
+  <img src="/images/big-button-demo.gif" alt="morph button demo image" />
 </p>
 
   ```html

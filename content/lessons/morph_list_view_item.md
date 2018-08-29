@@ -83,13 +83,13 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean elementum id neq
 - Here is a quick demo of the morph-list-view-item element for IOS platform.
 
   <p align="center">
-    <img src="demo-images/ios-basic-demo.png" alt="IOS morph-list-view-item demo"/>
+    <img src="/images/list-view-item-ios-basic-demo.png" alt="IOS morph-list-view-item demo"/>
   </p>
 
 - Here is a quick demo of the morph-list-view-item element for Android platform.
 
   <p align="center">
-    <img src="demo-images/android-basic-demo.png" alt="IOS morph-list-view-item demo"/>
+    <img src="/images/android-basic-demo.png" alt="IOS morph-list-view-item demo"/>
   </p>
 
 - Both IOS and Android demo are using the HTML markup. 
@@ -130,13 +130,13 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean elementum id neq
 - Demo when morph-list-view-item is inside morph-list-view for IOS platform
 
   <p align="center">
-    <img src="demo-images/ios-with-morph-list-view-demo.png" alt="IOS morph-list-view-item demo"/>
+    <img src="/images/ios-with-morph-list-view-demo.png" alt="IOS morph-list-view-item demo"/>
   </p>
 
 - Demo when morph-list-view-item is inside morph-list-view for IOS platform
 
   <p align="center">
-    <img src="demo-images/android-with-morph-list-view-demo.png" alt="IOS morph-list-view-item demo"/>
+    <img src="/images/android-with-morph-list-view-demo.png" alt="IOS morph-list-view-item demo"/>
   </p>
 
 - Here's the HTML markup when morph-list-view-item is inside morph-list-view for both IOS and Android platform
@@ -173,7 +173,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean elementum id neq
 - Demo showing ripple effect when morph-list-view-item is a link on Android platform
 
   <p align="center">
-    <img src="demo-images/android-list-view-item-with-demo.gif" alt="IOS morph-list-view-item demo"/>
+    <img src="/images/android-list-view-item-with-demo.gif" alt="IOS morph-list-view-item demo"/>
   </p>
 
 - Sample HTML markup for expandable item
@@ -194,7 +194,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean elementum id neq
   - Demo showing expandable item
 
   <p align="center">
-    <img src="demo-images/expandable-list-view-item-demo.gif" alt="IOS morph-list-view-item demo"/>
+    <img src="/images/expandable-list-view-item-demo.gif" alt="IOS morph-list-view-item demo"/>
   </p>
   
 ### Attributes

@@ -17,13 +17,13 @@ For the information about how to clone the desired repository, running the local
   <p>On IOS platform:</p>
 
   <p align="center">
-    <img src="demo-images/morph-pages-ios-demo.gif" alt="Morph Pages element" />
+    <img src="/images/morph-pages-ios-demo.gif" alt="Morph Pages element" />
   </p>
 
   <p>On Android platform:</p>
 
   <p align="center">
-    <img src="demo-images/morph-pages-android-demo.gif" alt="Morph Pages element" />
+    <img src="/images/morph-pages-android-demo.gif" alt="Morph Pages element" />
   </p>
 
 

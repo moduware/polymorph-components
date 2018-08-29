@@ -40,14 +40,14 @@ class Navigation extends React.Component {
             {' '}
             HOME{' '}
           </Link>
-          <Link className="nav-link" to="/lesson-one">
+          <Link className="nav-link" to="/morph-button">
             {' '}
             DOCS{' '}
           </Link>
-          <Link className="nav-link" to="/about">
+          {/* <Link className="nav-link" to="/about">
             {' '}
             ABOUT{' '}
-          </Link>
+          </Link> */}
         </section>
         <span>
           <UserLinks />

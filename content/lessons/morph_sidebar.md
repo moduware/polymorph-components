@@ -19,13 +19,13 @@ For the information about how to clone the desired repository, running the local
   <p>On IOS platform</p>
 
   <p align="center">
-    <img src="/logos/poly-logo-3.png" alt="Morph Sidebar element" />
+    <img src="/images/sidebar-demo-android.gif" alt="Morph Sidebar element" />
   </p>
 
   <p>On Android platform</p>
 
   <p align="center">
-    <img src="/logos/poly-logo-1.png" alt="Morph Sidebar element" />
+    <img src="/images/sidebar-demo-ios.gif" alt="Morph Sidebar element" />
   </p>
 
 ## Styling
