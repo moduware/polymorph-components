@@ -1,11 +1,11 @@
 module.exports = {
   blogPostDir: "posts", // The name of directory that contains your posts.
   lessonsDir: "lessons", // The name of the directory that contains lessons or docs.
-  siteTitle: "Polymer Elements", // Site title.
+  siteTitle: "Morph Components", // Site title.
   siteTitleAlt: "A collection of polymorph elements with their documentation and usage examples. Using Google Polymer creating elements as close to the native webcomponents.", // Alternative site title for SEO.
   siteLogo: "/logos/poly-logo-3.png", // Logo used for SEO and manifest.
-  siteUrl: "https://moduware.github.io/", // Domain of your website without pathPrefix.
-  pathPrefix: "/polymorph-components", // Prefixes all links. For cases when deployed to example.github.io/gatsby-advanced-starter/.
+  siteUrl: "http://morph.moduware.com", // Domain of your website without pathPrefix.
+  pathPrefix: "/", // Prefixes all links. For cases when deployed to example.github.io/gatsby-advanced-starter/.
   siteDescription: "A collection of polymorph elements that looks native to both IOS and Android platform. This page is underconstruction.", // Website description used for RSS feeds/meta description tag.
   siteRss: "/rss.xml", // Path to the RSS file.
   siteFBAppID: "1825", // FB Application ID for using app insights
