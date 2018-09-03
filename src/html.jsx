@@ -2,7 +2,7 @@
 /* eslint import/extensions:"off" */
 /* eslint global-require:"off" */
 import React from 'react';
-import favicon from './favicon.png';
+import favicon from './favicon.ico';
 
 let inlinedStyles = '';
 if (process.env.NODE_ENV === 'production') {
@@ -35,6 +35,14 @@ export default class HTML extends React.Component {
             content="width=device-width, initial-scale=1.0"
           />
           {this.props.headComponents}
+
+          <script src="https://unpkg.com/@webcomponents/webcomponentsjs@next/webcomponents-loader.js"></script>
+          <script src="https://unpkg.com/@webcomponents/html-imports@1.1.1/src/html-imports.js"></script>
+          <link rel="import" href="https://cdn.rawgit.com/clint77/polymer-cdn/master/lib/morph-shared-colors/morph-shared-colors.html" />
+          <link rel="import" href="https://cdn.rawgit.com/clint77/polymer-cdn/master/lib/morph-button/morph-button.html" />
+          <link rel="import" href="https://cdn.rawgit.com/clint77/polymer-cdn/master/lib/morph-tabbar/morph-tabbar.html" />
+          <link rel="import" href="https://cdn.rawgit.com/clint77/polymer-cdn/master/lib/morph-tabbar-item/morph-tabbar-item.html" />
+
           <link rel="shortcut icon" href={favicon} />
           {css}
         </head>

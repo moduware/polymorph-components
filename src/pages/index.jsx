@@ -5,6 +5,7 @@ import styled from 'styled-components'
 import SEO from '../components/SEO'
 import config from '../../data/SiteConfig'
 import CtaButton from '../components/CtaButton'
+import MorphContainer from '../components/MorphContainer'
 import Navigation from '../components/Layout/Navigation'
 
 class Index extends React.Component {
@@ -29,8 +30,8 @@ class Index extends React.Component {
             <p>
               A collection of polymorph elements with their documentation and usage examples.{' '}
             </p>
-            <CtaButton to={'/morph-button'}>Morph Button</CtaButton>
-            <paper-checkbox></paper-checkbox>
+
+            <MorphContainer />
 
             <div className="contributors">
               <p>
