@@ -6,7 +6,7 @@ const FlexContainer = styled.div`
   overflow: hidden;
   margin-top: 5px;
   padding: 10px;
-  align-items: center;
+  align-items: flex-start;
 
   justify-content: center;
   max-width: 100%;
