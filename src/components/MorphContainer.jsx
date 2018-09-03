@@ -23,7 +23,7 @@ class MorphContainer extends Component {
           </div>
         </MorphColumn>
 
-        <h3>morph-tabbar</h3>
+        <h3>morph-tabbar and morph-tabbar-item</h3>
 
         <MorphColumn>
           <div className="left">

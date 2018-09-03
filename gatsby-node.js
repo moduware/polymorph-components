@@ -7,6 +7,7 @@ exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
   let slug;
   if (node.internal.type === "MarkdownRemark") {
     const fileNode = getNode(node.parent);
+    console.log('\n', fileNode.relativePath);
     const parsedFilePath = path.parse(fileNode.relativePath);
     if (
       Object.prototype.hasOwnProperty.call(node, "frontmatter") &&

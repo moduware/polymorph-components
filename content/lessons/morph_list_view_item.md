@@ -89,7 +89,7 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean elementum id neq
 - Here is a quick demo of the morph-list-view-item element for Android platform.
 
   <p align="center">
-    <img src="/images/android-basic-demo.png" alt="IOS morph-list-view-item demo"/>
+    <img src="/images/list-view-item-android-basic-demo.png" alt="IOS morph-list-view-item demo"/>
   </p>
 
 - Both IOS and Android demo are using the HTML markup. 

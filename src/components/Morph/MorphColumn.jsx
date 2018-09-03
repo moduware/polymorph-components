@@ -15,9 +15,14 @@ const FlexContainer = styled.div`
   > div {
     flex: 1;
     padding: 10px;
+    min-width: 300px;
   }
   > div p {
     padding: 5px;
+  }
+
+  @media (max-width: 600px) {
+    display: block;
   }
 `
 
