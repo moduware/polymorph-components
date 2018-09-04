@@ -10,19 +10,25 @@ const FlexContainer = styled.div`
 
   justify-content: center;
   max-width: 100%;
-  background: lightgray;
+  background: #eff0f4;
 
   > div {
+    display: flex;
     flex: 1;
     padding: 10px;
     min-width: 300px;
+    overflow: hidden;
   }
   > div p {
-    padding: 5px;
+    padding: 10px;
+    flex: 1;
   }
 
-  @media (max-width: 600px) {
+  @media screen and (max-width: 900px) {
     display: block;
+    p img {
+      width: 100%;
+    }
   }
 `
 
