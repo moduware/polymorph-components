@@ -43,6 +43,9 @@ export default class HTML extends React.Component {
           <link rel="import" href="https://cdn.rawgit.com/clint77/polymer-cdn/master/lib/morph-tabbar/morph-tabbar.html" />
           <link rel="import" href="https://cdn.rawgit.com/clint77/polymer-cdn/master/lib/morph-tabbar-item/morph-tabbar-item.html" />
           <link rel="import" href="https://cdn.rawgit.com/clint77/polymer-cdn/master/lib/morph-list-view/morph-list-view.html" />
+          <link rel="import" href="https://cdn.rawgit.com/clint77/polymer-cdn/master/lib/morph-list-view-item/morph-list-view-item.html" />
+          <link rel="import" href="https://cdn.rawgit.com/clint77/polymer-cdn/master/lib/morph-list-view-title/morph-list-view-title.html" />
+          <link rel="import" href="https://cdn.rawgit.com/clint77/polymer-cdn/master/lib/morph-list-view-divider/morph-list-view-divider.html" />
 
           <link rel="shortcut icon" href={favicon} />
           {css}
