@@ -26,9 +26,9 @@ class Index extends React.Component {
             </Hero>
           </IndexHeadContainer>
           <BodyContainer>
-            <h2>List of Polymorph Elements</h2>
+            <h2>List of Morph Components</h2>
             <p>
-              A collection of polymorph elements with their documentation and usage examples.{' '}
+              A collection of morph components with their documentation and usage examples.
             </p>
 
             <MorphContainer />

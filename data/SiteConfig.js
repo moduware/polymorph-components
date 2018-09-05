@@ -6,7 +6,7 @@ module.exports = {
   siteLogo: "/logos/poly-logo-3.png", // Logo used for SEO and manifest.
   siteUrl: "http://morph.moduware.com", // Domain of your website without pathPrefix.
   pathPrefix: "/", // Prefixes all links. For cases when deployed to example.github.io/gatsby-advanced-starter/.
-  siteDescription: "A collection of polymorph elements that looks native to both IOS and Android platform. This page is underconstruction.", // Website description used for RSS feeds/meta description tag.
+  siteDescription: "A collection of UI web components that looks native to both IOS and Android platform.", // Website description used for RSS feeds/meta description tag.
   siteRss: "/rss.xml", // Path to the RSS file.
   siteFBAppID: "1825", // FB Application ID for using app insights
   googleAnalyticsID: "UA-82300-1 ", // GA tracking ID.

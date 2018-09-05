@@ -1,15 +1,22 @@
 import React, { Component } from 'react'
 import MorphColumn from '../components/Morph/MorphColumn'
 import NavLink from '../components/NavLink';
+import { UserIcon } from '../components/UserLinks';
 import WebcomponentLogo from './Morph/WebcomponentLogo';
-  
+import styled from 'styled-components'
 
+const StyledUserIcon = styled(UserIcon) `
+  margin-left: 0px;
+`
+  
 class MorphContainer extends Component {
   render() {
     return (
       <div className="morph">
         <NavLink to={'/morph-button'}>morph-button</NavLink>
-        <WebcomponentLogo href="https://www.webcomponents.org/element/moduware/morph-button/v0.0.4-alpha" />
+        <StyledUserIcon href="https://www.webcomponents.org/element/moduware/morph-button/v0.0.4-alpha">
+          <WebcomponentLogo />
+        </StyledUserIcon>
         <MorphColumn>
           <div className="left">
             <span>
@@ -31,7 +38,9 @@ class MorphContainer extends Component {
         </MorphColumn>
 
         <NavLink to={'/morph-tabbar'}>morph-tabbar</NavLink> and <NavLink to={'/morph-tabbar-item'}>morph-tabbar-item</NavLink>
-        <WebcomponentLogo href="https://www.webcomponents.org/element/moduware/morph-tabbar" />
+        <StyledUserIcon href="https://www.webcomponents.org/element/moduware/morph-tabbar">
+          <WebcomponentLogo />
+        </StyledUserIcon>
 
         <MorphColumn>
           <div className="left">
@@ -62,7 +71,9 @@ class MorphContainer extends Component {
         </MorphColumn>
 
         <NavLink to={'/morph-list-view'}>morph-list-view</NavLink> and <NavLink to={'/morph-list-view-item'}>morph-list-view-item</NavLink>
-        <WebcomponentLogo href="https://www.webcomponents.org/element/moduware/morph-list-view" />
+        <StyledUserIcon href="https://www.webcomponents.org/element/moduware/morph-list-view">
+          <WebcomponentLogo />
+        </StyledUserIcon>
         <MorphColumn single>
           <div className="left">
             <span>
@@ -93,7 +104,9 @@ class MorphContainer extends Component {
         </MorphColumn>
 
         <NavLink to={'/morph-pages'}>morph-pages</NavLink>
-        <WebcomponentLogo href="https://www.webcomponents.org/element/moduware/morph-pages" />        
+        <StyledUserIcon href="https://www.webcomponents.org/element/moduware/morph-pages">
+          <WebcomponentLogo />        
+        </StyledUserIcon>
         <MorphColumn>
           <div className="left">
             <span>
@@ -114,7 +127,9 @@ class MorphContainer extends Component {
         </MorphColumn>
 
         <NavLink to={'/morph-sidebar'}>morph-sidebar</NavLink>
-        <WebcomponentLogo href="https://www.webcomponents.org/element/moduware/morph-sidebar/v0.0.2-alpha" />
+        <StyledUserIcon href="https://www.webcomponents.org/element/moduware/morph-sidebar/v0.0.2-alpha">
+          <WebcomponentLogo />
+        </StyledUserIcon>
         <MorphColumn>
           <div className="left">
             <span>
@@ -135,7 +150,9 @@ class MorphContainer extends Component {
         </MorphColumn>
 
         <NavLink to={'/morph-swipeout'}>morph-swipeout</NavLink>
-        <WebcomponentLogo href="https://www.webcomponents.org/element/moduware/morph-swipeout" />
+        <StyledUserIcon href="https://www.webcomponents.org/element/moduware/morph-swipeout">
+          <WebcomponentLogo />
+        </StyledUserIcon>
 
         <MorphColumn single>
           <div className="single">
@@ -149,7 +166,9 @@ class MorphContainer extends Component {
         </MorphColumn>
 
         <NavLink to={'/morph-ripple'}>morph-ripple</NavLink>
-        <WebcomponentLogo href="https://www.webcomponents.org/element/moduware/morph-ripple" />
+        <StyledUserIcon href="https://www.webcomponents.org/element/moduware/morph-ripple">
+          <WebcomponentLogo />
+        </StyledUserIcon>
         <MorphColumn>
           <div className="single">
             <span>
@@ -162,7 +181,9 @@ class MorphContainer extends Component {
         </MorphColumn>
 
         <NavLink to={'/morph-overlay'}>morph-overlay</NavLink>
-        <WebcomponentLogo href="https://www.webcomponents.org/element/moduware/morph-overlay" />
+        <StyledUserIcon href="https://www.webcomponents.org/element/moduware/morph-overlay">
+          <WebcomponentLogo />
+        </StyledUserIcon>
         <MorphColumn>
           <div className="single">
             <span>
