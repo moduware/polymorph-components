@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
 
-const FlexContainer = styled.div`
+export const FlexContainer = styled.div`
   display: flex;
   overflow: hidden;
   margin-top: 5px;
@@ -47,6 +47,9 @@ const FlexContainer = styled.div`
       height: 100%;
     }
   }
+
+  color: ${props => props.columnOne ? 'yellow' : 'blue' };
+  background-color: ${props => props.columnOne ? 'blue' : '${props => props.theme.brand}'};
 `;
 
 class MorphColumn extends Component {

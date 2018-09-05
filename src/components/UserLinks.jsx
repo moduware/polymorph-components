@@ -3,7 +3,7 @@ import { FaGithubAlt, FaTwitter } from 'react-icons/lib/fa'
 import { MdMessage, MdEmail } from 'react-icons/lib/md'
 import styled from 'styled-components'
 
-const Container = styled.div`
+export const Container = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -11,7 +11,7 @@ const Container = styled.div`
   max-width: 100%;
 `
 
-const UserIcon = styled.a`
+export const UserIcon = styled.a`
   margin-left: 25px;
   color: white;
   &:hover {

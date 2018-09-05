@@ -1,13 +1,15 @@
 import React, { Component } from 'react'
-import styled from 'styled-components'
 import MorphColumn from '../components/Morph/MorphColumn'
 import NavLink from '../components/NavLink';
+import WebcomponentLogo from './Morph/WebcomponentLogo';
+  
 
 class MorphContainer extends Component {
   render() {
     return (
       <div className="morph">
         <NavLink to={'/morph-button'}>morph-button</NavLink>
+        <WebcomponentLogo href="https://www.webcomponents.org/element/moduware/morph-button/v0.0.4-alpha" />
         <MorphColumn>
           <div className="left">
             <span>
@@ -28,7 +30,8 @@ class MorphContainer extends Component {
           </div>
         </MorphColumn>
 
-        <h3><NavLink to={'/morph-tabbar'}>morph-tabbar</NavLink> and <NavLink to={'/morph-tabbar-item'}>morph-tabbar-item</NavLink></h3>
+        <NavLink to={'/morph-tabbar'}>morph-tabbar</NavLink> and <NavLink to={'/morph-tabbar-item'}>morph-tabbar-item</NavLink>
+        <WebcomponentLogo href="https://www.webcomponents.org/element/moduware/morph-tabbar" />
 
         <MorphColumn>
           <div className="left">
@@ -58,8 +61,8 @@ class MorphContainer extends Component {
           </div>
         </MorphColumn>
 
-        <h3><NavLink to={'/morph-list-view'}>morph-list-view</NavLink> and <NavLink to={'/morph-list-view-item'}>morph-list-view-item</NavLink></h3>
-
+        <NavLink to={'/morph-list-view'}>morph-list-view</NavLink> and <NavLink to={'/morph-list-view-item'}>morph-list-view-item</NavLink>
+        <WebcomponentLogo href="https://www.webcomponents.org/element/moduware/morph-list-view" />
         <MorphColumn single>
           <div className="left">
             <span>
@@ -89,8 +92,8 @@ class MorphContainer extends Component {
           </div>
         </MorphColumn>
 
-        <h3><NavLink to={'/morph-pages'}>morph-pages</NavLink></h3>
-        
+        <NavLink to={'/morph-pages'}>morph-pages</NavLink>
+        <WebcomponentLogo href="https://www.webcomponents.org/element/moduware/morph-pages" />        
         <MorphColumn>
           <div className="left">
             <span>
@@ -110,8 +113,8 @@ class MorphContainer extends Component {
           </div>
         </MorphColumn>
 
-        <h3><NavLink to={'/morph-sidebar'}>morph-sidebar</NavLink></h3>
-
+        <NavLink to={'/morph-sidebar'}>morph-sidebar</NavLink>
+        <WebcomponentLogo href="https://www.webcomponents.org/element/moduware/morph-sidebar/v0.0.2-alpha" />
         <MorphColumn>
           <div className="left">
             <span>
@@ -131,7 +134,8 @@ class MorphContainer extends Component {
           </div>
         </MorphColumn>
 
-        <h3><NavLink to={'/morph-swipeout'}>morph-swipeout</NavLink></h3>
+        <NavLink to={'/morph-swipeout'}>morph-swipeout</NavLink>
+        <WebcomponentLogo href="https://www.webcomponents.org/element/moduware/morph-swipeout" />
 
         <MorphColumn single>
           <div className="single">
@@ -144,8 +148,8 @@ class MorphContainer extends Component {
           </div>
         </MorphColumn>
 
-        <h3><NavLink to={'/morph-ripple'}>morph-ripple</NavLink></h3>
-
+        <NavLink to={'/morph-ripple'}>morph-ripple</NavLink>
+        <WebcomponentLogo href="https://www.webcomponents.org/element/moduware/morph-ripple" />
         <MorphColumn>
           <div className="single">
             <span>
@@ -157,8 +161,8 @@ class MorphContainer extends Component {
           </div>
         </MorphColumn>
 
-        <h3><NavLink to={'/morph-overlay'}>morph-overlay</NavLink></h3>
-
+        <NavLink to={'/morph-overlay'}>morph-overlay</NavLink>
+        <WebcomponentLogo href="https://www.webcomponents.org/element/moduware/morph-overlay" />
         <MorphColumn>
           <div className="single">
             <span>
@@ -169,7 +173,6 @@ class MorphContainer extends Component {
             </span>
           </div>
         </MorphColumn>
-
       </div>
     )
   }

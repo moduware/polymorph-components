@@ -16,9 +16,8 @@ class navLink extends Component {
 export default navLink
 
 const LinkContainer = styled.div`
-  // border: 1px solid ${props => props.theme.brand};
   border-radius: 3px;
-  padding: 20px;
+  padding: 10px;
   font-size: 3rem;
   font-weight: 600;
   display: inline-block;
@@ -27,6 +26,5 @@ const LinkContainer = styled.div`
 
   &:hover {
     color: ${props => props.theme.brand};
-    // background: ${props => props.theme.brand};
   }
 `
