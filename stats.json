@@ -69,9 +69,9 @@
       "path---morph-list-view-item-4e25c7933285f825bacd.js.map"
     ],
     "commons": [
-      "commons-3d75570345b8258e8c0c.js",
+      "commons-2e5c2a3ddf24133c3dc2.js",
       "build-js-styles.css",
-      "commons-3d75570345b8258e8c0c.js.map",
+      "commons-2e5c2a3ddf24133c3dc2.js.map",
       "build-js-styles.css.map"
     ],
     "path---morph-view": [
@@ -91,8 +91,8 @@
       "component---src-templates-post-jsx-e447ee4667df67d0905b.js.map"
     ],
     "component---src-pages-index-jsx": [
-      "component---src-pages-index-jsx-b82fdcea38cf526f049b.js",
-      "component---src-pages-index-jsx-b82fdcea38cf526f049b.js.map"
+      "component---src-pages-index-jsx-c7e413e0ca5a7228b9a1.js",
+      "component---src-pages-index-jsx-c7e413e0ca5a7228b9a1.js.map"
     ],
     "path---morph-tabbar": [
       "path---morph-tabbar-2deeaf55dd69bf9b50b8.js",
