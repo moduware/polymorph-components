@@ -1,8 +1,8 @@
 <div align="center">
-    <img src="static/logos/logo-1024.png" alt="Logo" width='100px' height='100px'/>
+    <img src="static/logos/poly-logo-3.png" alt="Logo" width='100px' height='100px'/>
 </div>
 
-# Gatsby Docs Starter 1.0
+# Morph Components
 
 #### This Project was forked from [Gatsby Advanced Starter](https://github.com/Vagr9K/gatsby-advanced-starter)
 
@@ -33,7 +33,7 @@ For a more complicated example, you can look at the repo for the site I built th
 ## Features
 
 <div align="center">
-    <img src="static/screen-shot-v0-1.png" alt="Logo" width='800px' />
+    <img src="static/logos/poly-logo-3.png" alt="Logo" width='800px' />
 </div>
 <div align="center">
     <img src="static/screen-shot-v0-2.png" alt="Logo" width='800px' />
