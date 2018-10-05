@@ -4,9 +4,10 @@
 
 First, make sure you have the [Polymer CLI](https://www.npmjs.com/package/polymer-cli) installed. Then run `polymer serve` to serve your element locally.
 
-**<h4>Our examples are demonstrated with specific morph components such as `<morph-overlay>` and `<morph-button>`. Please change them with your desired component that you want to clone and use!!</h4>**
+**Our examples are demonstrated with specific morph components such as `<morph-overlay>` and `<morph-button>`. Please change them with your desired component that you want to clone and use!!**
 
-## Getting Started:
+## Getting Started
+
 You can clone the desired repository to create a local copy on your computer.
 
   1. Navigate to the main page of the repository in Github
