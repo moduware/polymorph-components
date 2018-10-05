@@ -66,19 +66,20 @@ You can clone the desired repository to create a local copy on your computer.
 
   **As an example, we will use our `<morph-button>` component.**
 
-    ```bash
-    morph-button/
-    │
-    ├── bower-components/
-    ├── demo/
-    ├── test/
-    │    │
-    │    └── morph-button_test.html
-    │
-    ├── morph-button.html
-    │
-    └── README.md
-    ```
+  ```bash
+  morph-button/
+  │
+  ├── bower-components/
+  ├── demo/
+  ├── test/
+  │    │
+  │    └── morph-button_test.html
+  │
+  ├── morph-button.html
+  │
+  └── README.md
+  ```
+    
   - Then either add new test to existing fixture and context, or add new fixture and create new test context for new property or group of tests. Refer to [WCT][WCT] documentation for more detailed explanation about fixtures.
 
   - Example test for **`<morph-button>`**.
