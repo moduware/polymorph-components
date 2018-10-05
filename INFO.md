@@ -18,7 +18,9 @@ You can clone the desired repository to create a local copy on your computer.
   **As an example, we will clone our `<morph-overlay>` component.**
 
   ```bash
-  $ git clone https://github.com/moduware/morph-overlay.git
+
+  git clone https://github.com/moduware/morph-overlay.git
+
   ```
 
   4. Then **`$ cd morph-overlay/`**
@@ -35,7 +37,7 @@ You can clone the desired repository to create a local copy on your computer.
   2. Use **`polymer serve`**
 
   ```bash
-    $ polymer serve
+    polymer serve
   ```
 
   - and if running correctly, this message will appear
