@@ -1,10 +1,14 @@
 # Polymorph Components Guide
 
+This getting started guide is for out Morph Components recently updated to `Polymer 3.0`
+
+- The `Polymer 3.0` version resides in the `polymer3` branch until merge to our `master` branch
+
 ## Install the Polymer-CLI
 
-First, make sure you have the [Polymer CLI](https://www.npmjs.com/package/polymer-cli) installed. Then run `polymer serve` to serve your element locally.
+First, make sure you have installed the [Polymer CLI](https://www.npmjs.com/package/polymer-cli).
 
-**Our examples are demonstrated with specific morph components such as `<morph-overlay>` and `<morph-button>`. Please change them with your desired component that you want to clone and use!!**
+**Our examples are demonstrated with specific morph components such as `<morph-button>`. Please change them with your desired component that you want to clone and use**
 
 ## Getting Started
 
@@ -16,18 +20,20 @@ You can clone the desired repository to create a local copy on your computer.
 
   3. Open your Terminal and change the current working directory to the location where you want the cloned directory to be made and Type **`git clone`**, and then paste the URL you copied in Step 2.
 
-  **As an example, we will clone our `<morph-overlay>` component.**
+    NOTE: For this step we will only clone the `polymer3` branch.
+
+    **As an example, we will clone our `<morph-button>` component `polymer3` branch.**
 
   ```bash
 
-  git clone https://github.com/moduware/morph-overlay.git
+  git clone --single-branch -b polymer3 https://github.com/moduware/morph-button.git
 
   ```
 
-  4. Then **`$ cd morph-overlay/`**
+  4. Then **`$ cd morph-button/`**
 
-  5. Run **`$ bower install`** to install all packages in your bower.json and any packages that it depends on in the local bower_components folder
-    ** If you don't have bower installed in your machine, please refer to this [page].(https://bower.io/)
+  5. Run **`$ yarn install`** to install all packages in your `package.json` and any packages that it depends on in the local `/node_modules` folder
+    ** If you don't have `yarn` installed in your machine, please refer to this [page].(https://yarnpkg.com/lang/en/docs/install/#mac-stable)
 
 ## Running A Local Server
 
@@ -35,54 +41,52 @@ You can clone the desired repository to create a local copy on your computer.
 
   1. Open another tab  or window of your terminal
 
-  2. Use **`polymer serve`**
+  2. Use `npm start` or `polymer serve --npm --module-resolution=node`
 
-  ```bash
-    polymer serve
-  ```
-
-  - and if running correctly, this message will appear
+  and if running correctly, this message will appear
 
   ```bash
   info:   Files in this directory are available under the following URLs
         applications: http://127.0.0.1:8081
-        reusable components: http://127.0.0.1:8081/components/morph-overlay/
+        reusable components: http://127.0.0.1:8081/components/morph-button/
   ```
 
-  - Copy and paste the reusable components URL `http://127.0.0.1:8081/components/morph-overlay/` to your browser and open developer console and select either an IOS or Android device to see the component's render correctly.
+  Copy and paste the reusable components URL `http://127.0.0.1:8081/components/morph-button/` to your browser and open developer console and select either an IOS or Android device to see the component's render correctly.
 
-  - **Note**: You will not see the component's render properly unless you have set the device type (iOS or Android).
+  **Note**: You will not see the component's render properly unless you have set the device type (iOS or Android).
 
   3. **Important:** Running this local server is needed for running Polymer Test. More about this below.
 
 ## Test
 
-  - Our morph component is ready to be tested using [**web-component-tester**][WCT] or WCT for short. Our tests is setup to use `--expanded: true` configuration for creating a more readable output of test results in the console. It will show all the test that were run and also show all the test that failed if any. Additional configuration for WCT can be found and further configured in the `wct-conf.json` file in the root of your desired component's directory.
+NOTE: Due to current limitations by Polymer3 running test in the CLI or terminal, please run server and view all test in a browser.
 
-  - To start **Polymer Unit Test** you can run **`$ polymer test`**
+- To start **Polymer Unit Test** you can run `npm start` and go to `http://127.0.0.1:8081/test/morph-button_test.html` and inspect element and view the console.
 
-    **Reminder:** A local server is needed to be started and running for the test to properly run.
+Once the issues of running test in the terminal is wrinkle free, we can run our morph component tests using [**web-component-tester**][WCT] or WCT for short. Our tests is setup to use `--expanded: true` configuration for creating a more readable output of test results in the console. It will show all the test that were run and also show all the test that failed if any. Additional configuration for WCT can be found and further configured in the `wct-conf.json` file in the root of your desired component's directory.
 
-  - For brief overview of Polymer Testing please go to this page [Polymer Test][Polymer Test]
+  **Reminder:** A local server is needed to be started and running for the test to properly run.
 
-  - To create new test, change to the **test/** directory. See file structure below.
+- For brief overview of Polymer Testing please go to this page [Polymer Test][Polymer Test]
+
+- To create new test, change to the **test/** directory. See file structure below.
 
   **As an example, we will use our `<morph-button>` component.**
 
   ```bash
   morph-button/
   │
-  ├── bower-components/
+  ├── node_modules/
   ├── demo/
   ├── test/
   │    │
   │    └── morph-button_test.html
   │
-  ├── morph-button.html
+  ├── morph-button.js
   │
   └── README.md
   ```
-    
+
   - Then either add new test to existing fixture and context, or add new fixture and create new test context for new property or group of tests. Refer to [WCT][WCT] documentation for more detailed explanation about fixtures.
 
   - Example test for **`<morph-button>`**.
@@ -142,8 +146,9 @@ You can clone the desired repository to create a local copy on your computer.
     </script>
 ```
 
-  - For brief overview of Polymer Testing please go to this page [Polymer Test][Polymer Test]
-  - To learn more about the other Polymorph Components, please check out this [repository][Main Page].
+- For brief overview of Polymer Testing please go to this page [Polymer Test][Polymer Test]
+
+- To learn more about the other Polymorph Components, please check out this [repository][Main Page].
 
 [Main Page]: https://github.com/moduware/polymorph-components
 
