@@ -18,11 +18,11 @@ You can clone the desired repository to create a local copy on your computer.
 
   2. Click **Clone or download** and copy the clone URL for the repository
 
-  3. Open your Terminal and change the current working directory to the location where you want the cloned directory to be made and Type **`git clone`**, and then paste the URL you copied in Step 2.
+  3. Open your Terminal and change the current working directory to the location where you want the cloned directory to be made and Type `git clone`, and then paste the URL you copied in Step 2.
 
-    NOTE: For this step we will only clone the `polymer3` branch.
+  NOTE: For this step we will only clone the `polymer3` branch.
 
-    **As an example, we will clone our `<morph-button>` component `polymer3` branch.**
+  As an example, we will clone our `<morph-button>` component `polymer3` branch.
 
   ```bash
 
@@ -33,7 +33,7 @@ You can clone the desired repository to create a local copy on your computer.
   4. Then **`$ cd morph-button/`**
 
   5. Run **`$ yarn install`** to install all packages in your `package.json` and any packages that it depends on in the local `/node_modules` folder
-    ** If you don't have `yarn` installed in your machine, please refer to this [page].(https://yarnpkg.com/lang/en/docs/install/#mac-stable)
+    ** If you don't have `yarn` installed in your machine, please refer to this [page](https://yarnpkg.com/lang/en/docs/install/).
 
 ## Running A Local Server
 
