@@ -47,14 +47,11 @@ export const FlexContainer = styled.div`
       height: 100%;
     }
   }
-
-  color: ${props => props.columnOne ? 'yellow' : 'blue' };
-  background-color: ${props => props.columnOne ? 'blue' : '${props => props.theme.brand}'};
 `;
 
 class MorphColumn extends Component {
   render() {
-    const { children } = this.props
+    const { children } = this.props;
     return (
       <FlexContainer>{children}</FlexContainer>
     )

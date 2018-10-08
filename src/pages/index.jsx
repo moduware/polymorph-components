@@ -1,12 +1,11 @@
-import React from 'react'
-import Helmet from 'react-helmet'
-import styled from 'styled-components'
+import React from 'react';
+import Helmet from 'react-helmet';
+import styled from 'styled-components';
 
-import SEO from '../components/SEO'
-import config from '../../data/SiteConfig'
-import CtaButton from '../components/CtaButton'
-import MorphContainer from '../components/MorphContainer'
-import Navigation from '../components/Layout/Navigation'
+import SEO from '../components/SEO';
+import config from '../../data/SiteConfig';
+import MorphContainer from '../components/MorphContainer';
+import Navigation from '../components/Layout/Navigation';
 
 class Index extends React.Component {
   constructor(props) {
@@ -14,22 +13,31 @@ class Index extends React.Component {
     this.state = {
       value: null,
     };
+
+    this.onHover = (event) => {
+      const element = event.target;
+      element.setAttribute('src', '/logos/poly-logo-1.png');
+    };
+
+    this.onLeave = (event) => {
+      const element = event.target;
+      element.setAttribute('src', '/logos/poly-logo-3.png');
+    }
   }
 
-  onHover(event) {
-    let element = event.target;
-    console.log(element);
-    element.setAttribute('src', '/logos/poly-logo-1.png');
-  }
+  // onHover(event) {
+  //   const element = event.target;
+  //   element.setAttribute('src', '/logos/poly-logo-1.png');
+  // }
 
-  onLeave(event) {
-    let element = event.target;
-    element.setAttribute('src', '/logos/poly-logo-3.png');
-  }
+  // onLeave(event) {
+  //   const element = event.target;
+  //   element.setAttribute('src', '/logos/poly-logo-3.png');
+  // }
 
   render() {
 
-    const allSEOMarkdown = this.props.data.allMarkdown.edges
+    const allSEOMarkdown = this.props.data.allMarkdown.edges;
 
     return (
       <div className="index-container">
@@ -39,9 +47,13 @@ class Index extends React.Component {
           <IndexHeadContainer>
             <Navigation />
             <Hero>
-              <img src={config.siteLogo} width="150px" alt="moduware logo"
+              <img 
+                src={config.siteLogo} 
+                width="150px" 
+                alt="moduware logo"
                 onMouseOver={(event) => this.onHover(event)}
-                onMouseLeave={(event) => this.onLeave(event)}/>
+                onMouseLeave={(event) => this.onLeave(event)} 
+              />
               <h1>{config.siteTitle}</h1>
               <h4>{config.siteDescription}</h4>
             </Hero>
@@ -70,16 +82,15 @@ class Index extends React.Component {
     )
   }
 
-  onHover(event) {
-    let element = event.target;
-    console.log(element);
-    element.setAttribute('src', '/logos/poly-logo-1.png');
-  }
+  // onHover(event) {
+  //   let element = event.target;
+  //   element.setAttribute('src', '/logos/poly-logo-1.png');
+  // }
 
-  onLeave(event) {
-    let element = event.target;
-    element.setAttribute('src', '/logos/poly-logo-3.png');
-  }
+  // onLeave(event) {
+  //   let element = event.target;
+  //   element.setAttribute('src', '/logos/poly-logo-3.png');
+  // }
 
 }
 

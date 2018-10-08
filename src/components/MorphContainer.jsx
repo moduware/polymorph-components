@@ -1,9 +1,9 @@
-import React, { Component } from 'react'
-import MorphColumn from '../components/Morph/MorphColumn'
+import React, { Component } from 'react';
+import styled from 'styled-components';
+import MorphColumn from '../components/Morph/MorphColumn';
 import NavLink from '../components/NavLink';
 import { UserIcon } from '../components/UserLinks';
 import WebcomponentLogo from './Morph/WebcomponentLogo';
-import styled from 'styled-components'
 
 const StyledUserIcon = styled(UserIcon) `
   margin-left: 0px;
@@ -174,7 +174,7 @@ class MorphContainer extends Component {
             <span>
               <p>Android Morph Ripple</p>
               <span className="image-container">
-                <img src="/images/ripple-tabbar-demo.gif" alt="morph ripple demo image" />
+                <img src="/images/ripple-tabbar-demo.gif" alt="morph ripple demo" />
               </span>
             </span>
           </div>
@@ -189,7 +189,7 @@ class MorphContainer extends Component {
             <span>
               <p>Android Morph Overlay</p>
               <span className="image-container">
-                <img src="/images/overlay-android-demo.gif" alt="morph sidebar demo image" />
+                <img src="/images/overlay-android-demo.gif" alt="morph sidebar demo" />
               </span>
             </span>
           </div>

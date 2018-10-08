@@ -36,8 +36,8 @@ export default class HTML extends React.Component {
           />
           {this.props.headComponents}
 
-          <script src="https://unpkg.com/@webcomponents/webcomponentsjs@next/webcomponents-loader.js"></script>
-          <script src="https://unpkg.com/@webcomponents/html-imports@1.1.1/src/html-imports.js"></script>
+          <script src="https://unpkg.com/@webcomponents/webcomponentsjs@next/webcomponents-loader.js" />
+          <script src="https://unpkg.com/@webcomponents/html-imports@1.1.1/src/html-imports.js" />
           <link rel="import" href="https://cdn.rawgit.com/clint77/polymer-cdn/master/lib/morph-shared-colors/morph-shared-colors.html" />
           <link rel="import" href="https://cdn.rawgit.com/clint77/polymer-cdn/master/lib/morph-button/morph-button.html" />
           <link rel="import" href="https://cdn.rawgit.com/clint77/polymer-cdn/master/lib/morph-tabbar/morph-tabbar.html" />
