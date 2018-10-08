@@ -22,18 +22,8 @@ class Index extends React.Component {
     this.onLeave = (event) => {
       const element = event.target;
       element.setAttribute('src', '/logos/poly-logo-3.png');
-    }
+    };
   }
-
-  // onHover(event) {
-  //   const element = event.target;
-  //   element.setAttribute('src', '/logos/poly-logo-1.png');
-  // }
-
-  // onLeave(event) {
-  //   const element = event.target;
-  //   element.setAttribute('src', '/logos/poly-logo-3.png');
-  // }
 
   render() {
 
