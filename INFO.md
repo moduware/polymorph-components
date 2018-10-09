@@ -1,4 +1,4 @@
-# Polymorph Components Guide
+# Polymorph Components Guide - Polymer 3.0
 
 This getting started guide is for out Morph Components recently updated to `Polymer 3.0`
 
