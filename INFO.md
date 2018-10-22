@@ -10,7 +10,51 @@ First, make sure you have installed the [Polymer CLI](https://www.npmjs.com/pack
 
 **Our examples are demonstrated with specific morph components such as `<morph-button>`. Please change them with your desired component that you want to clone and use**
 
-## Getting Started
+## Usage
+
+Installation
+
+```bash
+
+  npm install --save @polymer/morph-button
+
+```
+
+In an HTML file
+
+```html
+
+  <html>
+    <head>
+      <script type="module">
+        import '@moduware/morph-button';
+      </script>
+    </head>
+  </html>
+
+```
+
+In a Polymer 3 element
+
+```javascript
+
+  import {PolymerElement, html} from '@polymer/polymer/polymer-element.js';
+
+  import '@moduware/morph-button.js';
+
+  class ExampleElement extends PolymerElement {
+    static get template() {
+      return html'
+        <morph-button filled big >submit</morph-button>
+      ';
+    }
+  }
+
+  customElements.define('example-element', ExampleElement);
+
+```
+
+## Getting Started on development
 
 You can clone the desired repository to create a local copy on your computer.
 
@@ -50,6 +94,8 @@ You can clone the desired repository to create a local copy on your computer.
         applications: http://127.0.0.1:8081
         reusable components: http://127.0.0.1:8081/components/morph-button/
   ```
+
+  ### Running the demo locally
 
   Copy and paste the reusable components URL `http://127.0.0.1:8081/components/morph-button/` to your browser and open developer console and select either an IOS or Android device to see the component's render correctly.
 
