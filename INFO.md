@@ -74,14 +74,13 @@ You can clone the desired repository to create a local copy on your computer.
 
   ```bash
 
-  git clone --single-branch -b polymer3 https://github.com/moduware/morph-button.git
+  git clone --single-branch -b master https://github.com/moduware/morph-button.git
 
   ```
 
   4. Then **`$ cd morph-button/`**
 
-  5. Run **`$ yarn install`** to install all packages in your `package.json` and any packages that it depends on in the local `/node_modules` folder
-    ** If you don't have `yarn` installed in your machine, please refer to this [page](https://yarnpkg.com/lang/en/docs/install/).
+  5. Run **`$ npm install`** to install all packages in your `package.json` and any packages that it depends on in the local `/node_modules` folder
 
 ## Running A Local Server
 
@@ -99,7 +98,7 @@ You can clone the desired repository to create a local copy on your computer.
         reusable components: http://127.0.0.1:8081/components/morph-button/
   ```
 
-  ### Running the demo locally
+### Running the demo locally
 
   Copy and paste the reusable components URL `http://127.0.0.1:8081/components/morph-button/` to your browser and open developer console and select either an IOS or Android device to see the component's render correctly.
 
@@ -116,6 +115,8 @@ NOTE: Due to current limitations by Polymer3 running test in the CLI or terminal
 Once the issues of running test in the terminal is wrinkle free, we can run our morph component tests using [**web-component-tester**][WCT] or WCT for short. Our tests is setup to use `--expanded: true` configuration for creating a more readable output of test results in the console. It will show all the test that were run and also show all the test that failed if any. Additional configuration for WCT can be found and further configured in the `wct-conf.json` file in the root of your desired component's directory.
 
   **Reminder:** A local server is needed to be started and running for the test to properly run.
+
+- Morph Components are also built with wct-instabub for code coverage. If you have polymer-cli installed, run the test on the terminal with command `wct`
 
 - For brief overview of Polymer Testing please go to this page [Polymer Test][Polymer Test]
 
@@ -204,4 +205,4 @@ Once the issues of running test in the terminal is wrinkle free, we can run our 
 
 [WCT]: https://github.com/Polymer/web-component-tester  
 
-[Polymer Test]: https://www.polymer-project.org/2.0/docs/tools/tests
+[Polymer Test]: https://www.polymer-project.org/3.0/docs/tools/tests
