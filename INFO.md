@@ -116,9 +116,9 @@ Once the issues of running test in the terminal is wrinkle free, we can run our 
 
 A local server is needed to be started and running for the test to properly run.
 
-- Morph Components are also built with wct-instabub for code coverage. If you have polymer-cli installed, run the test on the terminal with command `wct`
+- Morph Components are also built with wct-instabub for code coverage. If you have polymer-cli installed, run the test on the terminal with command 'wct'
 
-- For brief overview of Polymer Testing please go to this page [Polymer Test][Polymer Test]
+This command will run the test and give test coverage report on the terminal and also have '/coverage' folder for code test coverage related files
 
 - To create new test, change to the **test/** directory. See file structure below.
 
