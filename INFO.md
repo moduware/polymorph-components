@@ -106,7 +106,7 @@ You can clone the desired repository to create a local copy on your computer.
 
   3. **Important:** Running this local server is needed for running Polymer Test. More about this below.
 
-## Test
+### Running Test
 
 NOTE: Due to current limitations by Polymer3 running test in the CLI or terminal, please run server and view all test in a browser.
 
@@ -116,11 +116,17 @@ Once the issues of running test in the terminal is wrinkle free, we can run our 
 
 A local server is needed to be started and running for the test to properly run.
 
-- Morph Components are also built with wct-instabub for code coverage. If you have polymer-cli installed, run the test on the terminal with command 'wct'
+Morph Components are also built with wct-instabub for code coverage. If you have polymer-cli installed, run the test on the terminal with command 
+
+```bash
+
+  wct
+
+```
 
 This command will run the test and give test coverage report on the terminal and also have '/coverage' folder for code test coverage related files
 
-- To create new test, change to the **test/** directory. See file structure below.
+To create new test, change to the **test/** directory. See file structure below.
 
   **As an example, we will use our `<morph-button>` component.**
 
