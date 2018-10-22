@@ -114,7 +114,7 @@ NOTE: Due to current limitations by Polymer3 running test in the CLI or terminal
 
 Once the issues of running test in the terminal is wrinkle free, we can run our morph component tests using [**web-component-tester**][WCT] or WCT for short. Our tests is setup to use `--expanded: true` configuration for creating a more readable output of test results in the console. It will show all the test that were run and also show all the test that failed if any. Additional configuration for WCT can be found and further configured in the `wct-conf.json` file in the root of your desired component's directory.
 
-  **Reminder:** A local server is needed to be started and running for the test to properly run.
+A local server is needed to be started and running for the test to properly run.
 
 - Morph Components are also built with wct-instabub for code coverage. If you have polymer-cli installed, run the test on the terminal with command `wct`
 
