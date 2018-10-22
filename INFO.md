@@ -16,7 +16,7 @@ Installation
 
 ```bash
 
-  npm install --save @polymer/morph-button
+  npm install --save @moduware/morph-button
 
 ```
 
@@ -30,6 +30,10 @@ In an HTML file
         import '@moduware/morph-button';
       </script>
     </head>
+
+    <body>
+      <morph-button filled big>submit</morph-button>
+    </body>
   </html>
 
 ```
