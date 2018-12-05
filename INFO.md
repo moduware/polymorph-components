@@ -1,5 +1,8 @@
 # Polymorph Components Guide - Polymer 3.0
 
+UPDATE As of DEC. 05, 2018:
+We are currently in the process of updating Morph Components to use lit-element as its base class. Most of the Morph Copmponents already have this new lit-element version and are found in the 'lit' branch and some are already merge in 'master' at same time we updated the version used in the npm registry.
+
 This getting started guide is for out Morph Components recently updated to `Polymer 3.0`
 
 - The `Polymer 3.0` version resides in the `polymer3` branch until merge to our `master` branch
